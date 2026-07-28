@@ -16,7 +16,7 @@
 - (부제) **Hard-Negative Listwise Ranking**: 켄달타우 거리 기반으로 뽑은 hard negative들과 정답을 묶어
   8-way joint softmax(Plackett-Luce top-1)로 학습하는 `ListwiseSoftmaxLoss` — 이 프로젝트의 핵심 방법론
 
-이 저장소는 예선 전 기간의 실험 히스토리(v1 ~ v21)와, **예선 최종 제출 모델(v20)의 학습·추론 전체 코드
+이 저장소는 예선 전 기간의 실험 히스토리(v1-v21)와, **예선 최종 제출 모델(v20)의 학습·추론 전체 코드
 및 가중치**를 담고 있습니다. 코드 재현성 검증을 위해 제출된 저장소입니다.
 
 > ## ⭐ 최종 제출 모델(재현 대상)은 `v20_32b_qlora/` 입니다
@@ -26,7 +26,7 @@
 > - **이 결과를 만든 정확한 체크포인트**: `v20_32b_qlora/checkpoints/best_v20` (epoch 3, val exact-match
 >   0.6176) — `config.py`에 이 체크포인트를 만든 하이퍼파라미터가 그대로 고정되어 있습니다.
 > - **이 결과를 만든 정확한 제출 파일**: `v20_32b_qlora/submission_v20_best.csv`
-> - v1~v19, v21은 이 최종 모델에 도달하기까지의 실험 히스토리이며, 최종 제출 모델이 아닙니다(§8 표 참고).
+> - v1-v19, v21은 이 최종 모델에 도달하기까지의 실험 히스토리이며, 최종 제출 모델이 아닙니다(§8 표 참고).
 > - 본선 후보자 외부 데이터셋 검증도 **동일 체크포인트(best_v20)로 추가 학습 없이** 추론만 수행했습니다
 >   (`v20_32b_qlora/inference_semifinal.py` → `submission_semifinal_v20.csv`).
 
@@ -34,19 +34,23 @@
 
 ## 1. 실행 환경
 
+학습(4×H100)과 최종 제출 모델 재현(대회 규정상 RTX 3090 1장)은 **서로 다른 CUDA 환경**을 사용합니다.
+아래 두 환경을 구분해서 설치하세요.
+
 | 항목 | 값 |
 |---|---|
 | OS | Linux (SLURM 클러스터) |
 | Python | 3.10.20 |
-| CUDA | 13.0 |
-| PyTorch | 2.12.1+cu130 |
-| GPU (학습) | NVIDIA H100 80GB × 4 (DDP, `accelerate`) |
-| GPU (최종 제출 모델 실행 요건) | NVIDIA RTX 3090 24GB × 1 (대회 규정 4번) |
+| GPU (학습) | NVIDIA H100 80GB × 4 (DDP, `accelerate`), CUDA 13.0, PyTorch 2.12.1+cu130 |
+| GPU (최종 제출 모델 실행 요건) | NVIDIA RTX 3090 24GB × 1 (대회 규정 4번), driver 550.54.15, **CUDA 12.4** |
+
+> **driver 550.54.15는 CUDA 12.4까지만 지원**하므로, RTX 3090 채점 서버에서는 CUDA 13.0용(cu130) PyTorch
+> 휠이 설치되지 않습니다(드라이버가 요구 CUDA 런타임보다 낮아 초기화 실패). 이 재현 대상 환경에서는 반드시
+> 아래 cu124 휠을 설치하세요.
 
 ### 주요 라이브러리 버전 (`requirements.txt`)
 
 ```
-torch==2.12.1
 transformers==5.12.1
 peft==0.19.1
 accelerate==1.14.0
@@ -58,18 +62,31 @@ safetensors==0.8.0
 huggingface_hub==1.21.0
 ```
 
+(`torch`/`torchvision`은 CUDA 빌드 일치가 필요해 `requirements.txt`에서 제외했으며, 아래 2번 설치 안내의
+별도 명령으로 설치합니다.)
+
 ## 2. 설치
 
 ```bash
 conda create -n aichallenge python=3.10 -y
 conda activate aichallenge
+```
 
-# torch/torchvision은 CUDA 빌드가 서로 맞아야 하므로(안 맞으면 torchvision::nms 등
-# 커널 오류 발생) PyTorch 공식 인덱스에서 두 개를 함께 설치합니다.
-pip install torch==2.12.1 torchvision==0.27.1 --index-url https://download.pytorch.org/whl/cu130
+**(A) 최종 제출 모델 재현 — RTX 3090 / CUDA 12.4 (대회 채점 서버, 기본 권장)**
 
+```bash
+pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
 pip install -r requirements.txt
 ```
+
+**(B) 학습 재현 — 4×H100 / CUDA 13.0 (개발에 사용한 환경)**
+
+```bash
+pip install torch==2.12.1 torchvision==0.27.1 --index-url https://download.pytorch.org/whl/cu130
+pip install -r requirements.txt
+```
+
+`transformers==5.12.1`은 `torch>=2.4`만 요구하므로 두 환경 모두 나머지 라이브러리 버전은 동일하게 동작합니다.
 
 ## 3. 데이터 준비
 
@@ -139,7 +156,7 @@ sbatch run_train.sh
 | 데이터 | validation 비율 | 5% (train.csv에서 분할) |
 | 데이터 | random seed | 42 |
 | Hard negative | 그룹 구성 | positive 1개 + negative 7개 = 8개/그룹 |
-| Hard negative | 켄달타우 거리별 샘플 수 | d=1: 2개, d=2~6: 각 1개 (전 거리 구간 커버) |
+| Hard negative | 켄달타우 거리별 샘플 수 | d=1: 2개, d=2-6: 각 1개 (전 거리 구간 커버) |
 | LoRA | rank (r) | 128 |
 | LoRA | alpha | 256 |
 | LoRA | dropout | 0.05 |
@@ -164,7 +181,7 @@ sbatch run_train.sh
 
 #### 학습 곡선 (`figures/`, 실제 학습 로그로부터 생성, 이동평균으로 스무딩)
 
-**버전별(v1~v21) 리더보드 점수 추이** — 실제 제출된 버전들의 public LB 점수(§8 표와 동일 데이터).
+**버전별(v1-v21) 리더보드 점수 추이** — 실제 제출된 버전들의 public LB 점수(§8 표와 동일 데이터).
 v2.5의 급락(TTA flip 실패)과 v20에서의 전체 최고점 달성이 한눈에 보입니다.
 
 ![LB score progression](figures/lb_score_progression.png)
@@ -176,7 +193,7 @@ v2.5의 급락(TTA flip 실패)과 v20에서의 전체 최고점 달성이 한�
 |---|---|---|
 | ![loss curve](figures/loss_curve.png) | ![lr curve](figures/lr_curve.png) | ![vram curve](figures/vram_curve.png) |
 
-`ListwiseSoftmaxLoss` 레시피를 도입한 선행 실험의 로그로, 정답과의 켄달타우 거리(d=1~6)별로 loss가
+`ListwiseSoftmaxLoss` 레시피를 도입한 선행 실험의 로그로, 정답과의 켄달타우 거리(d=1-6)별로 loss가
 어떻게 움직이는지 보여줍니다(위와 동일한 step 범위로 잘라서 비교). 왼쪽은 step(x) × distance(y) 히트맵,
 오른쪽은 전체 구간 평균 loss입니다 — **d=1(인접 스왑)이 다른 거리보다 일관되게 loss가 높다**는,
 프로젝트 전반에서 반복 확인된 "d=1이 가장 어렵다"는 결론과 일치합니다.
@@ -203,6 +220,11 @@ torchrun --nproc_per_node=4 inference.py
 
 ### 5.2-b 추론 — 단일 GPU (NVIDIA RTX 3090 24GB, 대회 규정 4번 실행 환경)
 
+대회 채점 서버 사양: CPU AMD EPYC 7502 32-Core × 2, Memory 512GB, GPU GeForce RTX 3090,
+NVIDIA driver 550.54.15, CUDA 12.4. 이 사양에서는 반드시 **1번 설치 (A) 경로(torch==2.6.0+cu124)**로
+설치해야 합니다 — cu130 휠은 driver 550.54.15가 지원하는 CUDA 12.4보다 높은 CUDA 런타임을 요구해
+초기화에 실패합니다.
+
 `inference.py`는 `torchrun`의 `WORLD_SIZE`/`RANK`/`LOCAL_RANK` 환경변수를 읽어 동작하며, 이 값들이
 설정되지 않으면 각각 기본값 1/0/0으로 동작하므로 **코드 수정 없이 GPU 1장에서 그대로 실행**됩니다.
 
@@ -219,14 +241,14 @@ python inference.py
   (24 → 12 → 6 → ...). GPU 메모리가 24GB로 줄어들어도 배치 크기가 자동으로 낮아지며 동작합니다
   (속도만 느려짐).
 
-**실제 RTX 3090(24GB) 실행 검증 기록**: 베이스 모델(4bit) 로드만으로 22~23GB를 써서 LoRA 어댑터(약
+**실제 RTX 3090(24GB) 실행 검증 기록**: 베이스 모델(4bit) 로드만으로 22-23GB를 써서 LoRA 어댑터(약
 2GB)가 들어갈 자리가 없어 OOM이 났습니다. 원래도 양자화 대상이 아니던 vision tower와 lm_head(둘 다
 bf16 그대로, 정밀도 변화 없음)를 `device_map`으로 CPU RAM에 오프로드해서 해결했고, 어댑터 로딩 중
 peft가 예상 못한 메모리를 더 쓰는 문제는 `low_cpu_mem_usage=True`로, CPU 오프로드 후 accelerate의
 자동 디바이스 이동 hook이 깨지는 문제는 `dispatch_model()` 재적용으로 해결했습니다. 추가로
 `use_cache=False`(생성 안 하므로 캐시 불필요)와 `logits_to_keep=1`(lm_head를 마지막 토큰에만
 적용 — 이미 그 값만 쓰고 있었으므로 결과는 완전히 동일, 계산량만 감소)로 속도를 개선했습니다.
-실측 결과 819개 test set 처리에 샘플당 약 23~24초, 총 약 5시간 20분 소요(24시간 제한 내).
+실측 결과 819개 test set 처리에 샘플당 약 23-24초, 총 약 5시간 20분 소요(24시간 제한 내).
 
 ### 5.3 추론 (본선 후보자 외부 데이터셋 검증용)
 
@@ -260,7 +282,7 @@ bash run_smoke.sh
 - 사용한 오픈소스 모델(Qwen3-VL-32B-Instruct)은 2026년 5월 31일 이전에 가중치가 공개된 모델입니다.
 - 경량화 기법으로 QLoRA(4bit NF4 양자화 + LoRA)를 사용했습니다(대회 규정상 허용).
 
-## 8. 프로젝트 구조 (버전 히스토리 v1 ~ v21)
+## 8. 프로젝트 구조 (버전 히스토리 v1-v21)
 
 각 `vN_*` 폴더는 독립적인 실험 단위이며, 학습/추론 코드와 실행 로그를 포함합니다(단, 최종 제출 모델인
 v20 이외의 버전은 저장소 용량 제한(대회 규정상 가중치 포함 전체 80GB 이하) 때문에 학습된 가중치

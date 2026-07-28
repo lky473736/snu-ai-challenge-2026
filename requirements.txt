@@ -1,5 +1,6 @@
-# torch/torchvision은 CUDA 빌드 일치가 필요해 README 2번 설치 안내의 별도 명령으로 설치합니다
-# (torch==2.12.1, torchvision==0.27.1, --index-url https://download.pytorch.org/whl/cu130)
+# torch/torchvision은 CUDA 빌드 일치가 필요해 README 2번 설치 안내의 별도 명령으로 설치합니다.
+# - RTX 3090 / CUDA 12.4 (대회 채점 서버, 기본 권장): torch==2.6.0, torchvision==0.21.0, --index-url https://download.pytorch.org/whl/cu124
+# - 4xH100 / CUDA 13.0 (학습 재현용): torch==2.12.1, torchvision==0.27.1, --index-url https://download.pytorch.org/whl/cu130
 transformers==5.12.1
 peft==0.19.1
 accelerate==1.14.0
