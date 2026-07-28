@@ -3,13 +3,12 @@
 추가 학습 금지 규정에 따라, 예선 최종 제출(submission_v20_best.csv, public 0.91099 /
 private 0.90650)을 만든 것과 100% 동일한 체크포인트(best_v20)·동일 로직(4bit QLoRA,
 24-permutation 전수조사)만 그대로 재사용한다. 재학습 없음, 코드 변경은 데이터 경로/포맷
-어댑터뿐(Input_1~4를 test.csv에서 직접 읽어 파일시스템 정렬 의존을 제거 — 재현성 강화).
+어댑터뿐(Input_1-4를 test.csv에서 직접 읽어 파일시스템 정렬 의존을 제거 — 재현성 강화).
 """
 
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-# 결정론적 cuBLAS GEMM 사용 — CUDA context 생성(torch import/최초 .cuda() 호출) 이전에 설정되어야 함.
 os.environ.setdefault("CUBLAS_WORKSPACE_CONFIG", ":4096:8")
 
 from itertools import permutations
@@ -27,10 +26,14 @@ from config import (
     BNB_4BIT_QUANT_TYPE, BNB_4BIT_USE_DOUBLE_QUANT, LLM_INT8_SKIP_MODULES,
     INFER_BATCH_SIZE,
 )
+from src.dataset import load_image, build_messages
+from src.model import get_yes_no_token_ids, forward_logit
+
+OUT_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
+ALL_PERMS = list(permutations([1, 2, 3, 4]))
 
 
 def set_deterministic(seed: int = SEED):
-    """학습(src/train.py)과 동일한 seed + 재현성 강화 설정. 모든 CUDA 연산 이전에 호출."""
     import random
     import numpy as np
     random.seed(seed)
@@ -40,11 +43,6 @@ def set_deterministic(seed: int = SEED):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
     torch.use_deterministic_algorithms(True, warn_only=True)
-from src.dataset import load_image, build_messages
-from src.model import get_yes_no_token_ids, forward_logit
-
-OUT_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
-ALL_PERMS = list(permutations([1, 2, 3, 4]))
 
 # 예선 최종 제출과 동일한 체크포인트만 사용(추가 학습 금지)
 CKPT_NAME = "best_v20"
@@ -139,6 +137,18 @@ def run_inference(model, processor, device, shard, rank, world_size, out_name, y
             (OUT_DIR / f"partial_{i}_{out_name}.csv").unlink(missing_ok=True)
 
 
+def _load_with_attn_fallback(ModelClass, model_path, **kwargs):
+    errs = []
+    for attn_impl in ("flash_attention_2", "sdpa", "eager"):
+        try:
+            model = ModelClass.from_pretrained(model_path, attn_implementation=attn_impl, **kwargs)
+            print(f"attn_implementation={attn_impl}")
+            return model
+        except Exception as e:
+            errs.append(f"{attn_impl}: {e}")
+    raise RuntimeError("\n".join(errs))
+
+
 def main():
     set_deterministic()
 
@@ -162,17 +172,13 @@ def main():
         llm_int8_skip_modules=LLM_INT8_SKIP_MODULES,
     )
     if world_size == 1:
-        # 단일 GPU(예: RTX 3090 24GB)에서 베이스 모델(4bit) + LoRA 어댑터가 다 안 들어갈 수 있어,
-        # 일부 레이어를 CPU RAM으로 오프로드한다. 연산 자체(양자화 방식, 정밀도)는 동일하게
-        # 유지되므로 예측 결과에는 영향이 없다 — forward pass 때 CPU에 있는 레이어만 그때그때
-        # GPU로 옮겨 계산하는 방식이라 속도만 느려진다.
-        base_model = ModelClass.from_pretrained(
-            MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16,
+        base_model = _load_with_attn_fallback(
+            ModelClass, MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16,
             device_map="auto", max_memory={0: "20GiB", "cpu": "200GiB"},
         )
     else:
-        base_model = ModelClass.from_pretrained(
-            MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map={"": device},
+        base_model = _load_with_attn_fallback(
+            ModelClass, MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map={"": device},
         )
     torch.cuda.empty_cache()
 

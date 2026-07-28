@@ -47,4 +47,4 @@ LOGGING_STEPS = 20
 # ── 학습 배치(그룹 내 청크) ───────────────────────────────────
 # v14는 8(=group_size)이었음 — 32B는 훨씬 크므로 스모크로 재확인 후 조정할 것.
 TRAIN_MINIBATCH  = 8
-INFER_BATCH_SIZE = 24
+INFER_BATCH_SIZE = 6
