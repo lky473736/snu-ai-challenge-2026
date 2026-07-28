@@ -146,6 +146,7 @@ def main():
     base_model = ModelClass.from_pretrained(
         MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map={"": device},
     )
+    torch.cuda.empty_cache()
 
     test_df = pd.read_csv(EXT_TEST_CSV)
     shard = test_df.iloc[rank::world_size].reset_index(drop=True)
