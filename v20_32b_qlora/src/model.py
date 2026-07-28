@@ -106,7 +106,7 @@ def get_yes_no_token_ids(processor):
 
 def forward_logit(model, processor, inputs: dict, yes_id: int, no_id: int = None) -> torch.Tensor:
     """반환: (B,) — log P(Yes) - log P(No)."""
-    outputs = model(**inputs)
+    outputs = model(**inputs, use_cache=False, logits_to_keep=1)
     last_logits = outputs.logits[:, -1, :].float()
     log_probs = torch.log_softmax(last_logits, dim=-1)
     score = log_probs[:, yes_id]
