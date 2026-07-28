@@ -12,3 +12,6 @@ v20_32b_qlora/checkpoints/best_v20/
 # 베이스 모델(약 65GB, download_base_model.sh로 받음)과 대회 데이터는 저장소에 포함하지 않습니다.
 v20_32b_qlora/base_model/
 v20_32b_qlora/data/
+
+# 각 버전 폴더의 예측 결과(submission) CSV는 코드가 아니므로 저장소에 포함하지 않습니다.
+submission*.csv
