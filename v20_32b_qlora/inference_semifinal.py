@@ -70,7 +70,7 @@ def _chunked_forward(model, processor, texts, imgs_list, yes_id, no_id, device, 
                                      return_tensors="pt", padding=True).to(device)
                     parts.append(forward_logit(model, processor, inp, yes_id, no_id))
             return torch.cat(parts)
-        except torch.cuda.OutOfMemoryError:
+        except (torch.cuda.OutOfMemoryError, torch.OutOfMemoryError):
             if chunk_size <= 1:
                 raise
             torch.cuda.empty_cache()

@@ -65,7 +65,7 @@ def _chunked_forward(model, processor, texts, imgs_list, yes_id, no_id, device, 
                                      return_tensors="pt", padding=True).to(device)
                     parts.append(forward_logit(model, processor, inp, yes_id, no_id))
             return torch.cat(parts)
-        except torch.cuda.OutOfMemoryError:
+        except (torch.cuda.OutOfMemoryError, torch.OutOfMemoryError):
             if chunk_size <= 1:
                 raise
             torch.cuda.empty_cache()
@@ -195,7 +195,7 @@ def main():
                 )
             else:
                 model = PeftModel.from_pretrained(base_model, str(ckpt_path))
-        except torch.cuda.OutOfMemoryError:
+        except (torch.cuda.OutOfMemoryError, torch.OutOfMemoryError):
             if rank == 0:
                 print(f"GPU 메모리(OOM 시점 peak): {torch.cuda.max_memory_allocated()/1e9:.2f} GB", flush=True)
                 for name, p in base_model.named_parameters():
