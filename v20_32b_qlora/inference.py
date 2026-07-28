@@ -15,6 +15,7 @@ import torch.distributed as dist
 import pandas as pd
 from tqdm import tqdm
 from peft import PeftModel
+from accelerate import dispatch_model
 from transformers import AutoProcessor, AutoConfig, BitsAndBytesConfig
 
 from config import (
@@ -204,9 +205,11 @@ def main():
         model.eval()
 
         if world_size == 1:
-            emb = model.get_input_embeddings()
-            if next(emb.parameters()).device.type != "cuda":
-                emb.to(device)
+            dispatch_model(model, device_map={
+                "": 0,
+                "base_model.model.model.visual": "cpu",
+                "base_model.model.lm_head": "cpu",
+            })
             if rank == 0:
                 for name, p in model.named_parameters():
                     if "visual" not in name and "lm_head" not in name and p.device.type != "cuda":
