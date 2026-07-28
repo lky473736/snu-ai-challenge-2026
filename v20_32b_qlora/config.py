@@ -1,9 +1,11 @@
 from pathlib import Path
 
 # ── 경로 ──────────────────────────────────────────────────
+# 모두 이 파일(config.py) 기준 상대 경로. 데이터/베이스 모델을 아래 기본 위치에 두거나,
+# 이미 다른 곳에 받아둔 경우 이 두 값만 그 경로로 바꾸면 됩니다.
 PROJECT_ROOT = Path(__file__).parent
-DATA_DIR     = Path("/data/gyuyeonlim/snu_ai_challenge/data/snuaichallenge_data")
-MODEL_PATH   = str(Path("/data/gyuyeonlim/models/Qwen3-VL-32B-Instruct"))  # bf16 원본, on-the-fly 4bit 양자화
+DATA_DIR     = PROJECT_ROOT / "data"                                  # README 3번: 대회 데이터 배치 위치
+MODEL_PATH   = str(PROJECT_ROOT / "base_model" / "Qwen3-VL-32B-Instruct")  # README 4번: bash download_base_model.sh 로 받는 위치
 CKPT_DIR     = PROJECT_ROOT / "checkpoints"
 LOG_DIR      = PROJECT_ROOT / "logs"
 

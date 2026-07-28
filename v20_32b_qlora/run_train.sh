@@ -7,8 +7,8 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=200G
 #SBATCH --time=20:00:00
-#SBATCH --output=/data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora/logs/train_%j.out
-#SBATCH --error=/data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora/logs/train_%j.err
+#SBATCH --output=logs/train_%j.out
+#SBATCH --error=logs/train_%j.err
 
 set -euo pipefail
 echo "Job: $SLURM_JOB_ID  Node: $SLURMD_NODENAME  Started: $(date)"
@@ -18,8 +18,7 @@ source /opt/ohpc/pub/anaconda3/etc/profile.d/conda.sh
 conda activate aichallenge
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
-mkdir -p /data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora/logs
-cd /data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora
+mkdir -p logs
 
 echo "===================================================="
 echo "STAGE 1: v20 학습 — Qwen3-VL-32B QLoRA(4bit), v14 레시피, EPOCHS=3 (탐색)"

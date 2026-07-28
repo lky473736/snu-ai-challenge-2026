@@ -7,8 +7,8 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=64G
 #SBATCH --time=08:00:00
-#SBATCH --output=/data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora/logs/semifinal_%j.out
-#SBATCH --error=/data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora/logs/semifinal_%j.err
+#SBATCH --output=logs/semifinal_%j.out
+#SBATCH --error=logs/semifinal_%j.err
 
 set -uo pipefail
 echo "Job: $SLURM_JOB_ID  Node: $SLURMD_NODENAME  Started: $(date)"
@@ -18,8 +18,7 @@ source /opt/ohpc/pub/anaconda3/etc/profile.d/conda.sh
 conda activate aichallenge
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
-mkdir -p /data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora/logs
-cd /data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora
+mkdir -p logs
 
 torchrun --nproc_per_node=4 inference_semifinal.py
 

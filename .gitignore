@@ -8,3 +8,7 @@ partial_*.csv
 # 최종 모델 가중치는 GitHub에 올리지 않고 Hugging Face Hub에서 download_weights.sh로 받습니다.
 # https://huggingface.co/lky473736/snuaichallenge-v20-qwen3vl32b-qlora
 v20_32b_qlora/checkpoints/best_v20/
+
+# 베이스 모델(약 65GB, download_base_model.sh로 받음)과 대회 데이터는 저장소에 포함하지 않습니다.
+v20_32b_qlora/base_model/
+v20_32b_qlora/data/

@@ -7,8 +7,8 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=200G
 #SBATCH --time=01:00:00
-#SBATCH --output=/data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora/logs/smoke_%j.out
-#SBATCH --error=/data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora/logs/smoke_%j.err
+#SBATCH --output=logs/smoke_%j.out
+#SBATCH --error=logs/smoke_%j.err
 
 set -euo pipefail
 echo "Job: $SLURM_JOB_ID  Node: $SLURMD_NODENAME  Started: $(date)"
@@ -18,8 +18,7 @@ source /opt/ohpc/pub/anaconda3/etc/profile.d/conda.sh
 conda activate aichallenge
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
-mkdir -p /data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora/logs
-cd /data/gyuyeonlim/snu_ai_challenge/v20_32b_qlora
+mkdir -p logs
 
 accelerate launch --num_processes=4 --mixed_precision=bf16 smoke_test.py
 

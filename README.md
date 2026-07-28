@@ -38,28 +38,29 @@ SNU AI Challenge 2026 · Kaggle `snuaichallenge` · Public **0.91099** / Private
 
 ## Quick Start — 재현 최소 명령어 (RTX 3090 / 대회 채점 서버 기준)
 
-아래 순서 그대로 실행하면 `submission_v20_best.csv`가 재현됩니다. 각 단계의 상세 설명은 아래 1-5번
-섹션을 참고하세요.
+아래 순서 그대로 실행하면 `submission_v20_best.csv`가 재현됩니다. 1-3번은 인터넷이 되는 동안 한 번만
+하면 되고, **4번(추론)부터는 인터넷 연결이 필요 없습니다** (대회 규정 3.1). 각 단계의 상세 설명은
+아래 1-5번 섹션을 참고하세요.
 
 ```bash
 # 0) 저장소 클론
 git clone https://github.com/lky473736/snu-ai-challenge-2026.git
-cd snu-ai-challenge-2026
+cd snu-ai-challenge-2026/v20_32b_qlora
 
 # 1) 환경 구성 (RTX 3090 / CUDA 12.4 — 대회 채점 서버 기준, §1-2 참고)
 conda create -n aichallenge python=3.10 -y
 conda activate aichallenge
 pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
-pip install -r requirements.txt
+pip install -r ../requirements.txt
 
-# 2) 대회 데이터 배치 (§3 참고) — <DATA_DIR>을 config.py의 DATA_DIR과 맞출 것
-python3 -c "import kagglehub; kagglehub.competition_download('snuaichallenge', output_dir='<DATA_DIR>')"
+# 2) 대회 데이터 배치 (§3 참고) — data/ 아래에 train.csv/test.csv/이미지가 위치하게 됨
+python3 -c "import kagglehub; kagglehub.competition_download('snuaichallenge', output_dir='data')"
 
-# 3) LoRA 어댑터 가중치 다운로드 (§4 참고)
-cd v20_32b_qlora
+# 3) 베이스 모델 + LoRA 어댑터 가중치 다운로드 (§4 참고)
+bash download_base_model.sh
 bash download_weights.sh
 
-# 4) 추론 실행 — GPU 1장에서 코드 수정 없이 그대로 동작 (§5.2-b 참고)
+# 4) 추론 실행 (인터넷 불필요) — GPU 1장에서 코드 수정 없이 그대로 동작 (§5.2-b 참고)
 python inference.py
 # 완료되면 v20_32b_qlora/submission_v20_best.csv 가 생성됩니다.
 ```
@@ -137,17 +138,11 @@ pip install -r requirements.txt
 ## 3. 데이터 준비
 
 대회에서 제공하는 원본 데이터(`train.csv`, `test.csv`, 이미지 폴더)는 용량 문제로 저장소에 포함하지
-않았습니다. 아래 경로에 원본 대회 데이터를 위치시켜 주세요(상대 경로 기준):
+않았습니다. `config.py`의 `DATA_DIR` 기본값은 이 파일 기준 상대 경로인 `v20_32b_qlora/data/`이며,
+다음 구조를 기대합니다(다른 위치에 두고 싶다면 `DATA_DIR` 값만 바꾸면 됩니다).
 
 ```
-v20_32b_qlora/
-  config.py   # DATA_DIR 값을 실제 데이터 경로로 맞춰주세요
-```
-
-기본값은 `config.py`의 `DATA_DIR`에 설정되어 있으며, 다음 구조를 기대합니다.
-
-```
-<DATA_DIR>/
+v20_32b_qlora/data/
   train.csv
   test.csv
   train/<Id>/*.jpg
@@ -157,21 +152,32 @@ v20_32b_qlora/
 Kaggle API로 받는 경우:
 
 ```bash
-python3 -c "import kagglehub; kagglehub.competition_download('snuaichallenge', output_dir='<DATA_DIR>')"
+cd v20_32b_qlora
+python3 -c "import kagglehub; kagglehub.competition_download('snuaichallenge', output_dir='data')"
 ```
 
 ## 4. 모델 가중치
 
-베이스 모델(`Qwen/Qwen3-VL-32B-Instruct`, 공개 오픈소스 모델)은 최초 실행 시 Hugging Face Hub에서
-자동으로 받아집니다(`config.py`의 `MODEL_PATH`를 HF 모델 ID로 바꾸거나, 로컬에 미리 받아둔 경로를
-지정하세요).
+**베이스 모델**(`Qwen/Qwen3-VL-32B-Instruct`, 공개 오픈소스, bf16 원본, 약 65GB)은 저장소에 포함하지
+않았으며, 아래 스크립트로 Hugging Face Hub에서 받아 `config.py`의 `MODEL_PATH` 기본값
+(`v20_32b_qlora/base_model/Qwen3-VL-32B-Instruct`, 상대 경로)에 위치시킵니다.
+
+```bash
+cd v20_32b_qlora
+bash download_base_model.sh
+```
+
+> **대회 규정(3.1) — 인터넷 차단 환경 실행 요건**: 이 스크립트는 인터넷이 되는 동안 미리 한 번만
+> 실행해 두면 되고, 그 이후 `inference.py` 실행 자체는 로컬에 받아둔 이 캐시만 사용하므로 인터넷
+> 연결이 필요 없습니다. 코드 레벨에서 네트워크 호출을 완전히 차단하고 싶다면 추론 실행 전에
+> `export HF_HUB_OFFLINE=1`을 설정하세요.
 
 최종 제출 모델의 **LoRA 어댑터 가중치**는 용량(4.1GB) 문제로 저장소에 직접 포함하지 않고 Hugging Face
 Hub에 별도로 올려두었습니다.
 
 - Hugging Face: https://huggingface.co/lky473736/snuaichallenge-v20-qwen3vl32b-qlora
 
-다음 스크립트로 자동 다운로드할 수 있습니다.
+다음 스크립트로 자동 다운로드할 수 있습니다(이것도 마찬가지로 인터넷이 되는 동안 미리 실행).
 
 ```bash
 cd v20_32b_qlora
