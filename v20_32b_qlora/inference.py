@@ -143,16 +143,16 @@ def main():
         # 그대로인 모듈(vision tower, lm_head)만 골라서 CPU로 보낸다. 이 모듈들은 정밀도가
         # 전혀 바뀌지 않으므로(그냥 물리적으로 GPU 대신 CPU에 있을 뿐) 예측 결과는 동일하고,
         # forward pass 때 그때그때 GPU로 옮겨 계산하는 만큼만 느려진다.
+        # model.language_model(4bit 양자화된 텍스트 디코더)만 GPU에 두고, 4bit가 아니라
+        # bf16 그대로인 model.visual(vision tower)과 lm_head는 CPU로 보낸다. 정밀도가
+        # 전혀 바뀌지 않으므로(물리적 위치만 다름) 예측 결과는 동일하고, forward pass 때
+        # 그때그때 GPU로 옮겨 계산하는 만큼만 느려진다.
+        device_map = {"model.language_model": 0, "model.visual": "cpu", "lm_head": "cpu"}
         base_model = ModelClass.from_pretrained(
-            MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map={"": device},
+            MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map=device_map,
         )
-        # 정확한 모듈 이름을 확인하기 위한 1회성 진단 출력 (다음 커밋에서 이 이름으로
-        # vision tower/lm_head만 CPU로 보내는 device_map을 정확히 지정할 예정)
-        print("=== 최상위 모듈 ===")
-        print(list(dict(base_model.named_children()).keys()))
-        for name, child in base_model.named_children():
-            print(f"--- {name} 하위 ---")
-            print(list(dict(child.named_children()).keys()))
+        print("hf_device_map:", getattr(base_model, "hf_device_map", None))
+        print(f"GPU 메모리(로드 직후): {torch.cuda.memory_allocated()/1e9:.2f} GB")
     else:
         base_model = ModelClass.from_pretrained(
             MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map={"": device},
