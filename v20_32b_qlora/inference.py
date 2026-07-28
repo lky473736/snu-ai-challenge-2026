@@ -187,7 +187,17 @@ def main():
             print(f"\n{'='*50}")
             print(f"Checkpoint: {ckpt_path}")
 
-        model = PeftModel.from_pretrained(base_model, str(ckpt_path))
+        if rank == 0:
+            print(f"GPU 메모리(어댑터 로드 직전): {torch.cuda.memory_allocated()/1e9:.2f} GB")
+        if world_size == 1:
+            # 어댑터도 명시적으로 같은 device_map을 줘서, peft가 임의로 전체 모델을
+            # 다시 GPU로 모으려 드는 것을 방지한다.
+            model = PeftModel.from_pretrained(
+                base_model, str(ckpt_path),
+                device_map={"model.language_model": 0, "model.visual": "cpu", "lm_head": "cpu"},
+            )
+        else:
+            model = PeftModel.from_pretrained(base_model, str(ckpt_path))
         model.eval()
 
         run_inference(model, processor, device, shard, rank, world_size, out_name, yes_id, no_id, size_holder)
