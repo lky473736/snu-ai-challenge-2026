@@ -6,6 +6,9 @@ best_v20 체크포인트 하나만 사용(탐색 실행이라 last는 생략 —
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+# 결정론적 cuBLAS GEMM 사용 — CUDA context 생성(torch import/최초 .cuda() 호출) 이전에 설정되어야 함.
+os.environ.setdefault("CUBLAS_WORKSPACE_CONFIG", ":4096:8")
+
 import ast
 from itertools import permutations
 from pathlib import Path
@@ -19,10 +22,23 @@ from accelerate import dispatch_model
 from transformers import AutoProcessor, AutoConfig, BitsAndBytesConfig
 
 from config import (
-    DATA_DIR, CKPT_DIR, MODEL_PATH,
+    DATA_DIR, CKPT_DIR, MODEL_PATH, SEED,
     BNB_4BIT_QUANT_TYPE, BNB_4BIT_USE_DOUBLE_QUANT, LLM_INT8_SKIP_MODULES,
     INFER_BATCH_SIZE,
 )
+
+
+def set_deterministic(seed: int = SEED):
+    """학습(src/train.py)과 동일한 seed + 재현성 강화 설정. 모든 CUDA 연산 이전에 호출."""
+    import random
+    import numpy as np
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    torch.use_deterministic_algorithms(True, warn_only=True)
 from src.dataset import load_image, build_messages
 from src.model import get_yes_no_token_ids, forward_logit
 
@@ -118,6 +134,8 @@ def run_inference(model, processor, device, shard, rank, world_size, out_name, y
 
 
 def main():
+    set_deterministic()
+
     local_rank = int(os.environ.get("LOCAL_RANK", 0))
     world_size = int(os.environ.get("WORLD_SIZE", 1))
     rank = int(os.environ.get("RANK", 0))
