@@ -137,16 +137,22 @@ def main():
         llm_int8_skip_modules=LLM_INT8_SKIP_MODULES,
     )
     if world_size == 1:
-        # 단일 GPU(예: RTX 3090 24GB)에서 베이스 모델(4bit) + LoRA 어댑터가 다 안 들어갈 수 있어,
-        # 일부 레이어를 CPU RAM으로 오프로드한다. 연산 자체(양자화 방식, 정밀도)는 동일하게
-        # 유지되므로 예측 결과에는 영향이 없다 — forward pass 때 CPU에 있는 레이어만 그때그때
-        # GPU로 옮겨 계산하는 방식이라 속도만 느려진다.
+        # 단일 GPU(예: RTX 3090 24GB)에서 베이스 모델(4bit) + LoRA 어댑터가 다 안 들어갈 수 있다.
+        # 4bit로 양자화된 레이어는 CPU 오프로드가 안 되므로(bitsandbytes 4bit 커널이 CUDA 전용 —
+        # 억지로 CPU에 두려면 32bit로 바꿔야 해서 정밀도가 달라짐), 애초에 4bit가 아니라 bf16
+        # 그대로인 모듈(vision tower, lm_head)만 골라서 CPU로 보낸다. 이 모듈들은 정밀도가
+        # 전혀 바뀌지 않으므로(그냥 물리적으로 GPU 대신 CPU에 있을 뿐) 예측 결과는 동일하고,
+        # forward pass 때 그때그때 GPU로 옮겨 계산하는 만큼만 느려진다.
         base_model = ModelClass.from_pretrained(
-            MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16,
-            device_map="auto", max_memory={0: "15GiB", "cpu": "200GiB"},
+            MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map={"": device},
         )
-        print("hf_device_map:", getattr(base_model, "hf_device_map", None))
-        print(f"GPU 메모리(로드 직후): {torch.cuda.memory_allocated()/1e9:.2f} GB")
+        # 정확한 모듈 이름을 확인하기 위한 1회성 진단 출력 (다음 커밋에서 이 이름으로
+        # vision tower/lm_head만 CPU로 보내는 device_map을 정확히 지정할 예정)
+        print("=== 최상위 모듈 ===")
+        print(list(dict(base_model.named_children()).keys()))
+        for name, child in base_model.named_children():
+            print(f"--- {name} 하위 ---")
+            print(list(dict(child.named_children()).keys()))
     else:
         base_model = ModelClass.from_pretrained(
             MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map={"": device},
