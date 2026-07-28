@@ -63,6 +63,11 @@ huggingface_hub==1.21.0
 ```bash
 conda create -n aichallenge python=3.10 -y
 conda activate aichallenge
+
+# torch/torchvision은 CUDA 빌드가 서로 맞아야 하므로(안 맞으면 torchvision::nms 등
+# 커널 오류 발생) PyTorch 공식 인덱스에서 두 개를 함께 설치합니다.
+pip install torch==2.12.1 torchvision==0.27.1 --index-url https://download.pytorch.org/whl/cu130
+
 pip install -r requirements.txt
 ```
 

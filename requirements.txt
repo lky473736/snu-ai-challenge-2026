@@ -1,4 +1,5 @@
-torch==2.12.1
+# torch/torchvision은 CUDA 빌드 일치가 필요해 README 2번 설치 안내의 별도 명령으로 설치합니다
+# (torch==2.12.1, torchvision==0.27.1, --index-url https://download.pytorch.org/whl/cu130)
 transformers==5.12.1
 peft==0.19.1
 accelerate==1.14.0
