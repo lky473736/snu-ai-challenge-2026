@@ -1,12 +1,9 @@
 # TEMPO: Temporal Event Matching via Permutation-scored Ordering
 ### Hard-Negative Listwise Ranking for Chronological Frame Reconstruction with Vision-Language Models
 
-<table>
-<tr>
-<td width="55%"><img src="figures/distance_loss_heatmap.gif" alt="distance loss heatmap animated" width="100%"></td>
-<td width="45%"><img src="figures/architecture.png" alt="overall architecture" width="100%"></td>
-</tr>
-</table>
+![overall architecture](figures/architecture.png)
+
+![distance loss heatmap animated](figures/distance_loss_heatmap.gif)
 
 **SNU AI Challenge 2026 — "텍스트로 풀어보는 장면의 재구성"** (Kaggle competition ID: `snuaichallenge`)
 출품 프로젝트입니다. 4장의 셔플된 비디오 프레임과, 그 프레임들이 담은 사건을 설명하는 문장(caption)이
