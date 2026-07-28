@@ -1,0 +1,67 @@
+Job: 226173  Node: node23  Started: Fri Jul  3 11:01:46 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+[v4] Processes=4  Device=cuda:0
+  lora_r=64  lora_alpha=128
+  margin=1.5  ranking_weight=1.5
+  aux_weight=0.5  lr=1e-05
+  Loss: 4f BCE(tau-soft) + ListNet + 2f AUX BCE
+Train groups: 9059  4f samples: 45295  2f samples: 27177
+Loading processor...
+Loading processor...
+Loading processor...
+Loading processor...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+  -> sdpa OK
+  -> sdpa OK
+  -> sdpa OK
+  -> sdpa OK
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+
+============================================================
+Epoch 1/5  시작: 11:02:33
+  Effective batch = 1×8×4
+============================================================
+  step=   50  loss=3.4014  bce4f=0.9472  rank=1.6858  bce2f=1.5946  lr=8.48e-07
+  step=  100  loss=3.3721  bce4f=0.5349  rank=1.2894  bce2f=0.5547  lr=1.70e-06
+  step=  150  loss=3.3420  bce4f=0.6133  rank=1.5281  bce2f=0.3576  lr=2.54e-06
+  step=  200  loss=3.2442  bce4f=0.9225  rank=1.8995  bce2f=0.8543  lr=3.53e-06
+  step=  250  loss=3.1442  bce4f=0.6718  rank=1.5923  bce2f=0.3260  lr=4.38e-06
+  step=  300  loss=3.0542  bce4f=0.5815  rank=1.3093  bce2f=0.0139  lr=5.23e-06
+  step=  350  loss=2.9707  bce4f=0.6505  rank=1.6030  bce2f=0.0108  lr=6.08e-06
+  step=  400  loss=2.9100  bce4f=0.5783  rank=1.4310  bce2f=0.0005  lr=7.07e-06
+  step=  450  loss=2.8586  bce4f=0.5512  rank=1.4111  bce2f=0.0003  lr=7.92e-06
+  step=  500  loss=2.8151  bce4f=0.6031  rank=1.4254  bce2f=0.0003  lr=8.76e-06
+  step=  550  loss=2.7850  bce4f=0.7849  rank=1.8822  bce2f=0.0033  lr=9.61e-06
+  step=  600  loss=2.7544  bce4f=0.5477  rank=1.3658  bce2f=0.0002  lr=1.00e-05
+  step=  650  loss=2.7262  bce4f=0.4614  rank=1.2527  bce2f=0.0000  lr=1.00e-05
+  step=  700  loss=2.7041  bce4f=0.6149  rank=1.5350  bce2f=0.0001  lr=1.00e-05
+  step=  750  loss=2.6809  bce4f=0.5442  rank=1.3401  bce2f=0.0001  lr=9.99e-06
+  step=  800  loss=2.6638  bce4f=0.6259  rank=1.4794  bce2f=0.0000  lr=9.99e-06
+  step=  850  loss=2.6459  bce4f=0.6476  rank=1.6107  bce2f=0.0001  lr=9.98e-06
+  step=  900  loss=2.6332  bce4f=0.7113  rank=1.6699  bce2f=0.0002  lr=9.98e-06
+  step=  950  loss=2.6193  bce4f=0.6504  rank=1.5883  bce2f=0.0001  lr=9.97e-06
+  step= 1000  loss=2.6105  bce4f=0.6823  rank=1.5559  bce2f=0.0004  lr=9.96e-06
+  step= 1050  loss=2.5994  bce4f=0.5426  rank=1.3216  bce2f=0.0001  lr=9.95e-06
+  step= 1100  loss=2.5915  bce4f=0.6528  rank=1.5736  bce2f=0.0003  lr=9.94e-06
+  step= 1150  loss=2.5838  bce4f=0.7170  rank=1.7540  bce2f=0.0003  lr=9.93e-06
+  step= 1200  loss=2.5750  bce4f=0.5880  rank=1.3638  bce2f=0.0001  lr=9.91e-06
+  step= 1250  loss=2.5682  bce4f=0.5543  rank=1.3364  bce2f=0.0005  lr=9.90e-06
+  step= 1300  loss=2.5607  bce4f=0.5589  rank=1.3703  bce2f=0.0001  lr=9.89e-06
+  step= 1350  loss=2.5550  bce4f=0.6649  rank=1.6729  bce2f=0.0001  lr=9.87e-06

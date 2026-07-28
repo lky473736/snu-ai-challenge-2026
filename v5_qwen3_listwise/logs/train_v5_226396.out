@@ -1,0 +1,199 @@
+Job: 226396  Node: node27  Started: Sat Jul  4 11:26:06 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+====================================================
+STAGE 1: Training
+====================================================
+[v5] Processes=4  Device=cuda:0
+  lora_r=64  lora_alpha=128  lr=1e-05
+  방식: listwise 순열 직접 생성 SFT (hard-negative 없음)
+Train: 9059  Val: 476
+Loading processor...
+Loading processor...
+Loading processor...
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+
+============================================================
+Epoch 1/5  시작: 11:26:28
+============================================================
+  step=   50  loss=0.8717  lr=1.70e-06
+  step=  100  loss=0.8249  lr=3.40e-06
+  step=  150  loss=0.7997  lr=5.11e-06
+  step=  200  loss=0.7209  lr=7.09e-06
+  step=  250  loss=0.6373  lr=8.79e-06
+  step=  300  loss=0.5804  lr=1.00e-05
+  step=  350  loss=0.5396  lr=1.00e-05
+  step=  400  loss=0.5063  lr=9.99e-06
+  step=  450  loss=0.4791  lr=9.98e-06
+  step=  500  loss=0.4582  lr=9.96e-06
+  step=  550  loss=0.4410  lr=9.94e-06
+  step=  600  loss=0.4253  lr=9.91e-06
+  step=  650  loss=0.4128  lr=9.89e-06
+  step=  700  loss=0.4004  lr=9.85e-06
+  step=  750  loss=0.3896  lr=9.82e-06
+  step=  800  loss=0.3799  lr=9.77e-06
+  step=  850  loss=0.3725  lr=9.73e-06
+  step=  900  loss=0.3655  lr=9.68e-06
+  step=  950  loss=0.3584  lr=9.63e-06
+  step= 1000  loss=0.3513  lr=9.57e-06
+  step= 1050  loss=0.3466  lr=9.51e-06
+  step= 1100  loss=0.3419  lr=9.45e-06
+
+[Epoch 1/5 완료]  소요: 13.4분  avg_loss: 0.3385
+
+[Val] exact_match=0.3466 (165/476)  adj_swap_fail=93  other_fail=218
+  ★ Best saved (val_acc=0.3466)
+
+============================================================
+Epoch 2/5  시작: 11:44:19
+============================================================
+  step= 1150  loss=0.2434  lr=9.37e-06
+  step= 1200  loss=0.2203  lr=9.30e-06
+  step= 1250  loss=0.2254  lr=9.22e-06
+  step= 1300  loss=0.2277  lr=9.15e-06
+  step= 1350  loss=0.2294  lr=9.05e-06
+  step= 1400  loss=0.2274  lr=8.97e-06
+  step= 1450  loss=0.2257  lr=8.88e-06
+  step= 1500  loss=0.2275  lr=8.79e-06
+  step= 1550  loss=0.2257  lr=8.69e-06
+  step= 1600  loss=0.2252  lr=8.59e-06
+  step= 1650  loss=0.2250  lr=8.49e-06
+  step= 1700  loss=0.2245  lr=8.39e-06
+  step= 1750  loss=0.2244  lr=8.27e-06
+  step= 1800  loss=0.2253  lr=8.16e-06
+  step= 1850  loss=0.2264  lr=8.05e-06
+  step= 1900  loss=0.2247  lr=7.94e-06
+  step= 1950  loss=0.2254  lr=7.80e-06
+  step= 2000  loss=0.2248  lr=7.69e-06
+  step= 2050  loss=0.2244  lr=7.57e-06
+  step= 2100  loss=0.2239  lr=7.45e-06
+  step= 2150  loss=0.2247  lr=7.30e-06
+  step= 2200  loss=0.2235  lr=7.18e-06
+  step= 2250  loss=0.2230  lr=7.05e-06
+
+[Epoch 2/5 완료]  소요: 13.3분  avg_loss: 0.2224
+
+[Val] exact_match=0.4139 (197/476)  adj_swap_fail=83  other_fail=196
+  ★ Best saved (val_acc=0.4139)
+
+============================================================
+Epoch 3/5  시작: 12:01:43
+============================================================
+  step= 2300  loss=0.2078  lr=6.90e-06
+  step= 2350  loss=0.1999  lr=6.77e-06
+  step= 2400  loss=0.1967  lr=6.64e-06
+  step= 2450  loss=0.1908  lr=6.48e-06
+  step= 2500  loss=0.1898  lr=6.35e-06
+  step= 2550  loss=0.1879  lr=6.21e-06
+  step= 2600  loss=0.1909  lr=6.08e-06
+  step= 2650  loss=0.1905  lr=5.91e-06
+  step= 2700  loss=0.1913  lr=5.78e-06
+  step= 2750  loss=0.1907  lr=5.64e-06
+  step= 2800  loss=0.1919  lr=5.50e-06
+  step= 2850  loss=0.1933  lr=5.34e-06
+  step= 2900  loss=0.1932  lr=5.20e-06
+  step= 2950  loss=0.1935  lr=5.06e-06
+  step= 3000  loss=0.1938  lr=4.92e-06
+  step= 3050  loss=0.1948  lr=4.75e-06
+  step= 3100  loss=0.1946  lr=4.61e-06
+  step= 3150  loss=0.1954  lr=4.47e-06
+  step= 3200  loss=0.1933  lr=4.33e-06
+  step= 3250  loss=0.1924  lr=4.17e-06
+  step= 3300  loss=0.1928  lr=4.03e-06
+  step= 3350  loss=0.1922  lr=3.90e-06
+
+[Epoch 3/5 완료]  소요: 13.1분  avg_loss: 0.1936
+
+[Val] exact_match=0.4265 (203/476)  adj_swap_fail=81  other_fail=192
+  ★ Best saved (val_acc=0.4265)
+
+============================================================
+Epoch 4/5  시작: 12:19:00
+============================================================
+  step= 3400  loss=0.3907  lr=3.74e-06
+  step= 3450  loss=0.1727  lr=3.60e-06
+  step= 3500  loss=0.1729  lr=3.47e-06
+  step= 3550  loss=0.1848  lr=3.34e-06
+  step= 3600  loss=0.1824  lr=3.18e-06
+  step= 3650  loss=0.1868  lr=3.05e-06
+  step= 3700  loss=0.1844  lr=2.92e-06
+  step= 3750  loss=0.1913  lr=2.80e-06
+  step= 3800  loss=0.1913  lr=2.65e-06
+  step= 3850  loss=0.1920  lr=2.53e-06
+  step= 3900  loss=0.1924  lr=2.41e-06
+  step= 3950  loss=0.1923  lr=2.29e-06
+  step= 4000  loss=0.1909  lr=2.15e-06
+  step= 4050  loss=0.1909  lr=2.04e-06
+  step= 4100  loss=0.1896  lr=1.93e-06
+  step= 4150  loss=0.1902  lr=1.82e-06
+  step= 4200  loss=0.1912  lr=1.69e-06
+  step= 4250  loss=0.1920  lr=1.59e-06
+  step= 4300  loss=0.1909  lr=1.49e-06
+  step= 4350  loss=0.1903  lr=1.39e-06
+  step= 4400  loss=0.1902  lr=1.28e-06
+  step= 4450  loss=0.1915  lr=1.19e-06
+  step= 4500  loss=0.1924  lr=1.10e-06
+
+[Epoch 4/5 완료]  소요: 13.4분  avg_loss: 0.1926
+
+[Val] exact_match=0.4391 (209/476)  adj_swap_fail=84  other_fail=183
+  ★ Best saved (val_acc=0.4391)
+
+============================================================
+Epoch 5/5  시작: 12:36:48
+============================================================
+  step= 4550  loss=0.1805  lr=9.97e-07
+  step= 4600  loss=0.1839  lr=9.15e-07
+  step= 4650  loss=0.1755  lr=8.36e-07
+  step= 4700  loss=0.1787  lr=7.47e-07
+  step= 4750  loss=0.1813  lr=6.75e-07
+  step= 4800  loss=0.1796  lr=6.07e-07
+  step= 4850  loss=0.1797  lr=5.41e-07
+  step= 4900  loss=0.1827  lr=4.70e-07
+  step= 4950  loss=0.1826  lr=4.12e-07
+  step= 5000  loss=0.1823  lr=3.58e-07
+  step= 5050  loss=0.1816  lr=3.08e-07
+  step= 5100  loss=0.1817  lr=2.54e-07
+  step= 5150  loss=0.1794  lr=2.12e-07
+  step= 5200  loss=0.1800  lr=1.73e-07
+  step= 5250  loss=0.1797  lr=1.39e-07
+  step= 5300  loss=0.1806  lr=1.03e-07
+  step= 5350  loss=0.1802  lr=7.66e-08
+  step= 5400  loss=0.1806  lr=5.41e-08
+  step= 5450  loss=0.1820  lr=3.55e-08
+  step= 5500  loss=0.1829  lr=1.87e-08
+  step= 5550  loss=0.1825  lr=8.53e-09
+  step= 5600  loss=0.1825  lr=2.31e-09
+  step= 5650  loss=0.1826  lr=1.36e-11
+
+[Epoch 5/5 완료]  소요: 13.3분  avg_loss: 0.1837
+
+[Val] exact_match=0.4475 (213/476)  adj_swap_fail=78  other_fail=185
+  ★ Best saved (val_acc=0.4475)
+
+학습 완료. Best val_acc: 0.4475
+
+====================================================
+STAGE 2: Inference (best_v5 checkpoint, single GPU)
+====================================================
+저장: submission_v5_best.csv (819 rows)
+
+====================================================
+STAGE 3: Inference (best_v5_last checkpoint, single GPU)
+====================================================
+저장: submission_v5_last.csv (819 rows)
+Done: Sat Jul  4 13:10:29 KST 2026

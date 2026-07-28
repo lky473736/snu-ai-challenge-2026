@@ -1,0 +1,10 @@
+Job: 227214  Started: Tue Jul  7 23:34:26 KST 2026  N_EXTRA=0
+모델 로딩...
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+    micro-step 1/8 완료, 누적 peak=82.99GB
+    micro-step 2/8 완료, 누적 peak=82.99GB
+n_extra=0  (GRAD_ACCUM=8 사이클 + optimizer.step() 포함)  OOM  peak=None
+Done: Tue Jul  7 23:34:47 KST 2026

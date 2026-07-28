@@ -1,0 +1,72 @@
+Job: 226692  Node: node25  Started: Sun Jul  5 20:09:27 KST 2026
+Loading processor...
+Loading base model (한 번만 로드, 이후 어댑터만 교체)...
+  -> flash_attention_2 OK
+그룹 크기(1 pos+7 neg): [8]
+
+==================================================
+시도: r=112  alpha=224
+==================================================
+trainable params: 306,929,664 || all params: 9,074,053,360 || trainable%: 3.3825
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=112 실패
+
+==================================================
+시도: r=104  alpha=208
+==================================================
+trainable params: 285,106,176 || all params: 9,052,229,872 || trainable%: 3.1496
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=104 실패
+
+==================================================
+시도: r=96  alpha=192
+==================================================
+trainable params: 263,282,688 || all params: 9,030,406,384 || trainable%: 2.9155
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=96 실패
+
+==================================================
+시도: r=88  alpha=176
+==================================================
+trainable params: 241,459,200 || all params: 9,008,582,896 || trainable%: 2.6803
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=88 실패
+
+==================================================
+시도: r=80  alpha=160
+==================================================
+trainable params: 219,635,712 || all params: 8,986,759,408 || trainable%: 2.4440
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=80 실패
+
+==================================================
+시도: r=72  alpha=144
+==================================================
+trainable params: 197,812,224 || all params: 8,964,935,920 || trainable%: 2.2065
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=72 실패
+
+==================================================
+시도: r=64  alpha=128
+==================================================
+trainable params: 175,988,736 || all params: 8,943,112,432 || trainable%: 1.9679
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=64 실패
+
+==================================================
+모든 후보에서 OOM — DoRA는 이 VRAM으로 불가능해 보임
+Done: Sun Jul  5 20:10:26 KST 2026

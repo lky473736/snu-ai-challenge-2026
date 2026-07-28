@@ -1,0 +1,151 @@
+Job: 225744  Node: node23  Started: Thu Jul  2 00:05:34 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Processes: 4  Device: cuda:0
+  margin=1.2  ranking_weight=1.5  lora_r=64  lora_alpha=128  lr=1e-05  ckpt=best_tpru
+  GPU 0: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 1: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 2: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 3: NVIDIA H100 80GB HBM3  85.0GB
+[hard_negative] positive: 9059, hard_neg: 27177, total: 36236
+Loading processor...
+Loading processor...
+Loading processor...
+Train groups: 9059  Val raw: 476
+Loading processor...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+
+============================================================
+Epoch 1/5  시작: 00:06:22
+  Processes=4  Effective batch=32
+============================================================
+  step=   50  loss=1.4208  bce=0.5134  rank=0.0000  lr=8.48e-07
+  step=  100  loss=1.3488  bce=0.4658  rank=0.4250  lr=1.70e-06
+  step=  150  loss=1.4313  bce=0.5221  rank=0.9500  lr=2.54e-06
+  step=  200  loss=1.3498  bce=0.6355  rank=0.2750  lr=3.53e-06
+  step=  250  loss=1.3802  bce=0.7312  rank=1.2833  lr=4.38e-06
+  step=  300  loss=1.3465  bce=0.3236  rank=0.1500  lr=5.23e-06
+  step=  350  loss=1.3345  bce=1.7820  rank=0.9667  lr=6.08e-06
+  step=  400  loss=1.3120  bce=0.3006  rank=0.1500  lr=7.07e-06
+  step=  450  loss=1.2827  bce=1.0268  rank=0.0000  lr=7.92e-06
+  step=  500  loss=1.2516  bce=0.2608  rank=0.0000  lr=8.76e-06
+  step=  550  loss=1.2555  bce=1.3267  rank=2.0333  lr=9.61e-06
+  step=  600  loss=1.2390  bce=0.5993  rank=0.0667  lr=1.00e-05
+  step=  650  loss=1.2201  bce=0.1583  rank=0.0000  lr=1.00e-05
+  step=  700  loss=1.2021  bce=0.4661  rank=0.5250  lr=1.00e-05
+  step=  750  loss=1.1854  bce=0.2891  rank=0.0000  lr=9.99e-06
+  step=  800  loss=1.1692  bce=0.4700  rank=0.5917  lr=9.99e-06
+  step=  850  loss=1.1515  bce=0.7948  rank=1.4917  lr=9.98e-06
+  step=  900  loss=1.1353  bce=1.2786  rank=2.2833  lr=9.98e-06
+  step=  950  loss=1.1259  bce=0.5464  rank=0.3167  lr=9.97e-06
+  step= 1000  loss=1.1309  bce=0.7717  rank=0.0250  lr=9.96e-06
+  step= 1050  loss=1.1161  bce=0.5084  rank=0.0000  lr=9.95e-06
+  step= 1100  loss=1.1090  bce=0.4471  rank=0.2167  lr=9.94e-06
+  step= 1150  loss=1.1047  bce=0.8929  rank=2.0333  lr=9.93e-06
+  step= 1200  loss=1.0932  bce=0.2986  rank=0.0250  lr=9.91e-06
+  step= 1250  loss=1.0865  bce=0.2682  rank=0.0000  lr=9.90e-06
+  step= 1300  loss=1.0802  bce=0.2608  rank=0.0000  lr=9.89e-06
+  step= 1350  loss=1.0770  bce=0.5544  rank=0.0250  lr=9.87e-06
+  step= 1400  loss=1.0654  bce=0.0159  rank=0.0000  lr=9.85e-06
+  step= 1450  loss=1.0617  bce=0.4007  rank=0.1917  lr=9.83e-06
+  step= 1500  loss=1.0479  bce=0.2770  rank=0.1083  lr=9.82e-06
+  step= 1550  loss=1.0478  bce=0.0207  rank=0.0000  lr=9.80e-06
+  step= 1600  loss=1.0414  bce=0.4475  rank=0.0250  lr=9.77e-06
+  step= 1650  loss=1.0409  bce=0.5221  rank=0.6333  lr=9.75e-06
+  step= 1700  loss=1.0360  bce=0.1128  rank=0.0000  lr=9.73e-06
+  step= 1750  loss=1.0336  bce=0.7816  rank=1.4667  lr=9.71e-06
+  step= 1800  loss=1.0318  bce=0.1805  rank=0.0000  lr=9.68e-06
+  step= 1850  loss=1.0240  bce=0.3982  rank=0.2750  lr=9.65e-06
+  step= 1900  loss=1.0280  bce=0.8279  rank=1.7417  lr=9.63e-06
+  step= 1950  loss=1.0273  bce=0.4343  rank=0.5083  lr=9.60e-06
+  step= 2000  loss=1.0271  bce=1.4469  rank=3.2000  lr=9.57e-06
+  step= 2050  loss=1.0220  bce=0.3371  rank=0.2750  lr=9.54e-06
+  step= 2100  loss=1.0179  bce=0.5154  rank=0.5667  lr=9.51e-06
+  step= 2150  loss=1.0182  bce=0.7669  rank=2.0750  lr=9.48e-06
+  step= 2200  loss=1.0207  bce=0.4791  rank=0.0000  lr=9.44e-06
+  step= 2250  loss=1.0143  bce=0.4636  rank=0.4667  lr=9.41e-06
+
+[Epoch 1/5 완료]
+  소요: 420.6분  avg_loss: 1.0158
+  GPU0 max_alloc: 23.83GB
+
+[Val] exact_match=0.4900 (49/100)  adj_swap_fail=14  other_fail=37
+  I0KSxU  gt=[1, 3, 4, 2]  pred=[2, 4, 3, 1]  [other]
+  aXfsGc  gt=[2, 1, 3, 4]  pred=[4, 3, 2, 1]  [other]
+  yXG7PJ  gt=[2, 4, 3, 1]  pred=[1, 4, 3, 2]  [other]
+  ★ Best model saved  (val_acc=0.4900)
+
+============================================================
+Epoch 2/5  시작: 07:23:54
+  Processes=4  Effective batch=32
+============================================================
+  step= 2300  loss=0.9319  bce=0.2845  rank=0.1500  lr=9.37e-06
+  step= 2350  loss=0.8274  bce=0.5982  rank=1.2000  lr=9.33e-06
+  step= 2400  loss=0.7863  bce=0.0188  rank=0.0000  lr=9.30e-06
+  step= 2450  loss=0.7640  bce=0.1089  rank=0.0000  lr=9.26e-06
+  step= 2500  loss=0.7980  bce=0.6647  rank=1.4917  lr=9.22e-06
+  step= 2550  loss=0.7974  bce=0.9422  rank=0.1917  lr=9.18e-06
+  step= 2600  loss=0.8251  bce=0.0367  rank=0.0000  lr=9.14e-06
+  step= 2650  loss=0.8304  bce=0.2361  rank=0.0000  lr=9.10e-06
+  step= 2700  loss=0.8216  bce=0.5285  rank=0.6333  lr=9.06e-06
+  step= 2750  loss=0.8257  bce=0.3557  rank=0.0000  lr=9.01e-06
+  step= 2800  loss=0.8292  bce=0.8011  rank=1.6583  lr=8.97e-06
+  step= 2850  loss=0.8239  bce=0.5008  rank=0.6750  lr=8.92e-06
+  step= 2900  loss=0.8182  bce=0.4558  rank=0.3833  lr=8.88e-06
+  step= 2950  loss=0.8173  bce=0.6264  rank=1.2833  lr=8.83e-06
+  step= 3000  loss=0.8120  bce=0.8908  rank=0.8000  lr=8.79e-06
+  step= 3050  loss=0.8127  bce=1.4211  rank=1.3167  lr=8.73e-06
+  step= 3100  loss=0.8169  bce=0.1438  rank=0.0000  lr=8.69e-06
+  step= 3150  loss=0.8234  bce=0.6729  rank=0.9917  lr=8.64e-06
+  step= 3200  loss=0.8287  bce=0.4937  rank=0.5500  lr=8.59e-06
+  step= 3250  loss=0.8256  bce=0.4163  rank=0.4833  lr=8.53e-06
+  step= 3300  loss=0.8090  bce=0.3891  rank=0.0917  lr=8.48e-06
+  step= 3350  loss=0.8162  bce=0.4869  rank=0.8000  lr=8.43e-06
+  step= 3400  loss=0.8169  bce=0.0452  rank=0.0000  lr=8.38e-06
+  step= 3450  loss=0.8231  bce=0.0496  rank=0.0000  lr=8.32e-06
+  step= 3500  loss=0.8272  bce=0.1158  rank=0.0000  lr=8.27e-06
+  step= 3550  loss=0.8270  bce=0.5605  rank=0.4917  lr=8.22e-06
+  step= 3600  loss=0.8224  bce=0.2410  rank=0.0000  lr=8.16e-06
+  step= 3650  loss=0.8178  bce=0.4212  rank=0.2167  lr=8.10e-06
+  step= 3700  loss=0.8071  bce=0.1986  rank=0.0000  lr=8.04e-06
+  step= 3750  loss=0.8069  bce=0.2059  rank=0.0000  lr=7.99e-06
+  step= 3800  loss=0.7983  bce=0.6178  rank=0.3833  lr=7.93e-06
+  step= 3850  loss=0.7986  bce=0.1262  rank=0.0000  lr=7.86e-06
+  step= 3900  loss=0.8034  bce=0.1009  rank=0.0000  lr=7.81e-06
+  step= 3950  loss=0.7993  bce=0.2291  rank=0.0000  lr=7.75e-06
+  step= 4000  loss=0.8006  bce=0.0243  rank=0.0000  lr=7.69e-06
+  step= 4050  loss=0.8008  bce=0.1632  rank=0.0000  lr=7.62e-06
+  step= 4100  loss=0.8051  bce=0.4932  rank=0.5250  lr=7.56e-06
+  step= 4150  loss=0.8080  bce=0.4887  rank=0.4833  lr=7.50e-06
+  step= 4200  loss=0.8105  bce=0.3152  rank=0.0000  lr=7.44e-06
+  step= 4250  loss=0.8128  bce=0.5048  rank=0.8417  lr=7.37e-06
+  step= 4300  loss=0.8111  bce=0.5826  rank=0.1083  lr=7.30e-06
+  step= 4350  loss=0.8094  bce=1.0447  rank=0.7833  lr=7.24e-06
+  step= 4400  loss=0.8151  bce=0.3810  rank=0.0667  lr=7.18e-06
+  step= 4450  loss=0.8102  bce=0.2363  rank=0.0000  lr=7.10e-06
+  step= 4500  loss=0.8113  bce=0.0358  rank=0.0000  lr=7.04e-06
+
+[Epoch 2/5 완료]
+  소요: 425.6분  avg_loss: 0.8109
+  GPU0 max_alloc: 23.84GB
+
+[Val] exact_match=0.4900 (49/100)  adj_swap_fail=12  other_fail=39
+  I0KSxU  gt=[1, 3, 4, 2]  pred=[2, 4, 3, 1]  [other]
+  22x4vI  gt=[3, 1, 2, 4]  pred=[1, 4, 3, 2]  [other]
+  aXfsGc  gt=[2, 1, 3, 4]  pred=[4, 3, 2, 1]  [other]
+
+============================================================
+Epoch 3/5  시작: 14:45:40
+  Processes=4  Effective batch=32
+============================================================
+  step= 4550  loss=0.3632  bce=0.4658  rank=0.4250  lr=6.97e-06
+  step= 4600  loss=0.5143  bce=0.0924  rank=0.0000  lr=6.90e-06

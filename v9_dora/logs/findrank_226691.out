@@ -1,0 +1,10 @@
+Job: 226691  Node: node25  Started: Sun Jul  5 20:07:36 KST 2026
+Loading processor...
+Loading base model (한 번만 로드, 이후 어댑터만 교체)...
+  -> flash_attention_2 OK
+그룹 크기(1 pos+7 neg): [8]
+
+==================================================
+시도: r=112  alpha=224
+==================================================
+trainable params: 306,929,664 || all params: 9,074,053,360 || trainable%: 3.3825

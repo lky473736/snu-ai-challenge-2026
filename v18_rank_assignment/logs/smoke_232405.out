@@ -1,0 +1,8 @@
+Job: 232405  Node: node25  Started: Fri Jul 17 22:27:56 KST 2026
+LORA_R=128  LORA_ALPHA=256  (alpha/r=2.00)
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+
+=== 1) 고속 경로 검증 (slow vs fast) ===

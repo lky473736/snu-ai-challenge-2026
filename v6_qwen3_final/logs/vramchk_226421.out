@@ -1,0 +1,42 @@
+Job: 226421  Node: node23  Started: Sat Jul  4 14:52:46 KST 2026
+### size=448 minibatch=8 ###
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([8, 512])
+pixel_values shape: torch.Size([12288, 1536])
+
+=== Peak VRAM (minibatch=8, 448px, attn=flash_attention_2) === 70.29 GB
+H100 80GB 여유: 9.71 GB
+
+### size=448 minibatch=16 ###
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([16, 512])
+pixel_values shape: torch.Size([24576, 1536])
+FAILED (size=448 minibatch=16)
+
+### size=512 minibatch=8 ###
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([8, 576])
+pixel_values shape: torch.Size([14336, 1536])
+
+=== Peak VRAM (minibatch=8, 512px, attn=flash_attention_2) === 76.80 GB
+H100 80GB 여유: 3.20 GB
+
+### size=512 minibatch=16 ###
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([16, 576])
+pixel_values shape: torch.Size([28672, 1536])
+FAILED (size=512 minibatch=16)
+
+### size=560 minibatch=8 ###
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([8, 648])
+pixel_values shape: torch.Size([16640, 1536])
+FAILED (size=560 minibatch=8)
+
+### size=560 minibatch=12 ###
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([12, 648])
+pixel_values shape: torch.Size([24960, 1536])
+FAILED (size=560 minibatch=12)
+
+Done: Sat Jul  4 14:54:27 KST 2026

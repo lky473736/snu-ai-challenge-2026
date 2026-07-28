@@ -1,0 +1,39 @@
+Job: 226454  Node: node25  Started: Sat Jul  4 20:55:25 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+====================================================
+STAGE 1: Training (Qwen3-VL-8B, 448px, WEIGHT_TEMP=6, LIVE hard-negative resampling)
+====================================================
+[v6.5] Processes=4  Device=cuda:0
+  lora_r=64  lora_alpha=128  lr=1e-05
+  Loss: AdaptiveDistanceLoss (temp=6.0, all d=1..6 covered, No_ordering도 동일 hard-negative 처리)
+  Hard negatives: LIVE resampled every __getitem__ (v6 was fixed-once)
+Train samples (raw, pre-expansion): 9059
+Loading processor...
+Loading processor...
+Loading processor...
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+
+============================================================
+Epoch 1/5  시작: 20:55:47
+  Effective batch = 1×8×4
+============================================================
+  step=   50  loss=0.4950  lr=8.48e-07  w=[0.219,0.146,0.163,0.109,0.160,0.204]  L=[0.664,6.002,4.759,1.910,0.002,0.038]
+  step=  100  loss=0.4576  lr=1.70e-06  w=[0.198,0.214,0.186,0.127,0.154,0.121]  L=[0.009,0.002,0.005,0.000,0.000,0.000]
+  step=  150  loss=0.4204  lr=2.54e-06  w=[0.173,0.161,0.208,0.115,0.206,0.136]  L=[0.164,0.018,0.005,0.004,0.009,0.002]
+  step=  200  loss=0.4317  lr=3.53e-06  w=[0.187,0.111,0.149,0.136,0.233,0.183]  L=[0.009,0.062,0.002,0.001,0.049,0.005]
+  step=  250  loss=0.4079  lr=4.38e-06  w=[0.196,0.129,0.211,0.101,0.168,0.196]  L=[0.073,0.009,0.007,0.011,0.127,0.038]

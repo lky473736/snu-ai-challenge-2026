@@ -1,0 +1,7 @@
+Job: 226407  Node: node23  Started: Sat Jul  4 14:08:34 KST 2026
+### 작은 표본(20개)으로 정합성 먼저 확인 ###
+
+[24-way rescore] exact_match=0.3500 (7/20)  adj_swap_fail=4  other_fail=9
+비교: greedy 디코딩(원래 v5) exact_match=0.4475 (213/476)
+
+### 문제 없으면 전체 476개 ###

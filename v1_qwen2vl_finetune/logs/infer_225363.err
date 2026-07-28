@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/data/gyuyeonlim/hntv/hntv/src/inference.py", line 118, in <module>
+    main()
+  File "/data/gyuyeonlim/hntv/hntv/src/inference.py", line 84, in main
+    processor  = AutoProcessor.from_pretrained(MODEL_PATH)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/models/auto/processing_auto.py", line 327, in from_pretrained
+    return processor_class.from_pretrained(
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/processing_utils.py", line 1715, in from_pretrained
+    args = cls._get_arguments_from_pretrained(pretrained_model_name_or_path, processor_dict, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/processing_utils.py", line 1844, in _get_arguments_from_pretrained
+    sub_processor = auto_processor_class.from_pretrained(
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/models/auto/video_processing_auto.py", line 372, in from_pretrained
+    return video_processor_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2090, in __getattribute__
+    requires_backends(cls, cls._backends)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2076, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+Qwen2VLVideoProcessor requires the Torchvision library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+

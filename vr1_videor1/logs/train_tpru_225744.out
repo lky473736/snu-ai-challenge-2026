@@ -1,0 +1,41 @@
+Job: 225744  Node: node23  Started: Thu Jul  2 00:05:34 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Processes: 4  Device: cuda:0
+  margin=1.2  ranking_weight=1.5  lora_r=64  lora_alpha=128  lr=1e-05  ckpt=best_tpru
+  GPU 0: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 1: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 2: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 3: NVIDIA H100 80GB HBM3  85.0GB
+[hard_negative] positive: 9059, hard_neg: 27177, total: 36236
+Loading processor...
+Loading processor...
+Loading processor...
+Train groups: 9059  Val raw: 476
+Loading processor...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+
+============================================================
+Epoch 1/5  시작: 00:06:22
+  Processes=4  Effective batch=32
+============================================================
+  step=   50  loss=1.4208  bce=0.5134  rank=0.0000  lr=8.48e-07
+  step=  100  loss=1.3488  bce=0.4658  rank=0.4250  lr=1.70e-06
+  step=  150  loss=1.4313  bce=0.5221  rank=0.9500  lr=2.54e-06
+  step=  200  loss=1.3498  bce=0.6355  rank=0.2750  lr=3.53e-06
+  step=  250  loss=1.3802  bce=0.7312  rank=1.2833  lr=4.38e-06
+  step=  300  loss=1.3465  bce=0.3236  rank=0.1500  lr=5.23e-06
+  step=  350  loss=1.3345  bce=1.7820  rank=0.9667  lr=6.08e-06
+  step=  400  loss=1.3120  bce=0.3006  rank=0.1500  lr=7.07e-06
+  step=  450  loss=1.2827  bce=1.0268  rank=0.0000  lr=7.92e-06
+  step=  500  loss=1.2516  bce=0.2608  rank=0.0000  lr=8.76e-06
+  step=  550  loss=1.2555  bce=1.3267  rank=2.0333  lr=9.61e-06

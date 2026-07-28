@@ -1,0 +1,47 @@
+Job: 226696  Node: node25  Started: Sun Jul  5 22:52:40 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+====================================================
+STAGE 1: Training (Qwen3-VL-8B, 448px, AdaptiveDistanceNounLoss, live resampling, 10epoch)
+====================================================
+[v10] Processes=4  Device=cuda:0
+  lora_r=128  lora_alpha=256  lr=5e-05
+  Loss: AdaptiveDistanceNounLoss (temp_dist=6.0, temp_noun=2.5, all d=1..6 covered, n_nouns 5-bucket 축 추가)
+  Hard negatives: LIVE resampled every __getitem__ (v6 was fixed-once)
+Train samples (raw, pre-expansion): 9059
+Loading processor...
+Loading processor...Loading processor...
+
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+
+============================================================
+Epoch 1/5  시작: 22:53:05
+  Effective batch = 1×8×4
+============================================================
+  step=   50  loss=0.4266  lr=4.24e-06  w=[0.165,0.203,0.134,0.144,0.163,0.192]  wn=[1.090,1.021,1.059,0.897,0.903]  L=[0.033,0.038,0.000,0.011,0.003,0.000]
+  step=  100  loss=0.5170  lr=8.48e-06  w=[0.187,0.215,0.162,0.120,0.155,0.161]  wn=[1.182,1.074,0.957,0.843,0.866]  L=[2.374,0.002,0.001,3.049,3.530,0.062]
+  step=  150  loss=0.4465  lr=1.27e-05  w=[0.202,0.162,0.149,0.176,0.172,0.140]  wn=[1.205,1.111,0.999,0.816,0.794]  L=[0.363,0.313,0.100,0.160,0.201,0.201]
+  step=  200  loss=0.3957  lr=1.77e-05  w=[0.209,0.162,0.151,0.167,0.146,0.165]  wn=[1.129,1.162,1.032,0.864,0.789]  L=[1.419,0.474,0.474,0.160,0.387,0.201]
+  step=  250  loss=0.3724  lr=2.19e-05  w=[0.206,0.151,0.141,0.172,0.176,0.153]  wn=[1.147,1.214,0.978,0.836,0.794]  L=[1.526,0.100,0.474,0.079,0.201,1.910]
+  step=  300  loss=0.3630  lr=2.61e-05  w=[0.218,0.131,0.145,0.182,0.168,0.156]  wn=[1.225,1.134,0.943,0.846,0.766]  L=[0.274,0.009,0.009,0.005,0.009,0.023]
+  step=  350  loss=0.3522  lr=3.04e-05  w=[0.257,0.150,0.141,0.143,0.165,0.144]  wn=[1.185,1.142,0.926,0.879,0.799]  L=[0.196,0.002,0.002,0.004,0.038,0.038]
+  step=  400  loss=0.3537  lr=3.53e-05  w=[0.236,0.140,0.131,0.101,0.154,0.238]  wn=[1.184,1.278,0.898,0.827,0.764]  L=[0.246,0.002,0.062,0.002,0.011,0.003]
+  step=  450  loss=0.3572  lr=3.96e-05  w=[0.218,0.154,0.128,0.181,0.126,0.193]  wn=[1.174,1.339,0.912,0.830,0.717]  L=[0.020,0.011,0.014,0.002,0.030,0.001]
+  step=  500  loss=0.3617  lr=4.38e-05  w=[0.254,0.152,0.163,0.134,0.138,0.159]  wn=[1.159,1.406,0.904,0.809,0.710]  L=[0.146,0.043,0.313,0.013,0.014,0.826]
+  step=  550  loss=0.3520  lr=4.81e-05  w=[0.275,0.182,0.153,0.139,0.113,0.138]  wn=[1.176,1.371,0.931,0.783,0.717]  L=[0.147,0.023,0.005,0.009,0.009,0.038]
+  step=  600  loss=0.3554  lr=5.00e-05  w=[0.272,0.172,0.135,0.155,0.094,0.171]  wn=[1.237,1.320,0.950,0.752,0.686]  L=[0.449,0.079,0.000,0.000,0.001,0.000]
+  step=  650  loss=0.3541  lr=5.00e-05  w=[0.280,0.175,0.135,0.131,0.123,0.156]  wn=[1.256,1.324,0.907,0.772,0.671]  L=[0.257,0.062,0.100,0.143,0.633,0.758]

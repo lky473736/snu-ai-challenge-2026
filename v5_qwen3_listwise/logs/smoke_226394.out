@@ -1,0 +1,22 @@
+Job: 226394  Node: node27  Started: Sat Jul  4 11:05:39 KST 2026
+### 672px, batch=4 ###
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([4, 1141])
+labels sample (row0): [-100, -100, -100, -100, -100, -100, 16, 11, 18, 11, 19, 11, 17, 151645, 198]
+pixel_values shape: torch.Size([14080, 1536])
+loss: 0.7927945256233215 finite: True
+FAILED
+### 784px, batch=4 ###
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([4, 1141])
+labels sample (row0): [-100, -100, -100, -100, -100, -100, 16, 11, 18, 11, 19, 11, 17, 151645, 198]
+pixel_values shape: torch.Size([14080, 1536])
+loss: 0.7927945256233215 finite: True
+FAILED
+Done: Sat Jul  4 11:06:13 KST 2026

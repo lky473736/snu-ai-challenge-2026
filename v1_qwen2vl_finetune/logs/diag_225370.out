@@ -1,0 +1,49 @@
+Job: 225370  Node: node27  Started: Tue Jun 30 14:29:11 KST 2026
+Device: cuda
+Loading processor & model...
+Val samples (ordering only): 399
+
+=== Val Exact-Match Accuracy: 0.5013 (200/399) ===
+
+오답 199개 / 켄달타우 거리 분포 (필요한 adjacent swap 횟수):
+kendall_tau_dist
+1    44
+2    26
+3    60
+4    32
+5    33
+6     4
+Name: count, dtype: int64
+
+오답 중 gt 순위 분포 (0=best였는데 다른 동점 처리 등 edge case, 1=2등...):
+gt_rank
+1     61
+2     26
+3     19
+4     11
+5      9
+6      8
+7      9
+8      4
+9      8
+10     8
+11     8
+12     4
+13     1
+14     6
+15     1
+16     2
+17     1
+18     1
+19     2
+20     1
+21     4
+22     3
+23     2
+Name: count, dtype: int64
+
+near-miss (거리<=1, 즉 한 번의 adjacent swap 차이): 44
+far-miss  (거리>1, 더 멀리 틀림): 155
+
+저장: /data/gyuyeonlim/hntv/hntv/checkpoints/val_diagnosis.csv
+Done: Tue Jun 30 14:50:14 KST 2026

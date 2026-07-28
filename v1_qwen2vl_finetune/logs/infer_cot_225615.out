@@ -1,0 +1,9 @@
+Job: 225615  Node: node23  Started: Wed Jul  1 22:27:54 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Device: cuda
+Checkpoint: /data/gyuyeonlim/hntv/hntv/checkpoints/best_v1_score0.79057
+Max reasoning tokens: 80
+Test samples: 819

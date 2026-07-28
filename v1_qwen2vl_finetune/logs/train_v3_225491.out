@@ -1,0 +1,32 @@
+Job: 225491  Node: node27  Started: Wed Jul  1 19:19:46 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Processes: 4  Device: cuda:0
+  margin=1.2  ranking_weight=1.5  lora_r=64  lora_alpha=128  ckpt=best_v3
+  GPU 0: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 1: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 2: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 3: NVIDIA H100 80GB HBM3  85.0GB
+[hard_negative] positive: 7658, hard_neg: 22974, total: 30632
+Train groups: 7658  Val raw: 476
+Loading processor...
+Loading processor...
+Loading processor...
+Loading processor...
+Loading model (bfloat16)...
+Loading model (bfloat16)...
+Loading model (bfloat16)...
+Loading model (bfloat16)...
+trainable params: 161,480,704 || all params: 8,452,856,320 || trainable%: 1.9104
+trainable params: 161,480,704 || all params: 8,452,856,320 || trainable%: 1.9104
+trainable params: 161,480,704 || all params: 8,452,856,320 || trainable%: 1.9104
+trainable params: 161,480,704 || all params: 8,452,856,320 || trainable%: 1.9104
+
+============================================================
+Epoch 1/5  시작: 19:21:04
+  Processes=4  Effective batch=32
+============================================================
+  step=   50  loss=1.6349  bce=0.5448  rank=0.8667  lr=2.01e-06
+  step=  100  loss=1.6996  bce=0.8252  rank=1.2417  lr=4.02e-06

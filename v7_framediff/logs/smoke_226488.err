@@ -1,0 +1,13 @@
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights: 100%|██████████| 750/750 [00:00<00:00, 8619.09it/s]
+Traceback (most recent call last):
+  File "/data/gyuyeonlim/snu_ai_challenge/v7_framediff/smoke_test_v7.py", line 41, in <module>
+    logits = forward_batch(model, processor, texts, imgs_list, yes_id, no_id, device)
+  File "/data/gyuyeonlim/snu_ai_challenge/v7_framediff/src/train.py", line 111, in forward_batch
+    return _forward_chunk(model_unwrapped, processor, texts, imgs_list, yes_id, no_id, device, TRAIN_MINIBATCH)
+  File "/data/gyuyeonlim/snu_ai_challenge/v7_framediff/src/train.py", line 95, in _forward_chunk
+    inp = processor(
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/processing_utils.py", line 680, in __call__
+    text, text_replacement_offsets = self.get_text_with_replacements(
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/processing_utils.py", line 887, in get_text_with_replacements
+    replacement_text = next(replacements_iters[mm_type])
+StopIteration

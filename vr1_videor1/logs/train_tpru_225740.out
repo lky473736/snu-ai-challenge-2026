@@ -1,0 +1,30 @@
+Job: 225740  Node: node23  Started: Wed Jul  1 23:14:45 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Processes: 4  Device: cuda:0
+  margin=1.2  ranking_weight=1.5  lora_r=64  lora_alpha=128  lr=1e-05  ckpt=best_tpru
+  GPU 0: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 1: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 2: NVIDIA H100 80GB HBM3  85.0GB
+  GPU 3: NVIDIA H100 80GB HBM3  85.0GB
+[hard_negative] positive: 7658, hard_neg: 22974, total: 30632
+Train groups: 7658  Val raw: 476
+Loading processor...
+Loading processor...
+Loading processor...
+Loading processor...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bfloat16)...
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+
+============================================================
+Epoch 1/5  시작: 23:15:34
+  Processes=4  Effective batch=32
+============================================================

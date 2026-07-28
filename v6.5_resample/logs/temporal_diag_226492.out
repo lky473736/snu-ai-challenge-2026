@@ -1,0 +1,31 @@
+Job: 226492  Node: node25  Started: Sun Jul  5 09:24:25 KST 2026
+Loading base model + LoRA from /data/gyuyeonlim/snu_ai_challenge/v6.5_resample/checkpoints/best_v6_5 ...
+Val samples (ordering only): 399
+
+=== Val Exact-Match Accuracy: 0.5689 (227/399) ===
+
+상관계수 (sent_len vs correct)        = 0.435  (참고: v1 기준 0.376)
+상관계수 (temporal_words vs correct)   = 0.221  (신규 검증)
+
+temporal_words 구간별 정확도:
+        accuracy    n
+tw_bin               
+0       0.350000   80
+1       0.469880   83
+2       0.692308  130
+3       0.682353   85
+4       0.647059   17
+5+      0.250000    4
+
+sent_len 구간별 정확도 (교차검증용):
+         accuracy    n
+len_bin               
+<=15     0.285714   98
+15-20    0.307692   39
+20-25    0.463415   41
+25-30    0.676471  102
+30-35    0.800000   80
+35+      0.897436   39
+
+저장: /data/gyuyeonlim/snu_ai_challenge/v6.5_resample/checkpoints/val_temporal_diagnosis.csv
+Done: Sun Jul  5 09:33:51 KST 2026

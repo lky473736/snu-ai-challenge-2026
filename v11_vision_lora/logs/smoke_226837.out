@@ -1,0 +1,27 @@
+Job: 226837  Node: node24  Started: Mon Jul  6 14:01:24 KST 2026
+LORA_R=128  LORA_ALPHA=256  (alpha/r=2.00, v6.5는 2.00)
+샘플 20개 중 No_ordering 분포:
+ No_ordering
+False    18
+True      2
+Name: count, dtype: int64
+그룹 크기(1 pos+7 neg): [8]
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+[freeze] Merging v8 LoRA checkpoint from /data/gyuyeonlim/snu_ai_challenge/v8_lora128/checkpoints/best_v8 into base weights
+[vision LoRA] (LLM frozen/병합됨) 블록 [23, 24, 25, 26] 대상, 타겟 모듈 16개, r=64 alpha=128
+trainable params: 4,562,944 || all params: 8,771,686,640 || trainable%: 0.0520
+logits shape: torch.Size([8])
+loss: 0.545592188835144 finite: True
+weights: [0.1666666716337204, 0.1666666716337204, 0.1666666716337204, 0.1666666716337204, 0.1666666716337204, 0.1666666716337204]
+backward 성공
+Peak VRAM: 47.45 GB  (v6.5 r=64 기준 74.90GB였음, r=128은 LoRA 파라미터 2배라 증가 예상)
+
+=== val_exact_match 스모크 (n=3) ===
+
+[Val] exact_match=0.6667 (2/3)  adj_swap_fail=0  other_fail=1
+val smoke acc: 0.6666666666666666
+
+스모크 테스트 전체 통과
+Done: Mon Jul  6 14:02:34 KST 2026

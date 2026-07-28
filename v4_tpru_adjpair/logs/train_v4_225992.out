@@ -1,0 +1,41 @@
+Job: 225992  Node: node24  Started: Thu Jul  2 18:43:01 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+[v4] Processes=4  Device=cuda:0
+  lora_r=64  lora_alpha=128
+  margin=1.5  ranking_weight=1.5
+  aux_weight=0.5  lr=1e-05
+  Loss: 4f BCE(tau-soft) + ListNet + 2f AUX BCE
+Train groups: 9059  4f samples: 45295  2f samples: 27177
+Loading processor...
+Loading processor...
+Loading processor...
+Loading processor...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+  -> sdpa OK
+  -> sdpa OK
+  -> sdpa OK
+  -> sdpa OK
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+torch.compile enabled (reduce-overhead, dynamic=True)
+
+============================================================
+Epoch 1/5  시작: 18:43:27
+  Effective batch = 1×8×4
+============================================================

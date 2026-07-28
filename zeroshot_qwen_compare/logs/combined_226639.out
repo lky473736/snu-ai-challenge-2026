@@ -1,0 +1,16 @@
+Job: 226639  Node: node25  Started: Sun Jul  5 15:17:31 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+
+====================================================
+STEP 1: 32B / 30B-A3B zero-shot 전체 val(399개) 재검증
+====================================================
+Val samples (No_ordering excluded): 399
+
+============================================================
+Loading Qwen3-VL-30B-A3B-Instruct(MoE,4bit)
+============================================================
+  -> flash_attention_2 OK (load 28.0s)
+  가중치 로드 후 VRAM: 60.01 GB

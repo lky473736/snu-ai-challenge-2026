@@ -1,0 +1,2495 @@
+W0704 06:53:25.085000 4057084 site-packages/torch/distributed/run.py:862] 
+W0704 06:53:25.085000 4057084 site-packages/torch/distributed/run.py:862] *****************************************
+W0704 06:53:25.085000 4057084 site-packages/torch/distributed/run.py:862] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0704 06:53:25.085000 4057084 site-packages/torch/distributed/run.py:862] *****************************************
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:01<24:03,  1.98s/it]Loading weights:   0%|          | 1/729 [00:01<24:02,  1.98s/it]Loading weights:   0%|          | 1/729 [00:02<29:37,  2.44s/it]Loading weights:   0%|          | 1/729 [00:02<29:57,  2.47s/it]Loading weights:   1%|          | 4/729 [00:02<06:20,  1.90it/s]Loading weights:   1%|          | 5/729 [00:02<05:15,  2.30it/s]Loading weights:   1%|▏         | 10/729 [00:02<02:03,  5.84it/s]Loading weights:   0%|          | 2/729 [00:02<15:30,  1.28s/it]Loading weights:   0%|          | 2/729 [00:02<15:31,  1.28s/it]Loading weights:   1%|          | 6/729 [00:02<03:50,  3.13it/s]Loading weights:   1%|          | 6/729 [00:02<03:51,  3.13it/s]Loading weights:   2%|▏         | 15/729 [00:03<01:33,  7.61it/s]Loading weights:   2%|▏         | 16/729 [00:03<01:16,  9.28it/s]Loading weights:   2%|▏         | 16/729 [00:03<01:28,  8.03it/s]Loading weights:   2%|▏         | 16/729 [00:03<01:16,  9.27it/s]Loading weights:   2%|▏         | 17/729 [00:03<01:27,  8.16it/s]Loading weights:   3%|▎         | 19/729 [00:03<01:21,  8.74it/s]Loading weights:   3%|▎         | 19/729 [00:03<01:27,  8.07it/s]Loading weights:   3%|▎         | 19/729 [00:03<01:12,  9.74it/s]Loading weights:   3%|▎         | 19/729 [00:03<01:12,  9.75it/s]Loading weights:   3%|▎         | 22/729 [00:03<01:05, 10.73it/s]Loading weights:   3%|▎         | 22/729 [00:03<01:00, 11.64it/s]Loading weights:   3%|▎         | 22/729 [00:03<01:09, 10.24it/s]Loading weights:   3%|▎         | 24/729 [00:03<00:54, 12.82it/s]Loading weights:   4%|▎         | 26/729 [00:03<00:58, 11.96it/s]Loading weights:   4%|▍         | 29/729 [00:04<01:03, 11.07it/s]Loading weights:   4%|▍         | 28/729 [00:04<01:08, 10.19it/s]Loading weights:   4%|▍         | 28/729 [00:04<01:09, 10.14it/s]Loading weights:   4%|▍         | 31/729 [00:04<00:57, 12.08it/s]Loading weights:   4%|▎         | 27/729 [00:04<01:14,  9.44it/s]Loading weights:   5%|▍         | 34/729 [00:04<00:48, 14.22it/s]Loading weights:   5%|▍         | 34/729 [00:04<00:46, 14.85it/s]Loading weights:   5%|▍         | 34/729 [00:04<00:49, 13.98it/s]Loading weights:   5%|▍         | 34/729 [00:04<00:50, 13.88it/s]Loading weights:   5%|▌         | 37/729 [00:04<00:47, 14.71it/s]Loading weights:   5%|▍         | 36/729 [00:04<00:50, 13.61it/s]Loading weights:   5%|▌         | 37/729 [00:04<00:47, 14.58it/s]Loading weights:   5%|▌         | 38/729 [00:04<00:42, 16.13it/s]Loading weights:   5%|▌         | 40/729 [00:04<00:56, 12.18it/s]Loading weights:   5%|▌         | 40/729 [00:04<00:55, 12.45it/s]Loading weights:   5%|▌         | 40/729 [00:05<01:20,  8.56it/s]Loading weights:   6%|▌         | 41/729 [00:05<01:13,  9.39it/s]Loading weights:   6%|▌         | 42/729 [00:05<01:20,  8.56it/s]Loading weights:   6%|▌         | 42/729 [00:05<01:26,  7.96it/s]Loading weights:   6%|▌         | 42/729 [00:05<01:12,  9.45it/s]Loading weights:   6%|▌         | 44/729 [00:05<01:02, 11.01it/s]Loading weights:   7%|▋         | 48/729 [00:05<00:50, 13.61it/s]Loading weights:   7%|▋         | 49/729 [00:05<00:46, 14.71it/s]Loading weights:   7%|▋         | 49/729 [00:05<00:42, 15.94it/s]Loading weights:   7%|▋         | 50/729 [00:05<00:41, 16.38it/s]Loading weights:   7%|▋         | 52/729 [00:05<00:48, 13.90it/s]Loading weights:   7%|▋         | 52/729 [00:05<00:52, 12.80it/s]Loading weights:   8%|▊         | 55/729 [00:06<00:45, 14.70it/s]Loading weights:   7%|▋         | 54/729 [00:06<00:49, 13.50it/s]Loading weights:   8%|▊         | 58/729 [00:06<00:37, 17.94it/s]Loading weights:   7%|▋         | 53/729 [00:06<00:56, 12.05it/s]Loading weights:   9%|▉         | 64/729 [00:06<00:34, 19.13it/s]Loading weights:   9%|▉         | 64/729 [00:06<00:32, 20.50it/s]Loading weights:   9%|▉         | 64/729 [00:06<00:33, 19.80it/s]Loading weights:   9%|▊         | 63/729 [00:06<00:50, 13.17it/s]Loading weights:   9%|▉         | 66/729 [00:06<00:52, 12.68it/s]Loading weights:   9%|▉         | 67/729 [00:06<00:53, 12.31it/s]Loading weights:   9%|▉         | 67/729 [00:06<00:52, 12.66it/s]Loading weights:   9%|▉         | 68/729 [00:06<00:47, 14.05it/s]Loading weights:  10%|█         | 76/729 [00:07<00:36, 17.99it/s]Loading weights:  10%|█         | 76/729 [00:07<00:38, 16.78it/s]Loading weights:  10%|█         | 75/729 [00:07<00:43, 14.88it/s]Loading weights:  10%|█         | 75/729 [00:07<00:43, 14.88it/s]Loading weights:  11%|█         | 78/729 [00:07<00:40, 15.89it/s]Loading weights:  11%|█         | 79/729 [00:07<00:39, 16.48it/s]Loading weights:  11%|█         | 79/729 [00:07<00:37, 17.41it/s]Loading weights:  11%|█         | 78/729 [00:07<00:40, 15.91it/s]Loading weights:  12%|█▏        | 87/729 [00:07<00:25, 25.41it/s]Loading weights:  12%|█▏        | 87/729 [00:07<00:26, 24.66it/s]Loading weights:  12%|█▏        | 87/729 [00:07<00:26, 23.89it/s]Loading weights:  12%|█▏        | 85/729 [00:07<00:28, 22.59it/s]Loading weights:  13%|█▎        | 92/729 [00:08<00:35, 18.15it/s]Loading weights:  12%|█▏        | 91/729 [00:08<00:37, 16.84it/s]Loading weights:  12%|█▏        | 91/729 [00:08<00:36, 17.28it/s]Loading weights:  12%|█▏        | 89/729 [00:08<00:42, 15.03it/s]Loading weights:  14%|█▎        | 100/729 [00:08<00:28, 21.83it/s]Loading weights:  14%|█▎        | 100/729 [00:08<00:31, 20.12it/s]Loading weights:  14%|█▎        | 100/729 [00:08<00:30, 20.54it/s]Loading weights:  14%|█▎        | 99/729 [00:08<00:32, 19.20it/s]Loading weights:  14%|█▍        | 103/729 [00:08<00:44, 14.10it/s]Loading weights:  14%|█▍        | 102/729 [00:08<00:46, 13.55it/s]Loading weights:  14%|█▍        | 103/729 [00:08<00:44, 14.22it/s]Loading weights:  14%|█▍        | 104/729 [00:08<00:39, 15.72it/s]Loading weights:  15%|█▌        | 112/729 [00:09<00:33, 18.25it/s]Loading weights:  15%|█▌        | 112/729 [00:09<00:34, 17.82it/s]Loading weights:  15%|█▌        | 112/729 [00:09<00:34, 17.96it/s]Loading weights:  15%|█▌        | 112/729 [00:09<00:33, 18.23it/s]Loading weights:  16%|█▌        | 115/729 [00:09<00:36, 16.61it/s]Loading weights:  16%|█▌        | 115/729 [00:09<00:39, 15.69it/s]Loading weights:  16%|█▌        | 115/729 [00:09<00:40, 15.29it/s]Loading weights:  16%|█▌        | 115/729 [00:09<00:39, 15.37it/s]Loading weights:  17%|█▋        | 124/729 [00:10<00:38, 15.73it/s]Loading weights:  17%|█▋        | 124/729 [00:10<00:38, 15.52it/s]Loading weights:  17%|█▋        | 124/729 [00:10<00:38, 15.59it/s]Loading weights:  17%|█▋        | 124/729 [00:10<00:38, 15.64it/s]Loading weights:  17%|█▋        | 126/729 [00:10<00:43, 13.93it/s]Loading weights:  17%|█▋        | 126/729 [00:10<00:43, 13.96it/s]Loading weights:  17%|█▋        | 126/729 [00:10<00:42, 14.06it/s]Loading weights:  17%|█▋        | 126/729 [00:10<00:43, 13.99it/s]Loading weights:  18%|█▊        | 132/729 [00:10<00:31, 18.74it/s]Loading weights:  18%|█▊        | 132/729 [00:10<00:31, 18.68it/s]Loading weights:  18%|█▊        | 132/729 [00:10<00:32, 18.55it/s]Loading weights:  18%|█▊        | 131/729 [00:10<00:33, 17.59it/s]Loading weights:  19%|█▊        | 136/729 [00:10<00:34, 17.15it/s]Loading weights:  19%|█▊        | 136/729 [00:10<00:33, 17.50it/s]Loading weights:  19%|█▊        | 136/729 [00:10<00:34, 17.22it/s]Loading weights:  19%|█▊        | 136/729 [00:10<00:35, 16.84it/s]Loading weights:  19%|█▉        | 139/729 [00:10<00:32, 18.24it/s]Loading weights:  19%|█▉        | 139/729 [00:10<00:32, 18.16it/s]Loading weights:  19%|█▉        | 141/729 [00:10<00:28, 20.41it/s]Loading weights:  19%|█▉        | 141/729 [00:10<00:28, 20.42it/s]Loading weights:  20%|██        | 146/729 [00:11<00:22, 25.86it/s]Loading weights:  20%|██        | 146/729 [00:11<00:22, 25.74it/s]Loading weights:  20%|██        | 148/729 [00:11<00:28, 20.49it/s]Loading weights:  20%|██        | 148/729 [00:11<00:28, 20.49it/s]Loading weights:  21%|██        | 150/729 [00:11<00:45, 12.81it/s]Loading weights:  21%|██        | 151/729 [00:11<00:42, 13.76it/s]Loading weights:  21%|██        | 151/729 [00:11<00:42, 13.73it/s]Loading weights:  21%|██        | 150/729 [00:11<00:45, 12.81it/s]Loading weights:  22%|██▏       | 160/729 [00:12<00:32, 17.47it/s]Loading weights:  22%|██▏       | 160/729 [00:12<00:32, 17.51it/s]Loading weights:  22%|██▏       | 160/729 [00:12<00:32, 17.49it/s]Loading weights:  22%|██▏       | 160/729 [00:12<00:42, 13.27it/s]Loading weights:  22%|██▏       | 163/729 [00:12<00:45, 12.44it/s]Loading weights:  22%|██▏       | 163/729 [00:12<00:45, 12.56it/s]Loading weights:  22%|██▏       | 163/729 [00:12<00:45, 12.57it/s]Loading weights:  22%|██▏       | 162/729 [00:12<00:44, 12.75it/s]Loading weights:  24%|██▎       | 172/729 [00:13<00:34, 16.07it/s]Loading weights:  24%|██▎       | 172/729 [00:13<00:34, 16.05it/s]Loading weights:  24%|██▎       | 172/729 [00:13<00:32, 17.32it/s]Loading weights:  24%|██▎       | 172/729 [00:13<00:34, 16.07it/s]Loading weights:  24%|██▍       | 175/729 [00:13<00:46, 11.86it/s]Loading weights:  24%|██▍       | 174/729 [00:13<00:49, 11.13it/s]Loading weights:  24%|██▍       | 174/729 [00:13<00:47, 11.70it/s]Loading weights:  24%|██▍       | 175/729 [00:13<00:46, 11.85it/s]Loading weights:  25%|██▍       | 180/729 [00:13<00:36, 15.10it/s]Loading weights:  25%|██▍       | 180/729 [00:13<00:35, 15.34it/s]Loading weights:  25%|██▍       | 179/729 [00:13<00:36, 15.10it/s]Loading weights:  25%|██▍       | 179/729 [00:13<00:38, 14.23it/s]Loading weights:  25%|██▌       | 183/729 [00:13<00:33, 16.14it/s]Loading weights:  25%|██▌       | 183/729 [00:14<00:37, 14.51it/s]Loading weights:  25%|██▌       | 184/729 [00:14<00:38, 14.30it/s]Loading weights:  25%|██▌       | 184/729 [00:14<00:37, 14.46it/s]Loading weights:  26%|██▌       | 186/729 [00:14<00:36, 15.01it/s]Loading weights:  26%|██▌       | 186/729 [00:14<00:36, 14.78it/s]Loading weights:  26%|██▌       | 187/729 [00:14<00:34, 15.77it/s]Loading weights:  26%|██▌       | 187/729 [00:14<00:34, 15.62it/s]Loading weights:  27%|██▋       | 196/729 [00:14<00:26, 20.05it/s]Loading weights:  27%|██▋       | 196/729 [00:14<00:27, 19.61it/s]Loading weights:  27%|██▋       | 195/729 [00:14<00:36, 14.81it/s]Loading weights:  27%|██▋       | 195/729 [00:14<00:36, 14.45it/s]Loading weights:  27%|██▋       | 198/729 [00:15<00:37, 14.07it/s]Loading weights:  27%|██▋       | 198/729 [00:15<00:38, 13.79it/s]Loading weights:  27%|██▋       | 199/729 [00:15<00:39, 13.48it/s]Loading weights:  27%|██▋       | 199/729 [00:15<00:38, 13.77it/s]Loading weights:  28%|██▊       | 206/729 [00:15<00:24, 20.95it/s]Loading weights:  28%|██▊       | 206/729 [00:15<00:27, 19.07it/s]Loading weights:  28%|██▊       | 206/729 [00:15<00:27, 18.99it/s]Loading weights:  28%|██▊       | 205/729 [00:15<00:27, 19.34it/s]Loading weights:  29%|██▊       | 208/729 [00:15<00:29, 17.64it/s]Loading weights:  29%|██▊       | 209/729 [00:15<00:44, 11.64it/s]Loading weights:  29%|██▉       | 210/729 [00:16<00:44, 11.70it/s]Loading weights:  29%|██▉       | 210/729 [00:15<00:41, 12.38it/s]Loading weights:  29%|██▉       | 211/729 [00:15<00:42, 12.20it/s]Loading weights:  29%|██▉       | 214/729 [00:16<00:36, 14.17it/s]Loading weights:  29%|██▉       | 214/729 [00:16<00:36, 14.10it/s]Loading weights:  29%|██▉       | 214/729 [00:16<00:34, 14.84it/s]Loading weights:  29%|██▉       | 214/729 [00:16<00:35, 14.36it/s]Loading weights:  30%|███       | 220/729 [00:16<00:28, 17.56it/s]Loading weights:  30%|███       | 220/729 [00:16<00:34, 14.67it/s]Loading weights:  30%|███       | 220/729 [00:16<00:34, 14.64it/s]Loading weights:  30%|███       | 220/729 [00:16<00:34, 14.69it/s]Loading weights:  31%|███       | 223/729 [00:16<00:31, 15.97it/s]Loading weights:  31%|███       | 226/729 [00:16<00:25, 19.92it/s]Loading weights:  31%|███       | 226/729 [00:16<00:25, 19.42it/s]Loading weights:  31%|███       | 226/729 [00:16<00:26, 19.28it/s]Loading weights:  32%|███▏      | 232/729 [00:16<00:24, 20.17it/s]Loading weights:  32%|███▏      | 232/729 [00:16<00:24, 20.09it/s]Loading weights:  32%|███▏      | 231/729 [00:16<00:25, 19.39it/s]Loading weights:  32%|███▏      | 232/729 [00:16<00:24, 20.50it/s]Loading weights:  32%|███▏      | 235/729 [00:17<00:27, 18.04it/s]Loading weights:  32%|███▏      | 234/729 [00:17<00:29, 17.05it/s]Loading weights:  32%|███▏      | 235/729 [00:17<00:30, 16.39it/s]Loading weights:  32%|███▏      | 235/729 [00:17<00:30, 16.28it/s]Loading weights:  33%|███▎      | 240/729 [00:17<00:21, 23.15it/s]Loading weights:  33%|███▎      | 240/729 [00:17<00:21, 22.25it/s]Loading weights:  33%|███▎      | 244/729 [00:17<00:26, 18.23it/s]Loading weights:  33%|███▎      | 244/729 [00:17<00:25, 18.99it/s]Loading weights:  33%|███▎      | 244/729 [00:17<00:25, 19.01it/s]Loading weights:  34%|███▍      | 247/729 [00:17<00:29, 16.57it/s]Loading weights:  33%|███▎      | 244/729 [00:17<00:36, 13.32it/s]Loading weights:  34%|███▍      | 247/729 [00:17<00:29, 16.36it/s]Loading weights:  34%|███▍      | 247/729 [00:17<00:29, 16.34it/s]Loading weights:  35%|███▌      | 256/729 [00:18<00:22, 21.25it/s]Loading weights:  35%|███▌      | 256/729 [00:18<00:21, 21.75it/s]Loading weights:  35%|███▌      | 256/729 [00:18<00:23, 20.02it/s]Loading weights:  35%|███▌      | 256/729 [00:18<00:23, 20.08it/s]Loading weights:  36%|███▌      | 259/729 [00:18<00:26, 17.75it/s]Loading weights:  36%|███▌      | 259/729 [00:18<00:27, 17.14it/s]Loading weights:  36%|███▌      | 259/729 [00:18<00:25, 18.19it/s]Loading weights:  36%|███▌      | 259/729 [00:18<00:25, 18.38it/s]Loading weights:  37%|███▋      | 268/729 [00:18<00:22, 20.80it/s]Loading weights:  37%|███▋      | 268/729 [00:18<00:21, 21.16it/s]Loading weights:  37%|███▋      | 268/729 [00:18<00:23, 19.56it/s]Loading weights:  37%|███▋      | 268/729 [00:18<00:24, 18.86it/s]Loading weights:  37%|███▋      | 271/729 [00:19<00:25, 18.09it/s]Loading weights:  37%|███▋      | 271/729 [00:19<00:26, 17.49it/s]Loading weights:  37%|███▋      | 271/729 [00:19<00:26, 17.32it/s]Loading weights:  37%|███▋      | 271/729 [00:19<00:26, 17.52it/s]Loading weights:  38%|███▊      | 279/729 [00:19<00:20, 21.98it/s]Loading weights:  38%|███▊      | 280/729 [00:19<00:21, 21.18it/s]Loading weights:  39%|███▉      | 283/729 [00:19<00:22, 19.68it/s]Loading weights:  38%|███▊      | 280/729 [00:19<00:26, 16.87it/s]Loading weights:  39%|███▊      | 282/729 [00:19<00:25, 17.64it/s]Loading weights:  38%|███▊      | 280/729 [00:19<00:28, 15.98it/s]Loading weights:  40%|████      | 292/729 [00:19<00:17, 24.40it/s]Loading weights:  40%|████      | 292/729 [00:19<00:18, 23.40it/s]Loading weights:  40%|████      | 292/729 [00:19<00:17, 24.77it/s]Loading weights:  40%|████      | 292/729 [00:19<00:17, 24.52it/s]Loading weights:  40%|████      | 295/729 [00:20<00:20, 20.79it/s]Loading weights:  41%|████      | 296/729 [00:20<00:20, 21.10it/s]Loading weights:  40%|████      | 295/729 [00:20<00:21, 19.83it/s]Loading weights:  40%|████      | 295/729 [00:20<00:23, 18.59it/s]Loading weights:  42%|████▏     | 304/729 [00:20<00:18, 23.19it/s]Loading weights:  42%|████▏     | 303/729 [00:20<00:18, 22.73it/s]Loading weights:  42%|████▏     | 304/729 [00:20<00:20, 20.32it/s]Loading weights:  42%|████▏     | 304/729 [00:20<00:21, 19.65it/s]Loading weights:  42%|████▏     | 307/729 [00:20<00:23, 18.09it/s]Loading weights:  42%|████▏     | 306/729 [00:20<00:23, 18.06it/s]Loading weights:  42%|████▏     | 307/729 [00:20<00:21, 19.54it/s]Loading weights:  42%|████▏     | 307/729 [00:20<00:22, 19.11it/s]Loading weights:  43%|████▎     | 316/729 [00:21<00:18, 22.52it/s]Loading weights:  43%|████▎     | 316/729 [00:21<00:18, 22.34it/s]Loading weights:  43%|████▎     | 316/729 [00:21<00:18, 22.33it/s]Loading weights:  43%|████▎     | 316/729 [00:21<00:19, 21.51it/s]Loading weights:  44%|████▍     | 319/729 [00:21<00:27, 15.17it/s]Loading weights:  44%|████▍     | 319/729 [00:21<00:26, 15.54it/s]Loading weights:  44%|████▍     | 319/729 [00:21<00:27, 14.99it/s]Loading weights:  44%|████▍     | 319/729 [00:21<00:27, 14.93it/s]Loading weights:  45%|████▍     | 328/729 [00:21<00:19, 20.06it/s]Loading weights:  45%|████▍     | 328/729 [00:21<00:20, 19.58it/s]Loading weights:  45%|████▍     | 328/729 [00:21<00:20, 20.00it/s]Loading weights:  45%|████▍     | 328/729 [00:21<00:20, 19.24it/s]Loading weights:  45%|████▌     | 331/729 [00:22<00:27, 14.50it/s]Loading weights:  45%|████▌     | 331/729 [00:22<00:27, 14.34it/s]Loading weights:  45%|████▌     | 331/729 [00:22<00:26, 14.78it/s]Loading weights:  45%|████▌     | 331/729 [00:22<00:26, 14.79it/s]Loading weights:  47%|████▋     | 343/729 [00:22<00:15, 25.40it/s]Loading weights:  47%|████▋     | 342/729 [00:22<00:16, 24.17it/s]Loading weights:  47%|████▋     | 342/729 [00:22<00:15, 24.45it/s]Loading weights:  47%|████▋     | 342/729 [00:22<00:16, 23.62it/s]Loading weights:  49%|████▉     | 359/729 [00:22<00:08, 42.33it/s]Loading weights:  49%|████▉     | 359/729 [00:22<00:08, 42.05it/s]Loading weights:  49%|████▉     | 359/729 [00:22<00:08, 41.74it/s]Loading weights:  50%|████▉     | 363/729 [00:22<00:07, 46.70it/s]Loading weights:  53%|█████▎    | 383/729 [00:22<00:04, 71.25it/s]Loading weights:  52%|█████▏    | 382/729 [00:22<00:04, 70.41it/s]Loading weights:  53%|█████▎    | 383/729 [00:22<00:04, 71.65it/s]Loading weights:  53%|█████▎    | 385/729 [00:22<00:05, 68.44it/s]Loading weights:  54%|█████▍    | 396/729 [00:22<00:04, 80.70it/s]Loading weights:  54%|█████▍    | 396/729 [00:22<00:04, 79.94it/s]Loading weights:  54%|█████▍    | 396/729 [00:22<00:04, 77.98it/s]Loading weights:  55%|█████▌    | 402/729 [00:22<00:03, 85.52it/s]Loading weights:  57%|█████▋    | 415/729 [00:22<00:03, 99.74it/s]Loading weights:  57%|█████▋    | 415/729 [00:22<00:03, 100.17it/s]Loading weights:  57%|█████▋    | 419/729 [00:22<00:02, 104.38it/s]Loading weights:  58%|█████▊    | 420/729 [00:22<00:03, 100.88it/s]Loading weights:  60%|█████▉    | 436/729 [00:22<00:02, 121.73it/s]Loading weights:  60%|█████▉    | 437/729 [00:23<00:02, 123.93it/s]Loading weights:  60%|██████    | 441/729 [00:22<00:02, 127.28it/s]Loading weights:  61%|██████    | 442/729 [00:23<00:02, 124.38it/s]Loading weights:  63%|██████▎   | 456/729 [00:23<00:01, 136.71it/s]Loading weights:  63%|██████▎   | 456/729 [00:23<00:01, 136.68it/s]Loading weights:  64%|██████▎   | 463/729 [00:23<00:01, 144.33it/s]Loading weights:  64%|██████▍   | 465/729 [00:23<00:01, 144.53it/s]Loading weights:  66%|██████▌   | 479/729 [00:23<00:01, 155.05it/s]Loading weights:  66%|██████▌   | 478/729 [00:23<00:01, 152.73it/s]Loading weights:  66%|██████▌   | 481/729 [00:23<00:01, 148.91it/s]Loading weights:  67%|██████▋   | 485/729 [00:23<00:01, 157.87it/s]Loading weights:  68%|██████▊   | 498/729 [00:23<00:01, 163.65it/s]Loading weights:  68%|██████▊   | 497/729 [00:23<00:01, 161.49it/s]Loading weights:  69%|██████▉   | 503/729 [00:23<00:01, 165.05it/s]Loading weights:  69%|██████▉   | 505/729 [00:23<00:01, 161.95it/s]Loading weights:  71%|███████   | 517/729 [00:23<00:01, 166.14it/s]Loading weights:  71%|███████   | 516/729 [00:23<00:01, 161.92it/s]Loading weights:  72%|███████▏  | 522/729 [00:23<00:01, 164.37it/s]Loading weights:  72%|███████▏  | 523/729 [00:23<00:01, 160.41it/s]Loading weights:  74%|███████▎  | 537/729 [00:23<00:01, 173.11it/s]Loading weights:  74%|███████▎  | 537/729 [00:23<00:01, 172.83it/s]Loading weights:  75%|███████▍  | 545/729 [00:23<00:01, 179.89it/s]Loading weights:  75%|███████▍  | 545/729 [00:23<00:01, 175.81it/s]Loading weights:  77%|███████▋  | 560/729 [00:23<00:00, 186.74it/s]Loading weights:  77%|███████▋  | 558/729 [00:23<00:00, 180.89it/s]Loading weights:  78%|███████▊  | 565/729 [00:23<00:00, 181.80it/s]Loading weights:  78%|███████▊  | 565/729 [00:23<00:00, 178.30it/s]Loading weights:  80%|███████▉  | 582/729 [00:23<00:00, 192.26it/s]Loading weights:  80%|███████▉  | 583/729 [00:23<00:00, 195.00it/s]Loading weights:  81%|████████  | 589/729 [00:23<00:00, 192.80it/s]Loading weights:  81%|████████  | 589/729 [00:23<00:00, 195.47it/s]Loading weights:  83%|████████▎ | 602/729 [00:23<00:00, 193.07it/s]Loading weights:  83%|████████▎ | 603/729 [00:23<00:00, 196.39it/s]Loading weights:  84%|████████▍ | 611/729 [00:23<00:00, 196.48it/s]Loading weights:  84%|████████▎ | 610/729 [00:23<00:00, 191.49it/s]Loading weights:  85%|████████▌ | 623/729 [00:23<00:00, 192.13it/s]Loading weights:  85%|████████▌ | 623/729 [00:23<00:00, 192.31it/s]Loading weights:  86%|████████▋ | 630/729 [00:23<00:00, 188.72it/s]Loading weights:  87%|████████▋ | 632/729 [00:24<00:00, 186.08it/s]Loading weights:  88%|████████▊ | 643/729 [00:24<00:00, 185.03it/s]Loading weights:  88%|████████▊ | 643/729 [00:24<00:00, 185.10it/s]Loading weights:  89%|████████▉ | 651/729 [00:24<00:00, 180.31it/s]Loading weights:  89%|████████▉ | 650/729 [00:24<00:00, 176.43it/s]Loading weights:  91%|█████████ | 662/729 [00:24<00:00, 181.48it/s]Loading weights:  91%|█████████ | 662/729 [00:24<00:00, 181.25it/s]Loading weights:  92%|█████████▏| 671/729 [00:24<00:00, 178.56it/s]Loading weights:  92%|█████████▏| 671/729 [00:24<00:00, 178.68it/s]Loading weights:  94%|█████████▎| 682/729 [00:24<00:00, 179.05it/s]Loading weights:  94%|█████████▎| 683/729 [00:24<00:00, 181.61it/s]Loading weights:  95%|█████████▌| 695/729 [00:24<00:00, 187.42it/s]Loading weights:  95%|█████████▌| 695/729 [00:24<00:00, 187.36it/s]Loading weights:  97%|█████████▋| 705/729 [00:24<00:00, 186.43it/s]Loading weights:  97%|█████████▋| 705/729 [00:24<00:00, 187.19it/s]Loading weights:  98%|█████████▊| 715/729 [00:24<00:00, 182.55it/s]Loading weights:  98%|█████████▊| 715/729 [00:24<00:00, 181.13it/s]Loading weights:  99%|█████████▉| 724/729 [00:24<00:00, 158.54it/s]Loading weights: 100%|██████████| 729/729 [00:24<00:00, 29.67it/s] 
+Loading weights: 100%|██████████| 729/729 [00:24<00:00, 29.65it/s] 
+Loading weights: 100%|█████████▉| 726/729 [00:24<00:00, 153.02it/s]Loading weights: 100%|██████████| 729/729 [00:24<00:00, 29.60it/s] 
+Loading weights: 100%|██████████| 729/729 [00:24<00:00, 29.59it/s] 
+[submission_v4_best][rank0]:   0%|          | 0/205 [00:00<?, ?it/s]
+
+[submission_v4_best][rank2]:   0%|          | 0/205 [00:00<?, ?it/s][A[A
+[submission_v4_best][rank1]:   0%|          | 0/205 [00:00<?, ?it/s][A
+
+
+[submission_v4_best][rank3]:   0%|          | 0/204 [00:00<?, ?it/s][A[A[A[submission_v4_best][rank0]:   0%|          | 1/205 [00:03<12:55,  3.80s/it]
+
+[submission_v4_best][rank2]:   0%|          | 1/205 [00:03<10:43,  3.16s/it][A[A
+[submission_v4_best][rank1]:   0%|          | 1/205 [00:03<11:57,  3.52s/it][A
+
+
+[submission_v4_best][rank3]:   0%|          | 1/204 [00:04<13:33,  4.01s/it][A[A[A[submission_v4_best][rank0]:   1%|          | 2/205 [00:06<11:26,  3.38s/it]
+
+[submission_v4_best][rank2]:   1%|          | 2/205 [00:06<10:37,  3.14s/it][A[A
+[submission_v4_best][rank1]:   1%|          | 2/205 [00:06<10:49,  3.20s/it][A
+
+
+[submission_v4_best][rank3]:   1%|          | 2/204 [00:07<11:46,  3.50s/it][A[A[A[submission_v4_best][rank0]:   1%|▏         | 3/205 [00:09<09:47,  2.91s/it]
+
+[submission_v4_best][rank2]:   1%|▏         | 3/205 [00:08<09:36,  2.86s/it][A[A
+[submission_v4_best][rank1]:   1%|▏         | 3/205 [00:09<10:30,  3.12s/it][A
+
+
+[submission_v4_best][rank3]:   1%|▏         | 3/204 [00:10<11:19,  3.38s/it][A[A[A[submission_v4_best][rank0]:   2%|▏         | 4/205 [00:12<09:34,  2.86s/it]
+
+[submission_v4_best][rank2]:   2%|▏         | 4/205 [00:11<09:46,  2.92s/it][A[A
+[submission_v4_best][rank1]:   2%|▏         | 4/205 [00:12<10:44,  3.21s/it][A
+
+
+[submission_v4_best][rank3]:   2%|▏         | 4/204 [00:13<11:24,  3.42s/it][A[A[A[submission_v4_best][rank0]:   2%|▏         | 5/205 [00:15<09:46,  2.93s/it]
+
+[submission_v4_best][rank2]:   2%|▏         | 5/205 [00:14<09:53,  2.97s/it][A[A
+[submission_v4_best][rank1]:   2%|▏         | 5/205 [00:15<10:19,  3.10s/it][A
+
+
+[submission_v4_best][rank3]:   2%|▏         | 5/204 [00:17<11:13,  3.38s/it][A[A[A[submission_v4_best][rank0]:   3%|▎         | 6/205 [00:18<10:10,  3.07s/it]
+
+[submission_v4_best][rank2]:   3%|▎         | 6/205 [00:17<09:45,  2.94s/it][A[A
+[submission_v4_best][rank1]:   3%|▎         | 6/205 [00:19<10:33,  3.18s/it][A
+
+[submission_v4_best][rank2]:   3%|▎         | 7/205 [00:20<09:23,  2.84s/it][A[A
+
+
+[submission_v4_best][rank3]:   3%|▎         | 6/204 [00:20<11:03,  3.35s/it][A[A[A[submission_v4_best][rank0]:   3%|▎         | 7/205 [00:21<10:37,  3.22s/it]
+[submission_v4_best][rank1]:   3%|▎         | 7/205 [00:22<10:30,  3.19s/it][A
+
+
+[submission_v4_best][rank3]:   3%|▎         | 7/204 [00:23<10:32,  3.21s/it][A[A[A
+
+[submission_v4_best][rank2]:   4%|▍         | 8/205 [00:23<09:33,  2.91s/it][A[A[submission_v4_best][rank0]:   4%|▍         | 8/205 [00:25<10:25,  3.18s/it]
+[submission_v4_best][rank1]:   4%|▍         | 8/205 [00:25<10:18,  3.14s/it][A
+
+[submission_v4_best][rank2]:   4%|▍         | 9/205 [00:26<09:09,  2.81s/it][A[A
+
+
+[submission_v4_best][rank3]:   4%|▍         | 8/204 [00:26<10:18,  3.16s/it][A[A[A[submission_v4_best][rank0]:   4%|▍         | 9/205 [00:27<09:41,  2.97s/it]
+[submission_v4_best][rank1]:   4%|▍         | 9/205 [00:28<10:09,  3.11s/it][A
+
+[submission_v4_best][rank2]:   5%|▍         | 10/205 [00:29<09:45,  3.00s/it][A[A[submission_v4_best][rank0]:   5%|▍         | 10/205 [00:30<09:33,  2.94s/it]
+
+
+[submission_v4_best][rank3]:   4%|▍         | 9/204 [00:29<10:34,  3.25s/it][A[A[A
+[submission_v4_best][rank1]:   5%|▍         | 10/205 [00:31<09:54,  3.05s/it][A
+
+[submission_v4_best][rank2]:   5%|▌         | 11/205 [00:32<09:50,  3.04s/it][A[A[submission_v4_best][rank0]:   5%|▌         | 11/205 [00:33<09:54,  3.07s/it]
+
+
+[submission_v4_best][rank3]:   5%|▍         | 10/204 [00:33<10:28,  3.24s/it][A[A[A
+[submission_v4_best][rank1]:   5%|▌         | 11/205 [00:34<09:51,  3.05s/it][A
+
+[submission_v4_best][rank2]:   6%|▌         | 12/205 [00:35<09:44,  3.03s/it][A[A[submission_v4_best][rank0]:   6%|▌         | 12/205 [00:36<09:40,  3.01s/it]
+
+
+[submission_v4_best][rank3]:   5%|▌         | 11/204 [00:35<10:03,  3.13s/it][A[A[A
+[submission_v4_best][rank1]:   6%|▌         | 12/205 [00:36<09:15,  2.88s/it][A
+
+[submission_v4_best][rank2]:   6%|▋         | 13/205 [00:38<09:50,  3.07s/it][A[A
+
+
+[submission_v4_best][rank3]:   6%|▌         | 12/204 [00:39<10:01,  3.13s/it][A[A[A[submission_v4_best][rank0]:   6%|▋         | 13/205 [00:40<10:11,  3.18s/it]
+[submission_v4_best][rank1]:   6%|▋         | 13/205 [00:39<09:16,  2.90s/it][A
+
+
+[submission_v4_best][rank3]:   6%|▋         | 13/204 [00:41<09:28,  2.97s/it][A[A[A
+
+[submission_v4_best][rank2]:   7%|▋         | 14/205 [00:42<09:57,  3.13s/it][A[A[submission_v4_best][rank0]:   7%|▋         | 14/205 [00:43<10:04,  3.16s/it]
+[submission_v4_best][rank1]:   7%|▋         | 14/205 [00:42<09:21,  2.94s/it][A
+
+
+[submission_v4_best][rank3]:   7%|▋         | 14/204 [00:44<09:35,  3.03s/it][A[A[A
+
+[submission_v4_best][rank2]:   7%|▋         | 15/205 [00:44<09:43,  3.07s/it][A[A[submission_v4_best][rank0]:   7%|▋         | 15/205 [00:46<10:04,  3.18s/it]
+[submission_v4_best][rank1]:   7%|▋         | 15/205 [00:45<09:19,  2.94s/it][A
+
+[submission_v4_best][rank2]:   8%|▊         | 16/205 [00:48<09:43,  3.09s/it][A[A
+
+
+[submission_v4_best][rank3]:   7%|▋         | 15/204 [00:48<09:43,  3.09s/it][A[A[A[submission_v4_best][rank0]:   8%|▊         | 16/205 [00:49<10:04,  3.20s/it]
+[submission_v4_best][rank1]:   8%|▊         | 16/205 [00:49<09:51,  3.13s/it][A
+
+[submission_v4_best][rank2]:   8%|▊         | 17/205 [00:50<08:51,  2.82s/it][A[A
+
+
+[submission_v4_best][rank3]:   8%|▊         | 16/204 [00:51<09:40,  3.09s/it][A[A[A[submission_v4_best][rank0]:   8%|▊         | 17/205 [00:52<09:53,  3.16s/it]
+[submission_v4_best][rank1]:   8%|▊         | 17/205 [00:52<09:50,  3.14s/it][A
+
+[submission_v4_best][rank2]:   9%|▉         | 18/205 [00:53<08:58,  2.88s/it][A[A
+
+
+[submission_v4_best][rank3]:   8%|▊         | 17/204 [00:54<09:25,  3.02s/it][A[A[A[submission_v4_best][rank0]:   9%|▉         | 18/205 [00:55<09:34,  3.07s/it]
+[submission_v4_best][rank1]:   9%|▉         | 18/205 [00:55<09:30,  3.05s/it][A
+
+[submission_v4_best][rank2]:   9%|▉         | 19/205 [00:56<09:12,  2.97s/it][A[A
+
+
+[submission_v4_best][rank3]:   9%|▉         | 18/204 [00:57<09:40,  3.12s/it][A[A[A[submission_v4_best][rank0]:   9%|▉         | 19/205 [00:58<09:40,  3.12s/it]
+[submission_v4_best][rank1]:   9%|▉         | 19/205 [00:58<09:21,  3.02s/it][A
+
+[submission_v4_best][rank2]:  10%|▉         | 20/205 [00:59<09:20,  3.03s/it][A[A
+
+
+[submission_v4_best][rank3]:   9%|▉         | 19/204 [01:00<09:47,  3.18s/it][A[A[A
+[submission_v4_best][rank1]:  10%|▉         | 20/205 [01:01<09:09,  2.97s/it][A[submission_v4_best][rank0]:  10%|▉         | 20/205 [01:02<09:39,  3.13s/it]
+
+[submission_v4_best][rank2]:  10%|█         | 21/205 [01:02<09:31,  3.11s/it][A[A
+
+
+[submission_v4_best][rank3]:  10%|▉         | 20/204 [01:03<09:30,  3.10s/it][A[A[A[submission_v4_best][rank0]:  10%|█         | 21/205 [01:05<09:25,  3.07s/it]
+[submission_v4_best][rank1]:  10%|█         | 21/205 [01:04<09:06,  2.97s/it][A
+
+
+[submission_v4_best][rank3]:  10%|█         | 21/204 [01:05<08:33,  2.81s/it][A[A[A
+
+[submission_v4_best][rank2]:  11%|█         | 22/205 [01:06<09:26,  3.10s/it][A[A[submission_v4_best][rank0]:  11%|█         | 22/205 [01:08<09:21,  3.07s/it]
+[submission_v4_best][rank1]:  11%|█         | 22/205 [01:07<09:09,  3.00s/it][A
+
+[submission_v4_best][rank2]:  11%|█         | 23/205 [01:09<09:29,  3.13s/it][A[A
+
+
+[submission_v4_best][rank3]:  11%|█         | 22/204 [01:09<09:05,  2.99s/it][A[A[A[submission_v4_best][rank0]:  11%|█         | 23/205 [01:10<08:54,  2.94s/it]
+[submission_v4_best][rank1]:  11%|█         | 23/205 [01:10<09:18,  3.07s/it][A
+
+
+[submission_v4_best][rank3]:  11%|█▏        | 23/204 [01:12<08:58,  2.98s/it][A[A[A
+
+[submission_v4_best][rank2]:  12%|█▏        | 24/205 [01:12<09:38,  3.20s/it][A[A[submission_v4_best][rank0]:  12%|█▏        | 24/205 [01:13<08:47,  2.91s/it]
+[submission_v4_best][rank1]:  12%|█▏        | 24/205 [01:13<09:29,  3.15s/it][A[submission_v4_best][rank0]:  12%|█▏        | 25/205 [01:16<08:42,  2.90s/it]
+
+
+[submission_v4_best][rank3]:  12%|█▏        | 24/204 [01:15<09:18,  3.10s/it][A[A[A
+
+[submission_v4_best][rank2]:  12%|█▏        | 25/205 [01:15<09:28,  3.16s/it][A[A
+[submission_v4_best][rank1]:  12%|█▏        | 25/205 [01:16<09:19,  3.11s/it][A[submission_v4_best][rank0]:  13%|█▎        | 26/205 [01:19<08:44,  2.93s/it]
+
+
+[submission_v4_best][rank3]:  12%|█▏        | 25/204 [01:18<09:16,  3.11s/it][A[A[A
+
+[submission_v4_best][rank2]:  13%|█▎        | 26/205 [01:18<09:31,  3.19s/it][A[A
+[submission_v4_best][rank1]:  13%|█▎        | 26/205 [01:19<09:04,  3.04s/it][A[submission_v4_best][rank0]:  13%|█▎        | 27/205 [01:22<08:44,  2.95s/it]
+
+
+[submission_v4_best][rank3]:  13%|█▎        | 26/204 [01:21<09:07,  3.08s/it][A[A[A
+
+[submission_v4_best][rank2]:  13%|█▎        | 27/205 [01:22<09:30,  3.20s/it][A[A
+[submission_v4_best][rank1]:  13%|█▎        | 27/205 [01:22<08:50,  2.98s/it][A
+
+
+[submission_v4_best][rank3]:  13%|█▎        | 27/204 [01:24<08:29,  2.88s/it][A[A[A[submission_v4_best][rank0]:  14%|█▎        | 28/205 [01:25<09:03,  3.07s/it]
+
+[submission_v4_best][rank2]:  14%|█▎        | 28/205 [01:25<09:33,  3.24s/it][A[A
+[submission_v4_best][rank1]:  14%|█▎        | 28/205 [01:25<08:58,  3.04s/it][A
+
+
+[submission_v4_best][rank3]:  14%|█▎        | 28/204 [01:26<08:24,  2.86s/it][A[A[A[submission_v4_best][rank0]:  14%|█▍        | 29/205 [01:28<08:57,  3.06s/it]
+
+[submission_v4_best][rank2]:  14%|█▍        | 29/205 [01:28<09:08,  3.12s/it][A[A
+[submission_v4_best][rank1]:  14%|█▍        | 29/205 [01:28<08:51,  3.02s/it][A
+
+
+[submission_v4_best][rank3]:  14%|█▍        | 29/204 [01:30<08:39,  2.97s/it][A[A[A[submission_v4_best][rank0]:  15%|█▍        | 30/205 [01:31<08:54,  3.05s/it]
+
+[submission_v4_best][rank2]:  15%|█▍        | 30/205 [01:31<09:13,  3.16s/it][A[A
+[submission_v4_best][rank1]:  15%|█▍        | 30/205 [01:31<08:52,  3.04s/it][A
+
+
+[submission_v4_best][rank3]:  15%|█▍        | 30/204 [01:32<08:29,  2.93s/it][A[A[A[submission_v4_best][rank0]:  15%|█▌        | 31/205 [01:35<08:57,  3.09s/it]
+
+[submission_v4_best][rank2]:  15%|█▌        | 31/205 [01:34<09:06,  3.14s/it][A[A
+[submission_v4_best][rank1]:  15%|█▌        | 31/205 [01:34<09:01,  3.11s/it][A
+
+
+[submission_v4_best][rank3]:  15%|█▌        | 31/204 [01:35<08:21,  2.90s/it][A[A[A[submission_v4_best][rank0]:  16%|█▌        | 32/205 [01:37<08:11,  2.84s/it]
+
+[submission_v4_best][rank2]:  16%|█▌        | 32/205 [01:37<09:07,  3.16s/it][A[A
+[submission_v4_best][rank1]:  16%|█▌        | 32/205 [01:37<08:45,  3.04s/it][A
+
+
+[submission_v4_best][rank3]:  16%|█▌        | 32/204 [01:38<08:20,  2.91s/it][A[A[A[submission_v4_best][rank0]:  16%|█▌        | 33/205 [01:40<08:16,  2.89s/it]
+
+[submission_v4_best][rank2]:  16%|█▌        | 33/205 [01:40<08:54,  3.11s/it][A[A
+[submission_v4_best][rank1]:  16%|█▌        | 33/205 [01:41<09:02,  3.15s/it][A
+
+
+[submission_v4_best][rank3]:  16%|█▌        | 33/204 [01:41<08:16,  2.90s/it][A[A[A[submission_v4_best][rank0]:  17%|█▋        | 34/205 [01:43<08:12,  2.88s/it]
+[submission_v4_best][rank1]:  17%|█▋        | 34/205 [01:44<08:48,  3.09s/it][A
+
+[submission_v4_best][rank2]:  17%|█▋        | 34/205 [01:44<09:08,  3.21s/it][A[A
+
+
+[submission_v4_best][rank3]:  17%|█▋        | 34/204 [01:44<08:17,  2.93s/it][A[A[A[submission_v4_best][rank0]:  17%|█▋        | 35/205 [01:46<08:06,  2.86s/it]
+
+[submission_v4_best][rank2]:  17%|█▋        | 35/205 [01:47<08:45,  3.09s/it][A[A
+[submission_v4_best][rank1]:  17%|█▋        | 35/205 [01:47<08:37,  3.05s/it][A
+
+
+[submission_v4_best][rank3]:  17%|█▋        | 35/204 [01:47<08:16,  2.94s/it][A[A[A[submission_v4_best][rank0]:  18%|█▊        | 36/205 [01:48<08:07,  2.89s/it]
+
+
+[submission_v4_best][rank3]:  18%|█▊        | 36/204 [01:49<07:31,  2.68s/it][A[A[A
+
+[submission_v4_best][rank2]:  18%|█▊        | 36/205 [01:50<08:36,  3.06s/it][A[A
+[submission_v4_best][rank1]:  18%|█▊        | 36/205 [01:50<08:41,  3.08s/it][A[submission_v4_best][rank0]:  18%|█▊        | 37/205 [01:51<07:47,  2.78s/it]
+[submission_v4_best][rank1]:  18%|█▊        | 37/205 [01:52<07:56,  2.83s/it][A
+
+
+[submission_v4_best][rank3]:  18%|█▊        | 37/204 [01:52<08:00,  2.88s/it][A[A[A
+
+[submission_v4_best][rank2]:  18%|█▊        | 37/205 [01:53<08:42,  3.11s/it][A[A[submission_v4_best][rank0]:  19%|█▊        | 38/205 [01:54<07:56,  2.85s/it]
+[submission_v4_best][rank1]:  19%|█▊        | 38/205 [01:55<07:38,  2.74s/it][A
+
+[submission_v4_best][rank2]:  19%|█▊        | 38/205 [01:56<08:41,  3.12s/it][A[A
+
+
+[submission_v4_best][rank3]:  19%|█▊        | 38/204 [01:56<08:36,  3.11s/it][A[A[A[submission_v4_best][rank0]:  19%|█▉        | 39/205 [01:57<08:09,  2.95s/it]
+[submission_v4_best][rank1]:  19%|█▉        | 39/205 [01:58<07:46,  2.81s/it][A
+
+[submission_v4_best][rank2]:  19%|█▉        | 39/205 [01:59<08:32,  3.09s/it][A[A
+
+
+[submission_v4_best][rank3]:  19%|█▉        | 39/204 [01:59<08:21,  3.04s/it][A[A[A[submission_v4_best][rank0]:  20%|█▉        | 40/205 [02:00<08:15,  3.00s/it]
+[submission_v4_best][rank1]:  20%|█▉        | 40/205 [02:01<08:12,  2.99s/it][A
+
+[submission_v4_best][rank2]:  20%|█▉        | 40/205 [02:02<08:24,  3.06s/it][A[A
+
+
+[submission_v4_best][rank3]:  20%|█▉        | 40/204 [02:02<08:30,  3.11s/it][A[A[A[submission_v4_best][rank0]:  20%|██        | 41/205 [02:03<08:20,  3.05s/it]
+[submission_v4_best][rank1]:  20%|██        | 41/205 [02:04<08:13,  3.01s/it][A
+
+
+[submission_v4_best][rank3]:  20%|██        | 41/204 [02:05<08:14,  3.03s/it][A[A[A
+
+[submission_v4_best][rank2]:  20%|██        | 41/205 [02:05<08:40,  3.18s/it][A[A[submission_v4_best][rank0]:  20%|██        | 42/205 [02:07<08:21,  3.08s/it]
+[submission_v4_best][rank1]:  20%|██        | 42/205 [02:07<08:20,  3.07s/it][A
+
+[submission_v4_best][rank2]:  20%|██        | 42/205 [02:08<08:03,  2.97s/it][A[A[submission_v4_best][rank0]:  21%|██        | 43/205 [02:09<08:08,  3.01s/it]
+
+
+[submission_v4_best][rank3]:  21%|██        | 42/204 [02:09<08:28,  3.14s/it][A[A[A
+[submission_v4_best][rank1]:  21%|██        | 43/205 [02:10<08:12,  3.04s/it][A
+
+[submission_v4_best][rank2]:  21%|██        | 43/205 [02:11<08:01,  2.97s/it][A[A
+
+
+[submission_v4_best][rank3]:  21%|██        | 43/204 [02:11<08:15,  3.08s/it][A[A[A[submission_v4_best][rank0]:  21%|██▏       | 44/205 [02:12<08:03,  3.00s/it]
+[submission_v4_best][rank1]:  21%|██▏       | 44/205 [02:13<07:58,  2.97s/it][A
+
+[submission_v4_best][rank2]:  21%|██▏       | 44/205 [02:14<07:53,  2.94s/it][A[A
+
+
+[submission_v4_best][rank3]:  22%|██▏       | 44/204 [02:14<08:00,  3.00s/it][A[A[A[submission_v4_best][rank0]:  22%|██▏       | 45/205 [02:16<08:05,  3.03s/it]
+[submission_v4_best][rank1]:  22%|██▏       | 45/205 [02:16<07:47,  2.92s/it][A
+
+[submission_v4_best][rank2]:  22%|██▏       | 45/205 [02:17<07:51,  2.95s/it][A[A
+
+
+[submission_v4_best][rank3]:  22%|██▏       | 45/204 [02:17<07:56,  2.99s/it][A[A[A[submission_v4_best][rank0]:  22%|██▏       | 46/205 [02:19<08:01,  3.03s/it]
+[submission_v4_best][rank1]:  22%|██▏       | 46/205 [02:19<07:50,  2.96s/it][A
+
+[submission_v4_best][rank2]:  22%|██▏       | 46/205 [02:20<07:46,  2.93s/it][A[A
+
+
+[submission_v4_best][rank3]:  23%|██▎       | 46/204 [02:20<08:01,  3.05s/it][A[A[A[submission_v4_best][rank0]:  23%|██▎       | 47/205 [02:22<08:02,  3.05s/it]
+[submission_v4_best][rank1]:  23%|██▎       | 47/205 [02:21<07:09,  2.72s/it][A
+
+[submission_v4_best][rank2]:  23%|██▎       | 47/205 [02:23<07:59,  3.03s/it][A[A
+
+
+[submission_v4_best][rank3]:  23%|██▎       | 47/204 [02:23<07:57,  3.04s/it][A[A[A
+[submission_v4_best][rank1]:  23%|██▎       | 48/205 [02:24<07:19,  2.80s/it][A[submission_v4_best][rank0]:  23%|██▎       | 48/205 [02:25<08:13,  3.14s/it]
+
+[submission_v4_best][rank2]:  23%|██▎       | 48/205 [02:26<08:02,  3.07s/it][A[A
+
+
+[submission_v4_best][rank3]:  24%|██▎       | 48/204 [02:26<07:53,  3.03s/it][A[A[A
+[submission_v4_best][rank1]:  24%|██▍       | 49/205 [02:27<07:31,  2.89s/it][A[submission_v4_best][rank0]:  24%|██▍       | 49/205 [02:28<08:14,  3.17s/it]
+
+[submission_v4_best][rank2]:  24%|██▍       | 49/205 [02:29<08:08,  3.13s/it][A[A
+
+
+[submission_v4_best][rank3]:  24%|██▍       | 49/204 [02:29<07:48,  3.02s/it][A[A[A[submission_v4_best][rank0]:  24%|██▍       | 50/205 [02:31<07:56,  3.07s/it]
+[submission_v4_best][rank1]:  24%|██▍       | 50/205 [02:30<07:45,  3.00s/it][A
+
+[submission_v4_best][rank2]:  24%|██▍       | 50/205 [02:32<07:58,  3.09s/it][A[A
+
+
+[submission_v4_best][rank3]:  25%|██▍       | 50/204 [02:32<07:45,  3.02s/it][A[A[A[submission_v4_best][rank0]:  25%|██▍       | 51/205 [02:35<08:10,  3.18s/it]
+[submission_v4_best][rank1]:  25%|██▍       | 51/205 [02:34<08:00,  3.12s/it][A
+
+[submission_v4_best][rank2]:  25%|██▍       | 51/205 [02:35<07:50,  3.06s/it][A[A
+
+
+[submission_v4_best][rank3]:  25%|██▌       | 51/204 [02:36<07:56,  3.12s/it][A[A[A[submission_v4_best][rank0]:  25%|██▌       | 52/205 [02:37<07:54,  3.10s/it]
+[submission_v4_best][rank1]:  25%|██▌       | 52/205 [02:37<07:51,  3.08s/it][A
+
+[submission_v4_best][rank2]:  25%|██▌       | 52/205 [02:38<07:52,  3.09s/it][A[A
+
+
+[submission_v4_best][rank3]:  25%|██▌       | 52/204 [02:39<07:42,  3.04s/it][A[A[A[submission_v4_best][rank0]:  26%|██▌       | 53/205 [02:40<07:38,  3.02s/it]
+[submission_v4_best][rank1]:  26%|██▌       | 53/205 [02:40<07:35,  3.00s/it][A
+
+[submission_v4_best][rank2]:  26%|██▌       | 53/205 [02:41<07:37,  3.01s/it][A[A
+
+
+[submission_v4_best][rank3]:  26%|██▌       | 53/204 [02:42<07:37,  3.03s/it][A[A[A[submission_v4_best][rank0]:  26%|██▋       | 54/205 [02:44<07:47,  3.09s/it]
+[submission_v4_best][rank1]:  26%|██▋       | 54/205 [02:43<07:31,  2.99s/it][A
+
+[submission_v4_best][rank2]:  26%|██▋       | 54/205 [02:44<07:32,  3.00s/it][A[A
+
+
+[submission_v4_best][rank3]:  26%|██▋       | 54/204 [02:45<07:24,  2.96s/it][A[A[A[submission_v4_best][rank0]:  27%|██▋       | 55/205 [02:46<07:33,  3.02s/it]
+[submission_v4_best][rank1]:  27%|██▋       | 55/205 [02:46<07:35,  3.03s/it][A
+
+[submission_v4_best][rank2]:  27%|██▋       | 55/205 [02:47<07:28,  2.99s/it][A[A
+
+
+[submission_v4_best][rank3]:  27%|██▋       | 55/204 [02:48<07:39,  3.09s/it][A[A[A
+[submission_v4_best][rank1]:  27%|██▋       | 56/205 [02:49<07:26,  3.00s/it][A[submission_v4_best][rank0]:  27%|██▋       | 56/205 [02:50<07:53,  3.18s/it]
+
+[submission_v4_best][rank2]:  27%|██▋       | 56/205 [02:51<07:41,  3.10s/it][A[A
+
+
+[submission_v4_best][rank3]:  27%|██▋       | 56/204 [02:51<07:24,  3.00s/it][A[A[A
+[submission_v4_best][rank1]:  28%|██▊       | 57/205 [02:51<07:11,  2.91s/it][A[submission_v4_best][rank0]:  28%|██▊       | 57/205 [02:54<08:08,  3.30s/it]
+
+[submission_v4_best][rank2]:  28%|██▊       | 57/205 [02:54<07:33,  3.06s/it][A[A
+
+
+[submission_v4_best][rank3]:  28%|██▊       | 57/204 [02:54<07:19,  2.99s/it][A[A[A
+[submission_v4_best][rank1]:  28%|██▊       | 58/205 [02:54<07:12,  2.94s/it][A
+
+
+[submission_v4_best][rank3]:  28%|██▊       | 58/204 [02:56<06:30,  2.67s/it][A[A[A[submission_v4_best][rank0]:  28%|██▊       | 58/205 [02:57<07:58,  3.26s/it]
+
+[submission_v4_best][rank2]:  28%|██▊       | 58/205 [02:57<07:24,  3.02s/it][A[A
+[submission_v4_best][rank1]:  29%|██▉       | 59/205 [02:57<07:14,  2.97s/it][A[submission_v4_best][rank0]:  29%|██▉       | 59/205 [03:00<07:45,  3.19s/it]
+
+
+[submission_v4_best][rank3]:  29%|██▉       | 59/204 [02:59<06:57,  2.88s/it][A[A[A
+[submission_v4_best][rank1]:  29%|██▉       | 60/205 [03:00<07:11,  2.98s/it][A
+
+[submission_v4_best][rank2]:  29%|██▉       | 59/205 [03:00<08:02,  3.30s/it][A[A[submission_v4_best][rank0]:  29%|██▉       | 60/205 [03:03<07:44,  3.20s/it]
+
+
+[submission_v4_best][rank3]:  29%|██▉       | 60/204 [03:02<07:08,  2.98s/it][A[A[A
+[submission_v4_best][rank1]:  30%|██▉       | 61/205 [03:03<07:14,  3.02s/it][A
+
+[submission_v4_best][rank2]:  29%|██▉       | 60/205 [03:04<07:53,  3.27s/it][A[A[submission_v4_best][rank0]:  30%|██▉       | 61/205 [03:06<07:33,  3.15s/it]
+
+
+[submission_v4_best][rank3]:  30%|██▉       | 61/204 [03:05<07:05,  2.98s/it][A[A[A
+
+[submission_v4_best][rank2]:  30%|██▉       | 61/205 [03:07<07:37,  3.18s/it][A[A
+[submission_v4_best][rank1]:  30%|███       | 62/205 [03:07<07:17,  3.06s/it][A
+
+
+[submission_v4_best][rank3]:  30%|███       | 62/204 [03:07<06:24,  2.71s/it][A[A[A[submission_v4_best][rank0]:  30%|███       | 62/205 [03:09<07:22,  3.10s/it]
+
+[submission_v4_best][rank2]:  30%|███       | 62/205 [03:10<07:28,  3.14s/it][A[A
+[submission_v4_best][rank1]:  31%|███       | 63/205 [03:10<07:12,  3.05s/it][A
+
+
+[submission_v4_best][rank3]:  31%|███       | 63/204 [03:10<06:32,  2.78s/it][A[A[A[submission_v4_best][rank0]:  31%|███       | 63/205 [03:12<07:29,  3.16s/it]
+[submission_v4_best][rank1]:  31%|███       | 64/205 [03:12<06:36,  2.81s/it][A
+
+[submission_v4_best][rank2]:  31%|███       | 63/205 [03:12<07:12,  3.05s/it][A[A
+
+
+[submission_v4_best][rank3]:  31%|███▏      | 64/204 [03:13<06:42,  2.88s/it][A[A[A[submission_v4_best][rank0]:  31%|███       | 64/205 [03:15<07:08,  3.04s/it]
+[submission_v4_best][rank1]:  32%|███▏      | 65/205 [03:15<06:35,  2.83s/it][A
+
+[submission_v4_best][rank2]:  31%|███       | 64/205 [03:15<07:01,  2.99s/it][A[A
+
+
+[submission_v4_best][rank3]:  32%|███▏      | 65/204 [03:17<07:07,  3.07s/it][A[A[A[submission_v4_best][rank0]:  32%|███▏      | 65/205 [03:18<07:15,  3.11s/it]
+[submission_v4_best][rank1]:  32%|███▏      | 66/205 [03:18<06:42,  2.90s/it][A
+
+[submission_v4_best][rank2]:  32%|███▏      | 65/205 [03:18<06:56,  2.97s/it][A[A
+
+
+[submission_v4_best][rank3]:  32%|███▏      | 66/204 [03:19<06:24,  2.79s/it][A[A[A[submission_v4_best][rank0]:  32%|███▏      | 66/205 [03:21<07:15,  3.13s/it]
+[submission_v4_best][rank1]:  33%|███▎      | 67/205 [03:21<06:38,  2.88s/it][A
+
+[submission_v4_best][rank2]:  32%|███▏      | 66/205 [03:21<06:51,  2.96s/it][A[A
+
+
+[submission_v4_best][rank3]:  33%|███▎      | 67/204 [03:22<06:52,  3.01s/it][A[A[A[submission_v4_best][rank0]:  33%|███▎      | 67/205 [03:24<07:06,  3.09s/it]
+
+[submission_v4_best][rank2]:  33%|███▎      | 67/205 [03:24<06:44,  2.93s/it][A[A
+[submission_v4_best][rank1]:  33%|███▎      | 68/205 [03:24<06:55,  3.04s/it][A
+
+
+[submission_v4_best][rank3]:  33%|███▎      | 68/204 [03:25<06:12,  2.74s/it][A[A[A
+[submission_v4_best][rank1]:  34%|███▎      | 69/205 [03:26<06:19,  2.79s/it][A[submission_v4_best][rank0]:  33%|███▎      | 68/205 [03:27<06:53,  3.02s/it]
+
+[submission_v4_best][rank2]:  33%|███▎      | 68/205 [03:27<06:34,  2.88s/it][A[A
+
+
+[submission_v4_best][rank3]:  34%|███▍      | 69/204 [03:27<06:12,  2.76s/it][A[A[A[submission_v4_best][rank0]:  34%|███▎      | 69/205 [03:30<06:43,  2.97s/it]
+[submission_v4_best][rank1]:  34%|███▍      | 70/205 [03:30<06:32,  2.91s/it][A
+
+[submission_v4_best][rank2]:  34%|███▎      | 69/205 [03:30<06:30,  2.87s/it][A[A
+
+
+[submission_v4_best][rank3]:  34%|███▍      | 70/204 [03:30<06:17,  2.82s/it][A[A[A[submission_v4_best][rank0]:  34%|███▍      | 70/205 [03:33<06:42,  2.98s/it]
+[submission_v4_best][rank1]:  35%|███▍      | 71/205 [03:32<06:26,  2.88s/it][A
+
+[submission_v4_best][rank2]:  34%|███▍      | 70/205 [03:33<06:29,  2.88s/it][A[A
+
+
+[submission_v4_best][rank3]:  35%|███▍      | 71/204 [03:33<06:15,  2.82s/it][A[A[A[submission_v4_best][rank0]:  35%|███▍      | 71/205 [03:35<06:04,  2.72s/it]
+[submission_v4_best][rank1]:  35%|███▌      | 72/205 [03:34<05:52,  2.65s/it][A
+
+[submission_v4_best][rank2]:  35%|███▍      | 71/205 [03:36<06:49,  3.05s/it][A[A
+
+
+[submission_v4_best][rank3]:  35%|███▌      | 72/204 [03:37<06:36,  3.01s/it][A[A[A[submission_v4_best][rank0]:  35%|███▌      | 72/205 [03:38<06:07,  2.76s/it]
+[submission_v4_best][rank1]:  36%|███▌      | 73/205 [03:38<06:17,  2.86s/it][A
+
+[submission_v4_best][rank2]:  35%|███▌      | 72/205 [03:39<06:48,  3.07s/it][A[A
+
+
+[submission_v4_best][rank3]:  36%|███▌      | 73/204 [03:40<06:49,  3.13s/it][A[A[A[submission_v4_best][rank0]:  36%|███▌      | 73/205 [03:41<06:12,  2.82s/it]
+[submission_v4_best][rank1]:  36%|███▌      | 74/205 [03:40<06:08,  2.81s/it][A
+
+[submission_v4_best][rank2]:  36%|███▌      | 73/205 [03:42<06:43,  3.06s/it][A[A
+
+
+[submission_v4_best][rank3]:  36%|███▋      | 74/204 [03:43<06:33,  3.02s/it][A[A[A[submission_v4_best][rank0]:  36%|███▌      | 74/205 [03:44<06:22,  2.92s/it]
+[submission_v4_best][rank1]:  37%|███▋      | 75/205 [03:44<06:24,  2.96s/it][A
+
+[submission_v4_best][rank2]:  36%|███▌      | 74/205 [03:45<06:50,  3.13s/it][A[A
+
+
+[submission_v4_best][rank3]:  37%|███▋      | 75/204 [03:46<06:25,  2.99s/it][A[A[A[submission_v4_best][rank0]:  37%|███▋      | 75/205 [03:47<06:29,  3.00s/it]
+[submission_v4_best][rank1]:  37%|███▋      | 76/205 [03:47<06:24,  2.98s/it][A
+
+[submission_v4_best][rank2]:  37%|███▋      | 75/205 [03:48<06:41,  3.09s/it][A[A
+
+
+[submission_v4_best][rank3]:  37%|███▋      | 76/204 [03:49<06:20,  2.97s/it][A[A[A[submission_v4_best][rank0]:  37%|███▋      | 76/205 [03:50<06:22,  2.96s/it]
+[submission_v4_best][rank1]:  38%|███▊      | 77/205 [03:50<06:20,  2.97s/it][A
+
+[submission_v4_best][rank2]:  37%|███▋      | 76/205 [03:51<06:13,  2.90s/it][A[A
+
+
+[submission_v4_best][rank3]:  38%|███▊      | 77/204 [03:52<06:16,  2.96s/it][A[A[A[submission_v4_best][rank0]:  38%|███▊      | 77/205 [03:53<06:17,  2.95s/it]
+[submission_v4_best][rank1]:  38%|███▊      | 78/205 [03:53<06:25,  3.04s/it][A
+
+[submission_v4_best][rank2]:  38%|███▊      | 77/205 [03:54<06:17,  2.95s/it][A[A
+
+
+[submission_v4_best][rank3]:  38%|███▊      | 78/204 [03:54<06:11,  2.95s/it][A[A[A[submission_v4_best][rank0]:  38%|███▊      | 78/205 [03:56<06:11,  2.93s/it]
+[submission_v4_best][rank1]:  39%|███▊      | 79/205 [03:56<06:14,  2.97s/it][A
+
+[submission_v4_best][rank2]:  38%|███▊      | 78/205 [03:57<06:10,  2.92s/it][A[A
+
+
+[submission_v4_best][rank3]:  39%|███▊      | 79/204 [03:57<06:11,  2.97s/it][A[A[A[submission_v4_best][rank0]:  39%|███▊      | 79/205 [03:59<06:14,  2.97s/it]
+[submission_v4_best][rank1]:  39%|███▉      | 80/205 [03:59<06:14,  3.00s/it][A
+
+[submission_v4_best][rank2]:  39%|███▊      | 79/205 [04:00<06:08,  2.92s/it][A[A
+
+
+[submission_v4_best][rank3]:  39%|███▉      | 80/204 [04:01<06:28,  3.13s/it][A[A[A
+[submission_v4_best][rank1]:  40%|███▉      | 81/205 [04:02<06:05,  2.95s/it][A[submission_v4_best][rank0]:  39%|███▉      | 80/205 [04:03<06:30,  3.13s/it]
+
+[submission_v4_best][rank2]:  39%|███▉      | 80/205 [04:03<06:03,  2.91s/it][A[A
+
+
+[submission_v4_best][rank3]:  40%|███▉      | 81/204 [04:04<06:23,  3.12s/it][A[A[A[submission_v4_best][rank0]:  40%|███▉      | 81/205 [04:06<06:16,  3.04s/it]
+[submission_v4_best][rank1]:  40%|████      | 82/205 [04:05<06:03,  2.96s/it][A
+
+[submission_v4_best][rank2]:  40%|███▉      | 81/205 [04:06<06:03,  2.93s/it][A[A[submission_v4_best][rank0]:  40%|████      | 82/205 [04:08<06:04,  2.96s/it]
+[submission_v4_best][rank1]:  40%|████      | 83/205 [04:08<06:05,  3.00s/it][A
+
+
+[submission_v4_best][rank3]:  40%|████      | 82/204 [04:08<06:41,  3.29s/it][A[A[A
+
+[submission_v4_best][rank2]:  40%|████      | 82/205 [04:09<06:20,  3.09s/it][A[A[submission_v4_best][rank0]:  40%|████      | 83/205 [04:11<06:01,  2.96s/it]
+[submission_v4_best][rank1]:  41%|████      | 84/205 [04:11<06:02,  2.99s/it][A
+
+
+[submission_v4_best][rank3]:  41%|████      | 83/204 [04:11<06:27,  3.20s/it][A[A[A
+
+[submission_v4_best][rank2]:  40%|████      | 83/205 [04:12<06:11,  3.04s/it][A[A[submission_v4_best][rank0]:  41%|████      | 84/205 [04:14<06:04,  3.01s/it]
+
+
+[submission_v4_best][rank3]:  41%|████      | 84/204 [04:14<06:16,  3.14s/it][A[A[A
+[submission_v4_best][rank1]:  41%|████▏     | 85/205 [04:14<06:08,  3.07s/it][A
+
+[submission_v4_best][rank2]:  41%|████      | 84/205 [04:15<06:00,  2.98s/it][A[A[submission_v4_best][rank0]:  41%|████▏     | 85/205 [04:18<06:12,  3.11s/it]
+[submission_v4_best][rank1]:  42%|████▏     | 86/205 [04:17<06:02,  3.05s/it][A
+
+
+[submission_v4_best][rank3]:  42%|████▏     | 85/204 [04:17<06:16,  3.16s/it][A[A[A
+
+[submission_v4_best][rank2]:  41%|████▏     | 85/205 [04:18<05:57,  2.98s/it][A[A
+
+
+[submission_v4_best][rank3]:  42%|████▏     | 86/204 [04:19<05:48,  2.95s/it][A[A[A[submission_v4_best][rank0]:  42%|████▏     | 86/205 [04:21<06:01,  3.04s/it]
+[submission_v4_best][rank1]:  42%|████▏     | 87/205 [04:20<05:51,  2.98s/it][A
+
+[submission_v4_best][rank2]:  42%|████▏     | 86/205 [04:21<05:48,  2.93s/it][A[A
+
+
+[submission_v4_best][rank3]:  43%|████▎     | 87/204 [04:22<05:46,  2.96s/it][A[A[A[submission_v4_best][rank0]:  42%|████▏     | 87/205 [04:24<05:54,  3.01s/it]
+[submission_v4_best][rank1]:  43%|████▎     | 88/205 [04:23<05:47,  2.97s/it][A
+
+[submission_v4_best][rank2]:  42%|████▏     | 87/205 [04:24<06:04,  3.09s/it][A[A
+
+
+[submission_v4_best][rank3]:  43%|████▎     | 88/204 [04:25<05:36,  2.90s/it][A[A[A[submission_v4_best][rank0]:  43%|████▎     | 88/205 [04:26<05:45,  2.95s/it]
+[submission_v4_best][rank1]:  43%|████▎     | 89/205 [04:26<05:40,  2.94s/it][A
+
+[submission_v4_best][rank2]:  43%|████▎     | 88/205 [04:27<05:50,  3.00s/it][A[A
+[submission_v4_best][rank1]:  44%|████▍     | 90/205 [04:28<05:34,  2.91s/it][A[submission_v4_best][rank0]:  43%|████▎     | 89/205 [04:30<05:49,  3.02s/it]
+
+
+[submission_v4_best][rank3]:  44%|████▎     | 89/204 [04:29<05:51,  3.06s/it][A[A[A
+
+[submission_v4_best][rank2]:  43%|████▎     | 89/205 [04:30<05:44,  2.97s/it][A[A
+
+
+[submission_v4_best][rank3]:  44%|████▍     | 90/204 [04:32<05:43,  3.01s/it][A[A[A[submission_v4_best][rank0]:  44%|████▍     | 90/205 [04:33<05:54,  3.09s/it]
+[submission_v4_best][rank1]:  44%|████▍     | 91/205 [04:32<05:48,  3.06s/it][A
+
+[submission_v4_best][rank2]:  44%|████▍     | 90/205 [04:33<05:47,  3.02s/it][A[A
+
+
+[submission_v4_best][rank3]:  45%|████▍     | 91/204 [04:35<05:44,  3.05s/it][A[A[A[submission_v4_best][rank0]:  44%|████▍     | 91/205 [04:36<05:46,  3.04s/it]
+[submission_v4_best][rank1]:  45%|████▍     | 92/205 [04:35<05:39,  3.00s/it][A
+
+[submission_v4_best][rank2]:  44%|████▍     | 91/205 [04:36<05:42,  3.01s/it][A[A
+
+
+[submission_v4_best][rank3]:  45%|████▌     | 92/204 [04:37<05:03,  2.71s/it][A[A[A[submission_v4_best][rank0]:  45%|████▍     | 92/205 [04:39<05:39,  3.01s/it]
+[submission_v4_best][rank1]:  45%|████▌     | 93/205 [04:38<05:49,  3.12s/it][A
+
+[submission_v4_best][rank2]:  45%|████▍     | 92/205 [04:39<05:35,  2.97s/it][A[A
+
+
+[submission_v4_best][rank3]:  46%|████▌     | 93/204 [04:40<05:22,  2.90s/it][A[A[A[submission_v4_best][rank0]:  45%|████▌     | 93/205 [04:42<05:35,  3.00s/it]
+[submission_v4_best][rank1]:  46%|████▌     | 94/205 [04:41<05:47,  3.13s/it][A
+
+[submission_v4_best][rank2]:  45%|████▌     | 93/205 [04:42<05:34,  2.98s/it][A[A
+
+
+[submission_v4_best][rank3]:  46%|████▌     | 94/204 [04:43<05:25,  2.96s/it][A[A[A[submission_v4_best][rank0]:  46%|████▌     | 94/205 [04:45<05:31,  2.98s/it]
+[submission_v4_best][rank1]:  46%|████▋     | 95/205 [04:44<05:43,  3.12s/it][A
+
+[submission_v4_best][rank2]:  46%|████▌     | 94/205 [04:45<05:29,  2.97s/it][A[A
+
+
+[submission_v4_best][rank3]:  47%|████▋     | 95/204 [04:46<05:28,  3.01s/it][A[A[A[submission_v4_best][rank0]:  46%|████▋     | 95/205 [04:48<05:27,  2.98s/it]
+[submission_v4_best][rank1]:  47%|████▋     | 96/205 [04:47<05:34,  3.07s/it][A
+
+[submission_v4_best][rank2]:  46%|████▋     | 95/205 [04:47<05:16,  2.87s/it][A[A
+
+
+[submission_v4_best][rank3]:  47%|████▋     | 96/204 [04:49<05:11,  2.89s/it][A[A[A[submission_v4_best][rank0]:  47%|████▋     | 96/205 [04:50<05:20,  2.94s/it]
+[submission_v4_best][rank1]:  47%|████▋     | 97/205 [04:50<05:25,  3.02s/it][A
+
+[submission_v4_best][rank2]:  47%|████▋     | 96/205 [04:51<05:21,  2.95s/it][A[A
+
+
+[submission_v4_best][rank3]:  48%|████▊     | 97/204 [04:52<05:12,  2.92s/it][A[A[A[submission_v4_best][rank0]:  47%|████▋     | 97/205 [04:53<05:17,  2.94s/it]
+
+[submission_v4_best][rank2]:  47%|████▋     | 97/205 [04:53<05:14,  2.91s/it][A[A
+[submission_v4_best][rank1]:  48%|████▊     | 98/205 [04:54<05:33,  3.11s/it][A
+
+
+[submission_v4_best][rank3]:  48%|████▊     | 98/204 [04:54<04:55,  2.79s/it][A[A[A[submission_v4_best][rank0]:  48%|████▊     | 98/205 [04:57<05:28,  3.07s/it]
+[submission_v4_best][rank1]:  48%|████▊     | 99/205 [04:56<05:13,  2.96s/it][A
+
+[submission_v4_best][rank2]:  48%|████▊     | 98/205 [04:56<05:13,  2.93s/it][A[A
+
+
+[submission_v4_best][rank3]:  49%|████▊     | 99/204 [04:57<04:58,  2.84s/it][A[A[A[submission_v4_best][rank0]:  48%|████▊     | 99/205 [05:00<05:21,  3.03s/it]
+
+[submission_v4_best][rank2]:  48%|████▊     | 99/205 [04:59<05:06,  2.89s/it][A[A
+[submission_v4_best][rank1]:  49%|████▉     | 100/205 [05:00<05:22,  3.07s/it][A
+
+
+[submission_v4_best][rank3]:  49%|████▉     | 100/204 [05:00<04:53,  2.82s/it][A[A[A[submission_v4_best][rank0]:  49%|████▉     | 100/205 [05:03<05:22,  3.07s/it]
+
+[submission_v4_best][rank2]:  49%|████▉     | 100/205 [05:02<05:14,  2.99s/it][A[A
+[submission_v4_best][rank1]:  49%|████▉     | 101/205 [05:03<05:31,  3.19s/it][A
+
+
+[submission_v4_best][rank3]:  50%|████▉     | 101/204 [05:03<05:02,  2.94s/it][A[A[A[submission_v4_best][rank0]:  49%|████▉     | 101/205 [05:06<05:27,  3.15s/it]
+
+[submission_v4_best][rank2]:  49%|████▉     | 101/205 [05:06<05:20,  3.08s/it][A[A
+[submission_v4_best][rank1]:  50%|████▉     | 102/205 [05:07<05:41,  3.31s/it][A
+
+
+[submission_v4_best][rank3]:  50%|█████     | 102/204 [05:07<05:22,  3.17s/it][A[A[A[submission_v4_best][rank0]:  50%|████▉     | 102/205 [05:09<05:19,  3.10s/it]
+
+[submission_v4_best][rank2]:  50%|████▉     | 102/205 [05:09<05:13,  3.04s/it][A[A
+
+
+[submission_v4_best][rank3]:  50%|█████     | 103/204 [05:09<05:01,  2.98s/it][A[A[A
+[submission_v4_best][rank1]:  50%|█████     | 103/205 [05:10<05:28,  3.22s/it][A[submission_v4_best][rank0]:  50%|█████     | 103/205 [05:12<05:08,  3.02s/it]
+
+[submission_v4_best][rank2]:  50%|█████     | 103/205 [05:11<05:03,  2.98s/it][A[A
+
+
+[submission_v4_best][rank3]:  51%|█████     | 104/204 [05:12<04:59,  3.00s/it][A[A[A
+[submission_v4_best][rank1]:  51%|█████     | 104/205 [05:12<05:15,  3.13s/it][A[submission_v4_best][rank0]:  51%|█████     | 104/205 [05:15<05:04,  3.01s/it]
+
+[submission_v4_best][rank2]:  51%|█████     | 104/205 [05:15<05:03,  3.00s/it][A[A
+[submission_v4_best][rank1]:  51%|█████     | 105/205 [05:15<05:07,  3.07s/it][A
+
+
+[submission_v4_best][rank3]:  51%|█████▏    | 105/204 [05:16<05:07,  3.11s/it][A[A[A[submission_v4_best][rank0]:  51%|█████     | 105/205 [05:18<04:55,  2.96s/it]
+
+[submission_v4_best][rank2]:  51%|█████     | 105/205 [05:17<04:58,  2.99s/it][A[A
+[submission_v4_best][rank1]:  52%|█████▏    | 106/205 [05:19<05:11,  3.15s/it][A
+
+
+[submission_v4_best][rank3]:  52%|█████▏    | 106/204 [05:19<04:59,  3.06s/it][A[A[A[submission_v4_best][rank0]:  52%|█████▏    | 106/205 [05:21<05:06,  3.09s/it]
+
+[submission_v4_best][rank2]:  52%|█████▏    | 106/205 [05:20<04:53,  2.97s/it][A[A
+[submission_v4_best][rank1]:  52%|█████▏    | 107/205 [05:22<04:57,  3.03s/it][A
+
+
+[submission_v4_best][rank3]:  52%|█████▏    | 107/204 [05:22<05:02,  3.12s/it][A[A[A[submission_v4_best][rank0]:  52%|█████▏    | 107/205 [05:24<04:54,  3.00s/it]
+
+[submission_v4_best][rank2]:  52%|█████▏    | 107/205 [05:23<04:47,  2.93s/it][A[A
+[submission_v4_best][rank1]:  53%|█████▎    | 108/205 [05:25<05:03,  3.13s/it][A
+
+
+[submission_v4_best][rank3]:  53%|█████▎    | 108/204 [05:26<05:16,  3.29s/it][A[A[A[submission_v4_best][rank0]:  53%|█████▎    | 108/205 [05:27<04:49,  2.98s/it]
+
+[submission_v4_best][rank2]:  53%|█████▎    | 108/205 [05:27<05:07,  3.17s/it][A[A
+
+
+[submission_v4_best][rank3]:  53%|█████▎    | 109/204 [05:28<04:37,  2.92s/it][A[A[A
+[submission_v4_best][rank1]:  53%|█████▎    | 109/205 [05:28<05:08,  3.21s/it][A[submission_v4_best][rank0]:  53%|█████▎    | 109/205 [05:30<04:41,  2.93s/it]
+
+[submission_v4_best][rank2]:  53%|█████▎    | 109/205 [05:30<04:53,  3.06s/it][A[A
+
+
+[submission_v4_best][rank3]:  54%|█████▍    | 110/204 [05:31<04:36,  2.94s/it][A[A[A
+[submission_v4_best][rank1]:  54%|█████▎    | 110/205 [05:31<05:00,  3.16s/it][A[submission_v4_best][rank0]:  54%|█████▎    | 110/205 [05:33<04:39,  2.94s/it]
+
+[submission_v4_best][rank2]:  54%|█████▎    | 110/205 [05:33<04:48,  3.04s/it][A[A
+
+
+[submission_v4_best][rank3]:  54%|█████▍    | 111/204 [05:34<04:30,  2.91s/it][A[A[A
+[submission_v4_best][rank1]:  54%|█████▍    | 111/205 [05:34<04:51,  3.10s/it][A[submission_v4_best][rank0]:  54%|█████▍    | 111/205 [05:36<04:36,  2.94s/it]
+
+[submission_v4_best][rank2]:  54%|█████▍    | 111/205 [05:36<04:46,  3.05s/it][A[A
+
+
+[submission_v4_best][rank3]:  55%|█████▍    | 112/204 [05:37<04:29,  2.93s/it][A[A[A
+[submission_v4_best][rank1]:  55%|█████▍    | 112/205 [05:37<04:45,  3.07s/it][A
+
+[submission_v4_best][rank2]:  55%|█████▍    | 112/205 [05:38<04:20,  2.80s/it][A[A[submission_v4_best][rank0]:  55%|█████▍    | 112/205 [05:39<04:54,  3.17s/it]
+
+
+[submission_v4_best][rank3]:  55%|█████▌    | 113/204 [05:39<04:24,  2.90s/it][A[A[A
+[submission_v4_best][rank1]:  55%|█████▌    | 113/205 [05:40<04:46,  3.11s/it][A
+
+[submission_v4_best][rank2]:  55%|█████▌    | 113/205 [05:41<04:18,  2.81s/it][A[A[submission_v4_best][rank0]:  55%|█████▌    | 113/205 [05:42<04:46,  3.12s/it]
+
+
+[submission_v4_best][rank3]:  56%|█████▌    | 114/204 [05:43<04:39,  3.11s/it][A[A[A
+[submission_v4_best][rank1]:  56%|█████▌    | 114/205 [05:43<04:34,  3.02s/it][A
+
+[submission_v4_best][rank2]:  56%|█████▌    | 114/205 [05:44<04:32,  2.99s/it][A[A[submission_v4_best][rank0]:  56%|█████▌    | 114/205 [05:46<04:52,  3.21s/it]
+
+
+[submission_v4_best][rank3]:  56%|█████▋    | 115/204 [05:46<04:34,  3.08s/it][A[A[A
+[submission_v4_best][rank1]:  56%|█████▌    | 115/205 [05:46<04:29,  2.99s/it][A
+
+[submission_v4_best][rank2]:  56%|█████▌    | 115/205 [05:47<04:25,  2.95s/it][A[A[submission_v4_best][rank0]:  56%|█████▌    | 115/205 [05:49<04:45,  3.17s/it]
+
+
+[submission_v4_best][rank3]:  57%|█████▋    | 116/204 [05:49<04:28,  3.05s/it][A[A[A
+[submission_v4_best][rank1]:  57%|█████▋    | 116/205 [05:49<04:23,  2.96s/it][A
+
+[submission_v4_best][rank2]:  57%|█████▋    | 116/205 [05:50<04:18,  2.91s/it][A[A[submission_v4_best][rank0]:  57%|█████▋    | 116/205 [05:52<04:47,  3.23s/it]
+
+
+[submission_v4_best][rank3]:  57%|█████▋    | 117/204 [05:52<04:21,  3.00s/it][A[A[A
+[submission_v4_best][rank1]:  57%|█████▋    | 117/205 [05:52<04:22,  2.98s/it][A
+
+[submission_v4_best][rank2]:  57%|█████▋    | 117/205 [05:53<04:16,  2.92s/it][A[A[submission_v4_best][rank0]:  57%|█████▋    | 117/205 [05:55<04:35,  3.13s/it]
+[submission_v4_best][rank1]:  58%|█████▊    | 118/205 [05:55<04:11,  2.89s/it][A
+
+
+[submission_v4_best][rank3]:  58%|█████▊    | 118/204 [05:55<04:24,  3.08s/it][A[A[A
+
+[submission_v4_best][rank2]:  58%|█████▊    | 118/205 [05:56<04:14,  2.92s/it][A[A[submission_v4_best][rank0]:  58%|█████▊    | 118/205 [05:58<04:23,  3.02s/it]
+[submission_v4_best][rank1]:  58%|█████▊    | 119/205 [05:58<04:17,  2.99s/it][A
+
+
+[submission_v4_best][rank3]:  58%|█████▊    | 119/204 [05:59<04:28,  3.16s/it][A[A[A
+
+[submission_v4_best][rank2]:  58%|█████▊    | 119/205 [05:59<04:11,  2.93s/it][A[A[submission_v4_best][rank0]:  58%|█████▊    | 119/205 [06:01<04:25,  3.09s/it]
+[submission_v4_best][rank1]:  59%|█████▊    | 120/205 [06:01<04:16,  3.02s/it][A
+
+
+[submission_v4_best][rank3]:  59%|█████▉    | 120/204 [06:02<04:25,  3.16s/it][A[A[A
+
+[submission_v4_best][rank2]:  59%|█████▊    | 120/205 [06:02<04:11,  2.96s/it][A[A[submission_v4_best][rank0]:  59%|█████▊    | 120/205 [06:04<04:27,  3.15s/it]
+[submission_v4_best][rank1]:  59%|█████▉    | 121/205 [06:04<04:17,  3.06s/it][A
+
+
+[submission_v4_best][rank3]:  59%|█████▉    | 121/204 [06:04<04:12,  3.05s/it][A[A[A
+
+[submission_v4_best][rank2]:  59%|█████▉    | 121/205 [06:05<04:05,  2.92s/it][A[A[submission_v4_best][rank0]:  59%|█████▉    | 121/205 [06:08<04:26,  3.17s/it]
+[submission_v4_best][rank1]:  60%|█████▉    | 122/205 [06:07<04:17,  3.10s/it][A
+
+
+[submission_v4_best][rank3]:  60%|█████▉    | 122/204 [06:08<04:12,  3.08s/it][A[A[A
+
+[submission_v4_best][rank2]:  60%|█████▉    | 122/205 [06:08<04:06,  2.96s/it][A[A[submission_v4_best][rank0]:  60%|█████▉    | 122/205 [06:10<04:14,  3.06s/it]
+[submission_v4_best][rank1]:  60%|██████    | 123/205 [06:10<04:09,  3.04s/it][A
+
+
+[submission_v4_best][rank3]:  60%|██████    | 123/204 [06:11<04:07,  3.06s/it][A[A[A
+
+[submission_v4_best][rank2]:  60%|██████    | 123/205 [06:11<04:15,  3.11s/it][A[A[submission_v4_best][rank0]:  60%|██████    | 123/205 [06:13<04:02,  2.96s/it]
+
+
+[submission_v4_best][rank3]:  61%|██████    | 124/204 [06:13<03:49,  2.87s/it][A[A[A
+[submission_v4_best][rank1]:  60%|██████    | 124/205 [06:14<04:09,  3.08s/it][A
+
+[submission_v4_best][rank2]:  60%|██████    | 124/205 [06:14<04:12,  3.12s/it][A[A[submission_v4_best][rank0]:  60%|██████    | 124/205 [06:16<04:01,  2.98s/it]
+
+
+[submission_v4_best][rank3]:  61%|██████▏   | 125/204 [06:16<03:46,  2.87s/it][A[A[A
+[submission_v4_best][rank1]:  61%|██████    | 125/205 [06:17<04:08,  3.11s/it][A
+
+[submission_v4_best][rank2]:  61%|██████    | 125/205 [06:17<04:08,  3.11s/it][A[A[submission_v4_best][rank0]:  61%|██████    | 125/205 [06:19<03:59,  3.00s/it]
+
+
+[submission_v4_best][rank3]:  62%|██████▏   | 126/204 [06:19<03:42,  2.86s/it][A[A[A
+[submission_v4_best][rank1]:  61%|██████▏   | 126/205 [06:20<04:04,  3.09s/it][A
+
+[submission_v4_best][rank2]:  61%|██████▏   | 126/205 [06:21<04:06,  3.13s/it][A[A[submission_v4_best][rank0]:  61%|██████▏   | 126/205 [06:22<03:59,  3.03s/it]
+
+
+[submission_v4_best][rank3]:  62%|██████▏   | 127/204 [06:22<03:42,  2.89s/it][A[A[A
+[submission_v4_best][rank1]:  62%|██████▏   | 127/205 [06:23<03:54,  3.01s/it][A
+
+[submission_v4_best][rank2]:  62%|██████▏   | 127/205 [06:23<03:58,  3.06s/it][A[A[submission_v4_best][rank0]:  62%|██████▏   | 127/205 [06:25<03:54,  3.01s/it]
+
+
+[submission_v4_best][rank3]:  63%|██████▎   | 128/204 [06:25<03:43,  2.94s/it][A[A[A
+[submission_v4_best][rank1]:  62%|██████▏   | 128/205 [06:26<03:50,  2.99s/it][A
+
+[submission_v4_best][rank2]:  62%|██████▏   | 128/205 [06:26<03:54,  3.04s/it][A[A[submission_v4_best][rank0]:  62%|██████▏   | 128/205 [06:28<03:46,  2.94s/it]
+
+
+[submission_v4_best][rank3]:  63%|██████▎   | 129/204 [06:28<03:55,  3.14s/it][A[A[A
+[submission_v4_best][rank1]:  63%|██████▎   | 129/205 [06:29<03:47,  2.99s/it][A
+
+[submission_v4_best][rank2]:  63%|██████▎   | 129/205 [06:30<03:52,  3.06s/it][A[A[submission_v4_best][rank0]:  63%|██████▎   | 129/205 [06:31<03:52,  3.06s/it]
+
+
+[submission_v4_best][rank3]:  64%|██████▎   | 130/204 [06:31<03:46,  3.05s/it][A[A[A
+[submission_v4_best][rank1]:  63%|██████▎   | 130/205 [06:32<03:56,  3.15s/it][A
+
+[submission_v4_best][rank2]:  63%|██████▎   | 130/205 [06:32<03:44,  3.00s/it][A[A[submission_v4_best][rank0]:  63%|██████▎   | 130/205 [06:34<03:46,  3.03s/it]
+[submission_v4_best][rank1]:  64%|██████▍   | 131/205 [06:34<03:28,  2.82s/it][A
+
+
+[submission_v4_best][rank3]:  64%|██████▍   | 131/204 [06:34<03:39,  3.01s/it][A[A[A
+
+[submission_v4_best][rank2]:  64%|██████▍   | 131/205 [06:35<03:33,  2.88s/it][A[A[submission_v4_best][rank0]:  64%|██████▍   | 131/205 [06:38<03:47,  3.07s/it]
+
+
+[submission_v4_best][rank3]:  65%|██████▍   | 132/204 [06:37<03:31,  2.94s/it][A[A[A
+[submission_v4_best][rank1]:  64%|██████▍   | 132/205 [06:37<03:29,  2.87s/it][A
+
+[submission_v4_best][rank2]:  64%|██████▍   | 132/205 [06:39<03:50,  3.15s/it][A[A[submission_v4_best][rank0]:  64%|██████▍   | 132/205 [06:40<03:40,  3.02s/it]
+
+
+[submission_v4_best][rank3]:  65%|██████▌   | 133/204 [06:40<03:38,  3.07s/it][A[A[A
+[submission_v4_best][rank1]:  65%|██████▍   | 133/205 [06:40<03:35,  2.99s/it][A
+
+[submission_v4_best][rank2]:  65%|██████▍   | 133/205 [06:42<03:45,  3.13s/it][A[A[submission_v4_best][rank0]:  65%|██████▍   | 133/205 [06:43<03:33,  2.97s/it]
+[submission_v4_best][rank1]:  65%|██████▌   | 134/205 [06:43<03:31,  2.98s/it][A
+
+
+[submission_v4_best][rank3]:  66%|██████▌   | 134/204 [06:44<03:39,  3.14s/it][A[A[A
+
+[submission_v4_best][rank2]:  65%|██████▌   | 134/205 [06:45<03:46,  3.19s/it][A[A[submission_v4_best][rank0]:  65%|██████▌   | 134/205 [06:47<03:41,  3.12s/it]
+[submission_v4_best][rank1]:  66%|██████▌   | 135/205 [06:46<03:26,  2.95s/it][A
+
+
+[submission_v4_best][rank3]:  66%|██████▌   | 135/204 [06:47<03:34,  3.11s/it][A[A[A
+
+[submission_v4_best][rank2]:  66%|██████▌   | 135/205 [06:48<03:38,  3.12s/it][A[A
+[submission_v4_best][rank1]:  66%|██████▋   | 136/205 [06:49<03:22,  2.93s/it][A[submission_v4_best][rank0]:  66%|██████▌   | 135/205 [06:50<03:44,  3.21s/it]
+
+
+[submission_v4_best][rank3]:  67%|██████▋   | 136/204 [06:50<03:27,  3.05s/it][A[A[A
+
+[submission_v4_best][rank2]:  66%|██████▋   | 136/205 [06:51<03:31,  3.07s/it][A[A[submission_v4_best][rank0]:  66%|██████▋   | 136/205 [06:53<03:34,  3.11s/it]
+[submission_v4_best][rank1]:  67%|██████▋   | 137/205 [06:53<03:31,  3.11s/it][A
+
+
+[submission_v4_best][rank3]:  67%|██████▋   | 137/204 [06:53<03:25,  3.06s/it][A[A[A
+
+[submission_v4_best][rank2]:  67%|██████▋   | 137/205 [06:54<03:18,  2.93s/it][A[A[submission_v4_best][rank0]:  67%|██████▋   | 137/205 [06:56<03:32,  3.12s/it]
+
+
+[submission_v4_best][rank3]:  68%|██████▊   | 138/204 [06:56<03:23,  3.08s/it][A[A[A
+[submission_v4_best][rank1]:  67%|██████▋   | 138/205 [06:56<03:33,  3.19s/it][A
+
+[submission_v4_best][rank2]:  67%|██████▋   | 138/205 [06:57<03:17,  2.95s/it][A[A[submission_v4_best][rank0]:  67%|██████▋   | 138/205 [06:59<03:13,  2.88s/it]
+
+
+[submission_v4_best][rank3]:  68%|██████▊   | 139/204 [06:59<03:18,  3.06s/it][A[A[A
+[submission_v4_best][rank1]:  68%|██████▊   | 139/205 [07:00<03:38,  3.31s/it][A
+
+[submission_v4_best][rank2]:  68%|██████▊   | 139/205 [07:00<03:16,  2.98s/it][A[A[submission_v4_best][rank0]:  68%|██████▊   | 139/205 [07:01<03:11,  2.90s/it]
+
+
+[submission_v4_best][rank3]:  69%|██████▊   | 140/204 [07:02<03:19,  3.12s/it][A[A[A
+[submission_v4_best][rank1]:  68%|██████▊   | 140/205 [07:03<03:28,  3.20s/it][A
+
+[submission_v4_best][rank2]:  68%|██████▊   | 140/205 [07:03<03:14,  2.99s/it][A[A[submission_v4_best][rank0]:  68%|██████▊   | 140/205 [07:04<03:09,  2.91s/it]
+
+
+[submission_v4_best][rank3]:  69%|██████▉   | 141/204 [07:06<03:26,  3.28s/it][A[A[A
+
+[submission_v4_best][rank2]:  69%|██████▉   | 141/205 [07:06<03:13,  3.03s/it][A[A
+[submission_v4_best][rank1]:  69%|██████▉   | 141/205 [07:06<03:26,  3.23s/it][A[submission_v4_best][rank0]:  69%|██████▉   | 141/205 [07:07<03:04,  2.88s/it]
+[submission_v4_best][rank1]:  69%|██████▉   | 142/205 [07:08<03:08,  3.00s/it][A
+
+
+[submission_v4_best][rank3]:  70%|██████▉   | 142/204 [07:09<03:15,  3.15s/it][A[A[A
+
+[submission_v4_best][rank2]:  69%|██████▉   | 142/205 [07:09<03:11,  3.04s/it][A[A[submission_v4_best][rank0]:  69%|██████▉   | 142/205 [07:10<03:02,  2.89s/it]
+
+
+[submission_v4_best][rank3]:  70%|███████   | 143/204 [07:11<03:05,  3.05s/it][A[A[A
+[submission_v4_best][rank1]:  70%|██████▉   | 143/205 [07:12<03:13,  3.12s/it][A[submission_v4_best][rank0]:  70%|██████▉   | 143/205 [07:13<02:58,  2.87s/it]
+
+[submission_v4_best][rank2]:  70%|██████▉   | 143/205 [07:12<03:11,  3.08s/it][A[A
+
+
+[submission_v4_best][rank3]:  71%|███████   | 144/204 [07:14<03:00,  3.01s/it][A[A[A
+[submission_v4_best][rank1]:  70%|███████   | 144/205 [07:15<03:05,  3.03s/it][A
+
+[submission_v4_best][rank2]:  70%|███████   | 144/205 [07:15<03:02,  3.00s/it][A[A[submission_v4_best][rank0]:  70%|███████   | 144/205 [07:16<03:02,  3.00s/it][submission_v4_best][rank0]:  71%|███████   | 145/205 [07:18<02:42,  2.70s/it]
+[submission_v4_best][rank1]:  71%|███████   | 145/205 [07:17<03:00,  3.01s/it][A
+
+
+[submission_v4_best][rank3]:  71%|███████   | 145/204 [07:18<03:08,  3.20s/it][A[A[A
+
+[submission_v4_best][rank2]:  71%|███████   | 145/205 [07:19<03:14,  3.24s/it][A[A[submission_v4_best][rank0]:  71%|███████   | 146/205 [07:22<02:55,  2.97s/it]
+[submission_v4_best][rank1]:  71%|███████   | 146/205 [07:21<03:07,  3.19s/it][A
+
+
+[submission_v4_best][rank3]:  72%|███████▏  | 146/204 [07:22<03:13,  3.34s/it][A[A[A
+
+[submission_v4_best][rank2]:  71%|███████   | 146/205 [07:22<03:18,  3.36s/it][A[A[submission_v4_best][rank0]:  72%|███████▏  | 147/205 [07:26<03:06,  3.21s/it]
+[submission_v4_best][rank1]:  72%|███████▏  | 147/205 [07:25<03:15,  3.38s/it][A
+
+
+[submission_v4_best][rank3]:  72%|███████▏  | 147/204 [07:25<03:16,  3.45s/it][A[A[A
+
+[submission_v4_best][rank2]:  72%|███████▏  | 147/205 [07:26<03:24,  3.52s/it][A[A[submission_v4_best][rank0]:  72%|███████▏  | 148/205 [07:29<03:08,  3.31s/it]
+[submission_v4_best][rank1]:  72%|███████▏  | 148/205 [07:28<03:15,  3.44s/it][A
+
+
+[submission_v4_best][rank3]:  73%|███████▎  | 148/204 [07:29<03:15,  3.50s/it][A[A[A
+
+[submission_v4_best][rank2]:  72%|███████▏  | 148/205 [07:30<03:22,  3.56s/it][A[A
+[submission_v4_best][rank1]:  73%|███████▎  | 149/205 [07:32<03:17,  3.52s/it][A[submission_v4_best][rank0]:  73%|███████▎  | 149/205 [07:33<03:16,  3.51s/it]
+
+
+[submission_v4_best][rank3]:  73%|███████▎  | 149/204 [07:33<03:21,  3.66s/it][A[A[A
+
+[submission_v4_best][rank2]:  73%|███████▎  | 149/205 [07:34<03:22,  3.61s/it][A[A[submission_v4_best][rank0]:  73%|███████▎  | 150/205 [07:37<03:14,  3.54s/it]
+[submission_v4_best][rank1]:  73%|███████▎  | 150/205 [07:36<03:17,  3.59s/it][A
+
+
+[submission_v4_best][rank3]:  74%|███████▎  | 150/204 [07:37<03:18,  3.68s/it][A[A[A
+
+[submission_v4_best][rank2]:  73%|███████▎  | 150/205 [07:37<03:21,  3.67s/it][A[A
+[submission_v4_best][rank1]:  74%|███████▎  | 151/205 [07:40<03:14,  3.61s/it][A[submission_v4_best][rank0]:  74%|███████▎  | 151/205 [07:41<03:14,  3.61s/it]
+
+
+[submission_v4_best][rank3]:  74%|███████▍  | 151/204 [07:40<03:13,  3.65s/it][A[A[A
+
+[submission_v4_best][rank2]:  74%|███████▎  | 151/205 [07:42<03:24,  3.79s/it][A[A[submission_v4_best][rank0]:  74%|███████▍  | 152/205 [07:44<03:14,  3.67s/it]
+[submission_v4_best][rank1]:  74%|███████▍  | 152/205 [07:44<03:16,  3.71s/it][A
+
+
+[submission_v4_best][rank3]:  75%|███████▍  | 152/204 [07:44<03:11,  3.68s/it][A[A[A
+
+[submission_v4_best][rank2]:  74%|███████▍  | 152/205 [07:45<03:18,  3.74s/it][A[A[submission_v4_best][rank0]:  75%|███████▍  | 153/205 [07:48<03:11,  3.68s/it]
+[submission_v4_best][rank1]:  75%|███████▍  | 153/205 [07:47<03:10,  3.67s/it][A
+
+
+[submission_v4_best][rank3]:  75%|███████▌  | 153/204 [07:48<03:08,  3.69s/it][A[A[A
+
+[submission_v4_best][rank2]:  75%|███████▍  | 153/205 [07:49<03:16,  3.78s/it][A[A[submission_v4_best][rank0]:  75%|███████▌  | 154/205 [07:52<03:07,  3.67s/it]
+[submission_v4_best][rank1]:  75%|███████▌  | 154/205 [07:51<03:10,  3.74s/it][A
+
+
+[submission_v4_best][rank3]:  75%|███████▌  | 154/204 [07:52<03:07,  3.74s/it][A[A[A
+
+[submission_v4_best][rank2]:  75%|███████▌  | 154/205 [07:53<03:09,  3.71s/it][A[A
+[submission_v4_best][rank1]:  76%|███████▌  | 155/205 [07:55<03:03,  3.68s/it][A[submission_v4_best][rank0]:  76%|███████▌  | 155/205 [07:56<03:07,  3.74s/it]
+
+
+[submission_v4_best][rank3]:  76%|███████▌  | 155/204 [07:55<03:03,  3.74s/it][A[A[A
+
+[submission_v4_best][rank2]:  76%|███████▌  | 155/205 [07:56<03:02,  3.66s/it][A[A
+[submission_v4_best][rank1]:  76%|███████▌  | 156/205 [07:58<03:02,  3.72s/it][A[submission_v4_best][rank0]:  76%|███████▌  | 156/205 [07:59<03:03,  3.75s/it]
+
+
+[submission_v4_best][rank3]:  76%|███████▋  | 156/204 [07:59<02:58,  3.72s/it][A[A[A
+
+[submission_v4_best][rank2]:  76%|███████▌  | 156/205 [08:00<02:59,  3.67s/it][A[A
+[submission_v4_best][rank1]:  77%|███████▋  | 157/205 [08:02<02:56,  3.67s/it][A[submission_v4_best][rank0]:  77%|███████▋  | 157/205 [08:03<02:59,  3.73s/it]
+
+
+[submission_v4_best][rank3]:  77%|███████▋  | 157/204 [08:03<02:54,  3.70s/it][A[A[A
+
+[submission_v4_best][rank2]:  77%|███████▋  | 157/205 [08:03<02:54,  3.64s/it][A[A[submission_v4_best][rank0]:  77%|███████▋  | 158/205 [08:07<02:54,  3.71s/it]
+[submission_v4_best][rank1]:  77%|███████▋  | 158/205 [08:06<02:55,  3.73s/it][A
+
+
+[submission_v4_best][rank3]:  77%|███████▋  | 158/204 [08:06<02:48,  3.65s/it][A[A[A
+
+[submission_v4_best][rank2]:  77%|███████▋  | 158/205 [08:07<02:49,  3.61s/it][A[A
+[submission_v4_best][rank1]:  78%|███████▊  | 159/205 [08:09<02:48,  3.67s/it][A[submission_v4_best][rank0]:  78%|███████▊  | 159/205 [08:10<02:49,  3.68s/it]
+
+
+[submission_v4_best][rank3]:  78%|███████▊  | 159/204 [08:10<02:46,  3.70s/it][A[A[A
+
+[submission_v4_best][rank2]:  78%|███████▊  | 159/205 [08:11<02:49,  3.68s/it][A[A
+[submission_v4_best][rank1]:  78%|███████▊  | 160/205 [08:13<02:46,  3.70s/it][A[submission_v4_best][rank0]:  78%|███████▊  | 160/205 [08:14<02:47,  3.71s/it]
+
+
+[submission_v4_best][rank3]:  78%|███████▊  | 160/204 [08:14<02:43,  3.71s/it][A[A[A
+
+[submission_v4_best][rank2]:  78%|███████▊  | 160/205 [08:14<02:45,  3.67s/it][A[A
+[submission_v4_best][rank1]:  79%|███████▊  | 161/205 [08:17<02:42,  3.70s/it][A[submission_v4_best][rank0]:  79%|███████▊  | 161/205 [08:18<02:42,  3.69s/it]
+
+
+[submission_v4_best][rank3]:  79%|███████▉  | 161/204 [08:17<02:38,  3.69s/it][A[A[A
+
+[submission_v4_best][rank2]:  79%|███████▊  | 161/205 [08:18<02:39,  3.64s/it][A[A
+[submission_v4_best][rank1]:  79%|███████▉  | 162/205 [08:20<02:38,  3.68s/it][A[submission_v4_best][rank0]:  79%|███████▉  | 162/205 [08:22<02:40,  3.74s/it]
+
+
+[submission_v4_best][rank3]:  79%|███████▉  | 162/204 [08:21<02:34,  3.69s/it][A[A[A
+
+[submission_v4_best][rank2]:  79%|███████▉  | 162/205 [08:22<02:36,  3.65s/it][A[A[submission_v4_best][rank0]:  80%|███████▉  | 163/205 [08:25<02:37,  3.75s/it]
+[submission_v4_best][rank1]:  80%|███████▉  | 163/205 [08:24<02:39,  3.79s/it][A
+
+[submission_v4_best][rank2]:  80%|███████▉  | 163/205 [08:25<02:32,  3.63s/it][A[A
+
+
+[submission_v4_best][rank3]:  80%|███████▉  | 163/204 [08:25<02:38,  3.87s/it][A[A[A[submission_v4_best][rank0]:  80%|████████  | 164/205 [08:29<02:34,  3.76s/it]
+[submission_v4_best][rank1]:  80%|████████  | 164/205 [08:28<02:35,  3.79s/it][A
+
+[submission_v4_best][rank2]:  80%|████████  | 164/205 [08:29<02:29,  3.65s/it][A[A
+
+
+[submission_v4_best][rank3]:  80%|████████  | 164/204 [08:29<02:31,  3.79s/it][A[A[A
+[submission_v4_best][rank1]:  80%|████████  | 165/205 [08:32<02:29,  3.73s/it][A[submission_v4_best][rank0]:  80%|████████  | 165/205 [08:33<02:29,  3.73s/it]
+
+[submission_v4_best][rank2]:  80%|████████  | 165/205 [08:33<02:26,  3.67s/it][A[A
+
+
+[submission_v4_best][rank3]:  81%|████████  | 165/204 [08:33<02:26,  3.75s/it][A[A[A[submission_v4_best][rank0]:  81%|████████  | 166/205 [08:37<02:26,  3.75s/it]
+[submission_v4_best][rank1]:  81%|████████  | 166/205 [08:36<02:27,  3.77s/it][A
+
+[submission_v4_best][rank2]:  81%|████████  | 166/205 [08:36<02:21,  3.63s/it][A[A
+
+
+[submission_v4_best][rank3]:  81%|████████▏ | 166/204 [08:36<02:20,  3.70s/it][A[A[A[submission_v4_best][rank0]:  81%|████████▏ | 167/205 [08:40<02:21,  3.73s/it]
+[submission_v4_best][rank1]:  81%|████████▏ | 167/205 [08:40<02:23,  3.78s/it][A
+
+[submission_v4_best][rank2]:  81%|████████▏ | 167/205 [08:40<02:19,  3.66s/it][A[A
+
+
+[submission_v4_best][rank3]:  82%|████████▏ | 167/204 [08:40<02:22,  3.85s/it][A[A[A[submission_v4_best][rank0]:  82%|████████▏ | 168/205 [08:44<02:18,  3.73s/it]
+[submission_v4_best][rank1]:  82%|████████▏ | 168/205 [08:43<02:20,  3.79s/it][A
+
+[submission_v4_best][rank2]:  82%|████████▏ | 168/205 [08:44<02:16,  3.69s/it][A[A
+
+
+[submission_v4_best][rank3]:  82%|████████▏ | 168/204 [08:44<02:18,  3.83s/it][A[A[A[submission_v4_best][rank0]:  82%|████████▏ | 169/205 [08:48<02:14,  3.75s/it]
+[submission_v4_best][rank1]:  82%|████████▏ | 169/205 [08:47<02:15,  3.76s/it][A
+
+[submission_v4_best][rank2]:  82%|████████▏ | 169/205 [08:48<02:14,  3.73s/it][A[A
+
+
+[submission_v4_best][rank3]:  83%|████████▎ | 169/204 [08:48<02:11,  3.76s/it][A[A[A
+[submission_v4_best][rank1]:  83%|████████▎ | 170/205 [08:51<02:11,  3.74s/it][A[submission_v4_best][rank0]:  83%|████████▎ | 170/205 [08:52<02:13,  3.82s/it]
+
+[submission_v4_best][rank2]:  83%|████████▎ | 170/205 [08:51<02:10,  3.73s/it][A[A
+
+
+[submission_v4_best][rank3]:  83%|████████▎ | 170/204 [08:51<02:07,  3.75s/it][A[A[A
+[submission_v4_best][rank1]:  83%|████████▎ | 171/205 [08:54<02:05,  3.70s/it][A[submission_v4_best][rank0]:  83%|████████▎ | 171/205 [08:55<02:07,  3.75s/it]
+
+[submission_v4_best][rank2]:  83%|████████▎ | 171/205 [08:55<02:05,  3.71s/it][A[A
+
+
+[submission_v4_best][rank3]:  84%|████████▍ | 171/204 [08:55<02:02,  3.70s/it][A[A[A[submission_v4_best][rank0]:  84%|████████▍ | 172/205 [08:59<02:03,  3.74s/it]
+[submission_v4_best][rank1]:  84%|████████▍ | 172/205 [08:58<02:03,  3.75s/it][A
+
+[submission_v4_best][rank2]:  84%|████████▍ | 172/205 [08:59<02:02,  3.72s/it][A[A
+
+
+[submission_v4_best][rank3]:  84%|████████▍ | 172/204 [08:59<01:59,  3.75s/it][A[A[A
+[submission_v4_best][rank1]:  84%|████████▍ | 173/205 [09:02<01:58,  3.70s/it][A[submission_v4_best][rank0]:  84%|████████▍ | 173/205 [09:03<01:59,  3.73s/it]
+
+[submission_v4_best][rank2]:  84%|████████▍ | 173/205 [09:03<02:00,  3.77s/it][A[A
+
+
+[submission_v4_best][rank3]:  85%|████████▍ | 173/204 [09:03<01:56,  3.75s/it][A[A[A
+[submission_v4_best][rank1]:  85%|████████▍ | 174/205 [09:05<01:54,  3.70s/it][A[submission_v4_best][rank0]:  85%|████████▍ | 174/205 [09:07<01:56,  3.77s/it]
+
+[submission_v4_best][rank2]:  85%|████████▍ | 174/205 [09:06<01:55,  3.72s/it][A[A
+
+
+[submission_v4_best][rank3]:  85%|████████▌ | 174/204 [09:06<01:51,  3.73s/it][A[A[A
+[submission_v4_best][rank1]:  85%|████████▌ | 175/205 [09:09<01:49,  3.66s/it][A[submission_v4_best][rank0]:  85%|████████▌ | 175/205 [09:10<01:52,  3.75s/it]
+
+[submission_v4_best][rank2]:  85%|████████▌ | 175/205 [09:10<01:51,  3.73s/it][A[A
+
+
+[submission_v4_best][rank3]:  86%|████████▌ | 175/204 [09:10<01:46,  3.68s/it][A[A[A
+[submission_v4_best][rank1]:  86%|████████▌ | 176/205 [09:13<01:46,  3.66s/it][A[submission_v4_best][rank0]:  86%|████████▌ | 176/205 [09:14<01:47,  3.72s/it]
+
+[submission_v4_best][rank2]:  86%|████████▌ | 176/205 [09:14<01:47,  3.70s/it][A[A
+
+
+[submission_v4_best][rank3]:  86%|████████▋ | 176/204 [09:14<01:43,  3.69s/it][A[A[A
+[submission_v4_best][rank1]:  86%|████████▋ | 177/205 [09:16<01:42,  3.68s/it][A[submission_v4_best][rank0]:  86%|████████▋ | 177/205 [09:18<01:44,  3.72s/it]
+
+[submission_v4_best][rank2]:  86%|████████▋ | 177/205 [09:17<01:43,  3.71s/it][A[A
+
+
+[submission_v4_best][rank3]:  87%|████████▋ | 177/204 [09:17<01:38,  3.66s/it][A[A[A
+[submission_v4_best][rank1]:  87%|████████▋ | 178/205 [09:20<01:38,  3.66s/it][A[submission_v4_best][rank0]:  87%|████████▋ | 178/205 [09:21<01:38,  3.67s/it]
+
+[submission_v4_best][rank2]:  87%|████████▋ | 178/205 [09:21<01:39,  3.67s/it][A[A
+
+
+[submission_v4_best][rank3]:  87%|████████▋ | 178/204 [09:21<01:34,  3.65s/it][A[A[A
+[submission_v4_best][rank1]:  87%|████████▋ | 179/205 [09:24<01:34,  3.64s/it][A[submission_v4_best][rank0]:  87%|████████▋ | 179/205 [09:25<01:35,  3.69s/it]
+
+[submission_v4_best][rank2]:  87%|████████▋ | 179/205 [09:24<01:35,  3.67s/it][A[A
+
+
+[submission_v4_best][rank3]:  88%|████████▊ | 179/204 [09:25<01:31,  3.68s/it][A[A[A
+[submission_v4_best][rank1]:  88%|████████▊ | 180/205 [09:28<01:32,  3.71s/it][A[submission_v4_best][rank0]:  88%|████████▊ | 180/205 [09:29<01:31,  3.67s/it]
+
+[submission_v4_best][rank2]:  88%|████████▊ | 180/205 [09:28<01:30,  3.63s/it][A[A
+
+
+[submission_v4_best][rank3]:  88%|████████▊ | 180/204 [09:28<01:27,  3.66s/it][A[A[A
+[submission_v4_best][rank1]:  88%|████████▊ | 181/205 [09:31<01:29,  3.72s/it][A[submission_v4_best][rank0]:  88%|████████▊ | 181/205 [09:32<01:28,  3.70s/it]
+
+[submission_v4_best][rank2]:  88%|████████▊ | 181/205 [09:32<01:29,  3.71s/it][A[A
+
+
+[submission_v4_best][rank3]:  89%|████████▊ | 181/204 [09:32<01:24,  3.66s/it][A[A[A
+[submission_v4_best][rank1]:  89%|████████▉ | 182/205 [09:35<01:26,  3.78s/it][A[submission_v4_best][rank0]:  89%|████████▉ | 182/205 [09:36<01:25,  3.73s/it]
+
+[submission_v4_best][rank2]:  89%|████████▉ | 182/205 [09:36<01:25,  3.73s/it][A[A
+
+
+[submission_v4_best][rank3]:  89%|████████▉ | 182/204 [09:36<01:23,  3.81s/it][A[A[A
+[submission_v4_best][rank1]:  89%|████████▉ | 183/205 [09:39<01:23,  3.80s/it][A[submission_v4_best][rank0]:  89%|████████▉ | 183/205 [09:40<01:22,  3.77s/it]
+
+[submission_v4_best][rank2]:  89%|████████▉ | 183/205 [09:40<01:24,  3.82s/it][A[A
+
+
+[submission_v4_best][rank3]:  90%|████████▉ | 183/204 [09:40<01:18,  3.76s/it][A[A[A[submission_v4_best][rank0]:  90%|████████▉ | 184/205 [09:44<01:19,  3.77s/it]
+[submission_v4_best][rank1]:  90%|████████▉ | 184/205 [09:43<01:21,  3.86s/it][A
+
+
+[submission_v4_best][rank3]:  90%|█████████ | 184/204 [09:43<01:14,  3.71s/it][A[A[A
+
+[submission_v4_best][rank2]:  90%|████████▉ | 184/205 [09:44<01:22,  3.91s/it][A[A[submission_v4_best][rank0]:  90%|█████████ | 185/205 [09:47<01:14,  3.71s/it]
+[submission_v4_best][rank1]:  90%|█████████ | 185/205 [09:47<01:15,  3.79s/it][A
+
+
+[submission_v4_best][rank3]:  91%|█████████ | 185/204 [09:47<01:11,  3.74s/it][A[A[A
+
+[submission_v4_best][rank2]:  90%|█████████ | 185/205 [09:48<01:17,  3.86s/it][A[A[submission_v4_best][rank0]:  91%|█████████ | 186/205 [09:51<01:10,  3.73s/it]
+[submission_v4_best][rank1]:  91%|█████████ | 186/205 [09:50<01:12,  3.79s/it][A
+
+
+[submission_v4_best][rank3]:  91%|█████████ | 186/204 [09:51<01:07,  3.73s/it][A[A[A
+
+[submission_v4_best][rank2]:  91%|█████████ | 186/205 [09:51<01:12,  3.81s/it][A[A[submission_v4_best][rank0]:  91%|█████████ | 187/205 [09:55<01:06,  3.70s/it]
+[submission_v4_best][rank1]:  91%|█████████ | 187/205 [09:54<01:07,  3.76s/it][A
+
+
+[submission_v4_best][rank3]:  92%|█████████▏| 187/204 [09:55<01:03,  3.72s/it][A[A[A
+
+[submission_v4_best][rank2]:  91%|█████████ | 187/205 [09:55<01:08,  3.79s/it][A[A[submission_v4_best][rank0]:  92%|█████████▏| 188/205 [09:59<01:03,  3.72s/it]
+[submission_v4_best][rank1]:  92%|█████████▏| 188/205 [09:58<01:04,  3.77s/it][A
+
+
+[submission_v4_best][rank3]:  92%|█████████▏| 188/204 [09:58<00:58,  3.68s/it][A[A[A
+
+[submission_v4_best][rank2]:  92%|█████████▏| 188/205 [09:59<01:04,  3.77s/it][A[A
+[submission_v4_best][rank1]:  92%|█████████▏| 189/205 [10:02<00:59,  3.75s/it][A[submission_v4_best][rank0]:  92%|█████████▏| 189/205 [10:03<01:00,  3.81s/it]
+
+
+[submission_v4_best][rank3]:  93%|█████████▎| 189/204 [10:02<00:56,  3.79s/it][A[A[A
+
+[submission_v4_best][rank2]:  92%|█████████▏| 189/205 [10:02<01:00,  3.76s/it][A[A
+[submission_v4_best][rank1]:  93%|█████████▎| 190/205 [10:05<00:56,  3.75s/it][A[submission_v4_best][rank0]:  93%|█████████▎| 190/205 [10:06<00:56,  3.77s/it]
+
+
+[submission_v4_best][rank3]:  93%|█████████▎| 190/204 [10:06<00:53,  3.80s/it][A[A[A
+
+[submission_v4_best][rank2]:  93%|█████████▎| 190/205 [10:06<00:55,  3.73s/it][A[A
+[submission_v4_best][rank1]:  93%|█████████▎| 191/205 [10:09<00:51,  3.68s/it][A[submission_v4_best][rank0]:  93%|█████████▎| 191/205 [10:10<00:53,  3.81s/it]
+
+[submission_v4_best][rank2]:  93%|█████████▎| 191/205 [10:10<00:52,  3.75s/it][A[A
+
+
+[submission_v4_best][rank3]:  94%|█████████▎| 191/204 [10:10<00:49,  3.83s/it][A[A[A
+[submission_v4_best][rank1]:  94%|█████████▎| 192/205 [10:13<00:47,  3.68s/it][A[submission_v4_best][rank0]:  94%|█████████▎| 192/205 [10:14<00:48,  3.75s/it]
+
+
+[submission_v4_best][rank3]:  94%|█████████▍| 192/204 [10:13<00:45,  3.75s/it][A[A[A
+
+[submission_v4_best][rank2]:  94%|█████████▎| 192/205 [10:14<00:48,  3.76s/it][A[A
+[submission_v4_best][rank1]:  94%|█████████▍| 193/205 [10:16<00:44,  3.70s/it][A[submission_v4_best][rank0]:  94%|█████████▍| 193/205 [10:18<00:45,  3.77s/it]
+
+[submission_v4_best][rank2]:  94%|█████████▍| 193/205 [10:17<00:44,  3.70s/it][A[A
+
+
+[submission_v4_best][rank3]:  95%|█████████▍| 193/204 [10:17<00:41,  3.78s/it][A[A[A
+[submission_v4_best][rank1]:  95%|█████████▍| 194/205 [10:20<00:40,  3.71s/it][A[submission_v4_best][rank0]:  95%|█████████▍| 194/205 [10:21<00:40,  3.71s/it]
+
+
+[submission_v4_best][rank3]:  95%|█████████▌| 194/204 [10:21<00:37,  3.72s/it][A[A[A
+
+[submission_v4_best][rank2]:  95%|█████████▍| 194/205 [10:21<00:40,  3.71s/it][A[A
+[submission_v4_best][rank1]:  95%|█████████▌| 195/205 [10:24<00:36,  3.69s/it][A[submission_v4_best][rank0]:  95%|█████████▌| 195/205 [10:25<00:37,  3.72s/it]
+
+
+[submission_v4_best][rank3]:  96%|█████████▌| 195/204 [10:25<00:33,  3.71s/it][A[A[A
+
+[submission_v4_best][rank2]:  95%|█████████▌| 195/205 [10:25<00:36,  3.67s/it][A[A
+[submission_v4_best][rank1]:  96%|█████████▌| 196/205 [10:28<00:33,  3.76s/it][A[submission_v4_best][rank0]:  96%|█████████▌| 196/205 [10:29<00:33,  3.76s/it]
+
+
+[submission_v4_best][rank3]:  96%|█████████▌| 196/204 [10:28<00:29,  3.68s/it][A[A[A
+
+[submission_v4_best][rank2]:  96%|█████████▌| 196/205 [10:28<00:33,  3.69s/it][A[A
+[submission_v4_best][rank1]:  96%|█████████▌| 197/205 [10:31<00:30,  3.76s/it][A[submission_v4_best][rank0]:  96%|█████████▌| 197/205 [10:33<00:30,  3.78s/it]
+
+
+[submission_v4_best][rank3]:  97%|█████████▋| 197/204 [10:32<00:25,  3.68s/it][A[A[A
+
+[submission_v4_best][rank2]:  96%|█████████▌| 197/205 [10:32<00:29,  3.69s/it][A[A
+[submission_v4_best][rank1]:  97%|█████████▋| 198/205 [10:35<00:26,  3.76s/it][A
+
+
+[submission_v4_best][rank3]:  97%|█████████▋| 198/204 [10:36<00:22,  3.70s/it][A[A[A[submission_v4_best][rank0]:  97%|█████████▋| 198/205 [10:37<00:26,  3.81s/it]
+
+[submission_v4_best][rank2]:  97%|█████████▋| 198/205 [10:36<00:25,  3.68s/it][A[A
+[submission_v4_best][rank1]:  97%|█████████▋| 199/205 [10:39<00:22,  3.75s/it][A
+
+
+[submission_v4_best][rank3]:  98%|█████████▊| 199/204 [10:39<00:18,  3.66s/it][A[A[A
+
+[submission_v4_best][rank2]:  97%|█████████▋| 199/205 [10:39<00:22,  3.69s/it][A[A[submission_v4_best][rank0]:  97%|█████████▋| 199/205 [10:40<00:22,  3.79s/it]
+[submission_v4_best][rank1]:  98%|█████████▊| 200/205 [10:43<00:19,  3.81s/it][A
+
+
+[submission_v4_best][rank3]:  98%|█████████▊| 200/204 [10:43<00:14,  3.71s/it][A[A[A
+
+[submission_v4_best][rank2]:  98%|█████████▊| 200/205 [10:43<00:18,  3.68s/it][A[A[submission_v4_best][rank0]:  98%|█████████▊| 200/205 [10:45<00:19,  3.96s/it]
+[submission_v4_best][rank1]:  98%|█████████▊| 201/205 [10:46<00:15,  3.76s/it][A
+
+
+[submission_v4_best][rank3]:  99%|█████████▊| 201/204 [10:47<00:11,  3.68s/it][A[A[A
+
+[submission_v4_best][rank2]:  98%|█████████▊| 201/205 [10:47<00:14,  3.69s/it][A[A[submission_v4_best][rank0]:  98%|█████████▊| 201/205 [10:48<00:15,  3.85s/it]
+[submission_v4_best][rank1]:  99%|█████████▊| 202/205 [10:50<00:11,  3.81s/it][A
+
+
+[submission_v4_best][rank3]:  99%|█████████▉| 202/204 [10:50<00:07,  3.73s/it][A[A[A
+
+[submission_v4_best][rank2]:  99%|█████████▊| 202/205 [10:51<00:11,  3.75s/it][A[A[submission_v4_best][rank0]:  99%|█████████▊| 202/205 [10:52<00:11,  3.89s/it]
+[submission_v4_best][rank1]:  99%|█████████▉| 203/205 [10:54<00:07,  3.72s/it][A
+
+
+[submission_v4_best][rank3]: 100%|█████████▉| 203/204 [10:54<00:03,  3.74s/it][A[A[A
+
+[submission_v4_best][rank2]:  99%|█████████▉| 203/205 [10:54<00:07,  3.76s/it][A[A[submission_v4_best][rank0]:  99%|█████████▉| 203/205 [10:56<00:07,  3.82s/it]
+[submission_v4_best][rank1]: 100%|█████████▉| 204/205 [10:58<00:03,  3.72s/it][A
+
+
+[submission_v4_best][rank3]: 100%|██████████| 204/204 [10:58<00:00,  3.75s/it][A[A[A[submission_v4_best][rank3]: 100%|██████████| 204/204 [10:58<00:00,  3.23s/it]
+
+
+[submission_v4_best][rank2]: 100%|█████████▉| 204/205 [10:58<00:03,  3.78s/it][A[A[submission_v4_best][rank0]: 100%|█████████▉| 204/205 [11:00<00:03,  3.83s/it]
+[submission_v4_best][rank1]: 100%|██████████| 205/205 [11:02<00:00,  3.78s/it][A[submission_v4_best][rank1]: 100%|██████████| 205/205 [11:02<00:00,  3.23s/it]
+
+
+[submission_v4_best][rank2]: 100%|██████████| 205/205 [11:02<00:00,  3.70s/it][A[A[submission_v4_best][rank2]: 100%|██████████| 205/205 [11:02<00:00,  3.23s/it]
+[submission_v4_best][rank0]: 100%|██████████| 205/205 [11:03<00:00,  3.77s/it][submission_v4_best][rank0]: 100%|██████████| 205/205 [11:03<00:00,  3.24s/it]
+/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[rank0]:[W704 07:05:08.283384010 ProcessGroupNCCL.cpp:5324] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/peft/tuners/tuners_utils.py:302: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/peft/tuners/tuners_utils.py:302: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/peft/tuners/tuners_utils.py:302: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/peft/tuners/tuners_utils.py:302: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+[submission_v4_last][rank0]:   0%|          | 0/205 [00:00<?, ?it/s]
+
+[submission_v4_last][rank2]:   0%|          | 0/205 [00:00<?, ?it/s][A[A
+
+
+[submission_v4_last][rank3]:   0%|          | 0/204 [00:00<?, ?it/s][A[A[A
+[submission_v4_last][rank1]:   0%|          | 0/205 [00:00<?, ?it/s][A
+
+[submission_v4_last][rank2]:   0%|          | 1/205 [00:02<08:51,  2.60s/it][A[A
+[submission_v4_last][rank1]:   0%|          | 1/205 [00:02<10:01,  2.95s/it][A[submission_v4_last][rank0]:   0%|          | 1/205 [00:03<10:52,  3.20s/it]
+
+
+[submission_v4_last][rank3]:   0%|          | 1/204 [00:03<11:44,  3.47s/it][A[A[A
+
+[submission_v4_last][rank2]:   1%|          | 2/205 [00:05<09:12,  2.72s/it][A[A
+[submission_v4_last][rank1]:   1%|          | 2/205 [00:05<09:53,  2.92s/it][A[submission_v4_last][rank0]:   1%|          | 2/205 [00:05<09:57,  2.94s/it]
+
+
+[submission_v4_last][rank3]:   1%|          | 2/204 [00:06<10:38,  3.16s/it][A[A[A
+
+[submission_v4_last][rank2]:   1%|▏         | 3/205 [00:08<09:09,  2.72s/it][A[A[submission_v4_last][rank0]:   1%|▏         | 3/205 [00:08<08:43,  2.59s/it]
+[submission_v4_last][rank1]:   1%|▏         | 3/205 [00:09<10:13,  3.04s/it][A
+
+
+[submission_v4_last][rank3]:   1%|▏         | 3/204 [00:09<10:40,  3.19s/it][A[A[A[submission_v4_last][rank0]:   2%|▏         | 4/205 [00:10<08:47,  2.62s/it]
+
+[submission_v4_last][rank2]:   2%|▏         | 4/205 [00:11<09:28,  2.83s/it][A[A
+[submission_v4_last][rank1]:   2%|▏         | 4/205 [00:12<10:13,  3.05s/it][A
+
+
+[submission_v4_last][rank3]:   2%|▏         | 4/204 [00:12<10:28,  3.14s/it][A[A[A
+
+[submission_v4_last][rank2]:   2%|▏         | 5/205 [00:13<09:23,  2.82s/it][A[A[submission_v4_last][rank0]:   2%|▏         | 5/205 [00:14<09:29,  2.85s/it]
+[submission_v4_last][rank1]:   2%|▏         | 5/205 [00:14<09:54,  2.97s/it][A
+
+
+[submission_v4_last][rank3]:   2%|▏         | 5/204 [00:15<10:25,  3.14s/it][A[A[A
+
+[submission_v4_last][rank2]:   3%|▎         | 6/205 [00:16<09:27,  2.85s/it][A[A[submission_v4_last][rank0]:   3%|▎         | 6/205 [00:17<09:40,  2.92s/it]
+[submission_v4_last][rank1]:   3%|▎         | 6/205 [00:18<10:04,  3.04s/it][A
+
+
+[submission_v4_last][rank3]:   3%|▎         | 6/204 [00:18<09:58,  3.02s/it][A[A[A
+
+[submission_v4_last][rank2]:   3%|▎         | 7/205 [00:19<08:48,  2.67s/it][A[A[submission_v4_last][rank0]:   3%|▎         | 7/205 [00:20<09:48,  2.97s/it]
+[submission_v4_last][rank1]:   3%|▎         | 7/205 [00:21<10:02,  3.04s/it][A
+
+
+[submission_v4_last][rank3]:   3%|▎         | 7/204 [00:21<09:57,  3.03s/it][A[A[A
+
+[submission_v4_last][rank2]:   4%|▍         | 8/205 [00:22<09:11,  2.80s/it][A[A[submission_v4_last][rank0]:   4%|▍         | 8/205 [00:23<09:49,  2.99s/it]
+[submission_v4_last][rank1]:   4%|▍         | 8/205 [00:24<09:53,  3.01s/it][A
+
+
+[submission_v4_last][rank3]:   4%|▍         | 8/204 [00:24<09:36,  2.94s/it][A[A[A
+
+[submission_v4_last][rank2]:   4%|▍         | 9/205 [00:24<08:46,  2.69s/it][A[A[submission_v4_last][rank0]:   4%|▍         | 9/205 [00:25<09:17,  2.85s/it]
+[submission_v4_last][rank1]:   4%|▍         | 9/205 [00:26<09:38,  2.95s/it][A
+
+
+[submission_v4_last][rank3]:   4%|▍         | 9/204 [00:27<09:49,  3.02s/it][A[A[A
+
+[submission_v4_last][rank2]:   5%|▍         | 10/205 [00:27<09:13,  2.84s/it][A[A[submission_v4_last][rank0]:   5%|▍         | 10/205 [00:28<09:18,  2.87s/it]
+[submission_v4_last][rank1]:   5%|▍         | 10/205 [00:29<09:35,  2.95s/it][A
+
+
+[submission_v4_last][rank3]:   5%|▍         | 10/204 [00:30<09:45,  3.02s/it][A[A[A
+
+[submission_v4_last][rank2]:   5%|▌         | 11/205 [00:30<09:22,  2.90s/it][A[A[submission_v4_last][rank0]:   5%|▌         | 11/205 [00:31<09:21,  2.90s/it]
+[submission_v4_last][rank1]:   5%|▌         | 11/205 [00:32<09:16,  2.87s/it][A
+
+
+[submission_v4_last][rank3]:   5%|▌         | 11/204 [00:33<09:36,  2.99s/it][A[A[A
+
+[submission_v4_last][rank2]:   6%|▌         | 12/205 [00:33<09:20,  2.90s/it][A[A[submission_v4_last][rank0]:   6%|▌         | 12/205 [00:34<09:12,  2.86s/it]
+[submission_v4_last][rank1]:   6%|▌         | 12/205 [00:35<09:04,  2.82s/it][A
+
+
+[submission_v4_last][rank3]:   6%|▌         | 12/204 [00:36<09:32,  2.98s/it][A[A[A
+
+[submission_v4_last][rank2]:   6%|▋         | 13/205 [00:36<09:11,  2.87s/it][A[A[submission_v4_last][rank0]:   6%|▋         | 13/205 [00:37<09:26,  2.95s/it]
+[submission_v4_last][rank1]:   6%|▋         | 13/205 [00:38<09:00,  2.82s/it][A
+
+
+[submission_v4_last][rank3]:   6%|▋         | 13/204 [00:39<09:01,  2.83s/it][A[A[A
+
+[submission_v4_last][rank2]:   7%|▋         | 14/205 [00:39<09:27,  2.97s/it][A[A[submission_v4_last][rank0]:   7%|▋         | 14/205 [00:40<09:27,  2.97s/it]
+[submission_v4_last][rank1]:   7%|▋         | 14/205 [00:40<08:58,  2.82s/it][A
+
+
+[submission_v4_last][rank3]:   7%|▋         | 14/204 [00:42<09:20,  2.95s/it][A[A[A
+
+[submission_v4_last][rank2]:   7%|▋         | 15/205 [00:42<09:26,  2.98s/it][A[A
+[submission_v4_last][rank1]:   7%|▋         | 15/205 [00:43<09:02,  2.85s/it][A[submission_v4_last][rank0]:   7%|▋         | 15/205 [00:43<09:48,  3.10s/it]
+
+
+[submission_v4_last][rank3]:   7%|▋         | 15/204 [00:45<09:14,  2.93s/it][A[A[A
+
+[submission_v4_last][rank2]:   8%|▊         | 16/205 [00:45<09:20,  2.96s/it][A[A[submission_v4_last][rank0]:   8%|▊         | 16/205 [00:47<09:42,  3.08s/it]
+[submission_v4_last][rank1]:   8%|▊         | 16/205 [00:47<09:25,  2.99s/it][A
+
+[submission_v4_last][rank2]:   8%|▊         | 17/205 [00:47<08:31,  2.72s/it][A[A
+
+
+[submission_v4_last][rank3]:   8%|▊         | 16/204 [00:47<09:02,  2.88s/it][A[A[A
+[submission_v4_last][rank1]:   8%|▊         | 17/205 [00:50<09:20,  2.98s/it][A[submission_v4_last][rank0]:   8%|▊         | 17/205 [00:50<09:42,  3.10s/it]
+
+[submission_v4_last][rank2]:   9%|▉         | 18/205 [00:50<08:35,  2.76s/it][A[A
+
+
+[submission_v4_last][rank3]:   8%|▊         | 17/204 [00:50<09:01,  2.89s/it][A[A[A[submission_v4_last][rank0]:   9%|▉         | 18/205 [00:53<09:29,  3.04s/it]
+[submission_v4_last][rank1]:   9%|▉         | 18/205 [00:53<09:23,  3.01s/it][A
+
+[submission_v4_last][rank2]:   9%|▉         | 19/205 [00:53<08:49,  2.84s/it][A[A
+
+
+[submission_v4_last][rank3]:   9%|▉         | 18/204 [00:53<09:04,  2.93s/it][A[A[A
+[submission_v4_last][rank1]:   9%|▉         | 19/205 [00:56<09:10,  2.96s/it][A[submission_v4_last][rank0]:   9%|▉         | 19/205 [00:56<09:34,  3.09s/it]
+
+[submission_v4_last][rank2]:  10%|▉         | 20/205 [00:56<09:08,  2.97s/it][A[A
+
+
+[submission_v4_last][rank3]:   9%|▉         | 19/204 [00:57<09:15,  3.00s/it][A[A[A
+[submission_v4_last][rank1]:  10%|▉         | 20/205 [00:58<09:04,  2.94s/it][A[submission_v4_last][rank0]:  10%|▉         | 20/205 [00:59<09:15,  3.00s/it]
+
+
+[submission_v4_last][rank3]:  10%|▉         | 20/204 [00:59<08:50,  2.88s/it][A[A[A
+
+[submission_v4_last][rank2]:  10%|█         | 21/205 [01:00<09:11,  3.00s/it][A[A
+
+
+[submission_v4_last][rank3]:  10%|█         | 21/204 [01:01<08:06,  2.66s/it][A[A[A
+[submission_v4_last][rank1]:  10%|█         | 21/205 [01:01<09:04,  2.96s/it][A[submission_v4_last][rank0]:  10%|█         | 21/205 [01:02<09:08,  2.98s/it]
+
+[submission_v4_last][rank2]:  11%|█         | 22/205 [01:03<09:14,  3.03s/it][A[A
+
+
+[submission_v4_last][rank3]:  11%|█         | 22/204 [01:04<08:27,  2.79s/it][A[A[A[submission_v4_last][rank0]:  11%|█         | 22/205 [01:05<09:09,  3.00s/it]
+[submission_v4_last][rank1]:  11%|█         | 22/205 [01:05<09:23,  3.08s/it][A
+
+[submission_v4_last][rank2]:  11%|█         | 23/205 [01:05<08:58,  2.96s/it][A[A[submission_v4_last][rank0]:  11%|█         | 23/205 [01:07<08:53,  2.93s/it]
+
+
+[submission_v4_last][rank3]:  11%|█▏        | 23/204 [01:07<08:35,  2.85s/it][A[A[A
+[submission_v4_last][rank1]:  11%|█         | 23/205 [01:08<09:11,  3.03s/it][A
+
+[submission_v4_last][rank2]:  12%|█▏        | 24/205 [01:08<08:46,  2.91s/it][A[A[submission_v4_last][rank0]:  12%|█▏        | 24/205 [01:10<08:42,  2.88s/it]
+
+
+[submission_v4_last][rank3]:  12%|█▏        | 24/204 [01:10<08:49,  2.94s/it][A[A[A
+[submission_v4_last][rank1]:  12%|█▏        | 24/205 [01:11<09:05,  3.01s/it][A
+
+[submission_v4_last][rank2]:  12%|█▏        | 25/205 [01:11<08:44,  2.91s/it][A[A[submission_v4_last][rank0]:  12%|█▏        | 25/205 [01:13<08:33,  2.85s/it]
+[submission_v4_last][rank1]:  12%|█▏        | 25/205 [01:13<08:50,  2.95s/it][A
+
+
+[submission_v4_last][rank3]:  12%|█▏        | 25/204 [01:14<09:00,  3.02s/it][A[A[A
+
+[submission_v4_last][rank2]:  13%|█▎        | 26/205 [01:14<08:49,  2.96s/it][A[A[submission_v4_last][rank0]:  13%|█▎        | 26/205 [01:16<08:44,  2.93s/it]
+[submission_v4_last][rank1]:  13%|█▎        | 26/205 [01:16<08:46,  2.94s/it][A
+
+
+[submission_v4_last][rank3]:  13%|█▎        | 26/204 [01:17<08:46,  2.96s/it][A[A[A
+
+[submission_v4_last][rank2]:  13%|█▎        | 27/205 [01:17<08:57,  3.02s/it][A[A[submission_v4_last][rank0]:  13%|█▎        | 27/205 [01:19<08:34,  2.89s/it]
+
+
+[submission_v4_last][rank3]:  13%|█▎        | 27/204 [01:19<08:16,  2.81s/it][A[A[A
+[submission_v4_last][rank1]:  13%|█▎        | 27/205 [01:19<08:36,  2.90s/it][A
+
+[submission_v4_last][rank2]:  14%|█▎        | 28/205 [01:21<09:13,  3.12s/it][A[A
+
+
+[submission_v4_last][rank3]:  14%|█▎        | 28/204 [01:22<08:11,  2.79s/it][A[A[A[submission_v4_last][rank0]:  14%|█▎        | 28/205 [01:22<08:53,  3.01s/it]
+[submission_v4_last][rank1]:  14%|█▎        | 28/205 [01:22<08:33,  2.90s/it][A
+
+[submission_v4_last][rank2]:  14%|█▍        | 29/205 [01:24<08:51,  3.02s/it][A[A
+
+
+[submission_v4_last][rank3]:  14%|█▍        | 29/204 [01:25<08:19,  2.86s/it][A[A[A[submission_v4_last][rank0]:  14%|█▍        | 29/205 [01:25<08:43,  2.98s/it]
+[submission_v4_last][rank1]:  14%|█▍        | 29/205 [01:25<08:37,  2.94s/it][A
+
+[submission_v4_last][rank2]:  15%|█▍        | 30/205 [01:26<08:37,  2.96s/it][A[A
+
+
+[submission_v4_last][rank3]:  15%|█▍        | 30/204 [01:28<08:26,  2.91s/it][A[A[A[submission_v4_last][rank0]:  15%|█▍        | 30/205 [01:28<08:43,  2.99s/it]
+[submission_v4_last][rank1]:  15%|█▍        | 30/205 [01:28<08:34,  2.94s/it][A
+
+[submission_v4_last][rank2]:  15%|█▌        | 31/205 [01:29<08:30,  2.93s/it][A[A
+
+
+[submission_v4_last][rank3]:  15%|█▌        | 31/204 [01:31<08:22,  2.90s/it][A[A[A[submission_v4_last][rank0]:  15%|█▌        | 31/205 [01:31<08:43,  3.01s/it]
+[submission_v4_last][rank1]:  15%|█▌        | 31/205 [01:31<08:53,  3.07s/it][A
+
+[submission_v4_last][rank2]:  16%|█▌        | 32/205 [01:32<08:34,  2.97s/it][A[A[submission_v4_last][rank0]:  16%|█▌        | 32/205 [01:33<08:01,  2.78s/it]
+
+
+[submission_v4_last][rank3]:  16%|█▌        | 32/204 [01:34<08:21,  2.92s/it][A[A[A
+[submission_v4_last][rank1]:  16%|█▌        | 32/205 [01:34<08:44,  3.03s/it][A
+
+[submission_v4_last][rank2]:  16%|█▌        | 33/205 [01:35<08:33,  2.98s/it][A[A[submission_v4_last][rank0]:  16%|█▌        | 33/205 [01:36<08:03,  2.81s/it]
+
+
+[submission_v4_last][rank3]:  16%|█▌        | 33/204 [01:37<08:18,  2.91s/it][A[A[A
+[submission_v4_last][rank1]:  16%|█▌        | 33/205 [01:38<08:57,  3.12s/it][A
+
+[submission_v4_last][rank2]:  17%|█▋        | 34/205 [01:39<08:43,  3.06s/it][A[A[submission_v4_last][rank0]:  17%|█▋        | 34/205 [01:39<08:12,  2.88s/it]
+
+
+[submission_v4_last][rank3]:  17%|█▋        | 34/204 [01:39<08:09,  2.88s/it][A[A[A
+[submission_v4_last][rank1]:  17%|█▋        | 34/205 [01:41<08:45,  3.08s/it][A
+
+[submission_v4_last][rank2]:  17%|█▋        | 35/205 [01:41<08:31,  3.01s/it][A[A[submission_v4_last][rank0]:  17%|█▋        | 35/205 [01:42<08:11,  2.89s/it]
+
+
+[submission_v4_last][rank3]:  17%|█▋        | 35/204 [01:42<08:13,  2.92s/it][A[A[A
+[submission_v4_last][rank1]:  17%|█▋        | 35/205 [01:44<08:32,  3.01s/it][A
+
+[submission_v4_last][rank2]:  18%|█▊        | 36/205 [01:44<08:24,  2.98s/it][A[A
+
+
+[submission_v4_last][rank3]:  18%|█▊        | 36/204 [01:44<07:27,  2.66s/it][A[A[A[submission_v4_last][rank0]:  18%|█▊        | 36/205 [01:45<08:15,  2.93s/it]
+[submission_v4_last][rank1]:  18%|█▊        | 36/205 [01:47<08:39,  3.07s/it][A
+
+[submission_v4_last][rank2]:  18%|█▊        | 37/205 [01:48<08:31,  3.04s/it][A[A[submission_v4_last][rank0]:  18%|█▊        | 37/205 [01:48<07:46,  2.78s/it]
+
+
+[submission_v4_last][rank3]:  18%|█▊        | 37/204 [01:48<07:55,  2.84s/it][A[A[A
+[submission_v4_last][rank1]:  18%|█▊        | 37/205 [01:49<07:50,  2.80s/it][A
+
+[submission_v4_last][rank2]:  19%|█▊        | 38/205 [01:51<08:25,  3.03s/it][A[A[submission_v4_last][rank0]:  19%|█▊        | 38/205 [01:51<07:54,  2.84s/it]
+[submission_v4_last][rank1]:  19%|█▊        | 38/205 [01:51<07:08,  2.56s/it][A
+
+
+[submission_v4_last][rank3]:  19%|█▊        | 38/204 [01:51<08:21,  3.02s/it][A[A[A
+
+[submission_v4_last][rank2]:  19%|█▉        | 39/205 [01:53<08:18,  3.00s/it][A[A[submission_v4_last][rank0]:  19%|█▉        | 39/205 [01:54<07:57,  2.87s/it]
+[submission_v4_last][rank1]:  19%|█▉        | 39/205 [01:54<07:17,  2.64s/it][A
+
+
+[submission_v4_last][rank3]:  19%|█▉        | 39/204 [01:54<08:07,  2.96s/it][A[A[A
+
+[submission_v4_last][rank2]:  20%|█▉        | 40/205 [01:56<08:13,  2.99s/it][A[A[submission_v4_last][rank0]:  20%|█▉        | 40/205 [01:57<07:59,  2.91s/it]
+
+
+[submission_v4_last][rank3]:  20%|█▉        | 40/204 [01:57<07:59,  2.92s/it][A[A[A
+[submission_v4_last][rank1]:  20%|█▉        | 40/205 [01:57<07:46,  2.83s/it][A[submission_v4_last][rank0]:  20%|██        | 41/205 [01:59<08:00,  2.93s/it]
+
+
+[submission_v4_last][rank3]:  20%|██        | 41/204 [02:00<07:59,  2.94s/it][A[A[A
+[submission_v4_last][rank1]:  20%|██        | 41/205 [02:00<07:42,  2.82s/it][A
+
+[submission_v4_last][rank2]:  20%|██        | 41/205 [02:00<08:33,  3.13s/it][A[A
+
+[submission_v4_last][rank2]:  20%|██        | 42/205 [02:02<07:54,  2.91s/it][A[A[submission_v4_last][rank0]:  20%|██        | 42/205 [02:03<08:01,  2.96s/it]
+[submission_v4_last][rank1]:  20%|██        | 42/205 [02:03<07:46,  2.86s/it][A
+
+
+[submission_v4_last][rank3]:  21%|██        | 42/204 [02:03<08:01,  2.98s/it][A[A[A
+
+[submission_v4_last][rank2]:  21%|██        | 43/205 [02:05<07:46,  2.88s/it][A[A[submission_v4_last][rank0]:  21%|██        | 43/205 [02:05<07:51,  2.91s/it]
+
+
+[submission_v4_last][rank3]:  21%|██        | 43/204 [02:06<07:48,  2.91s/it][A[A[A
+[submission_v4_last][rank1]:  21%|██        | 43/205 [02:06<07:46,  2.88s/it][A
+
+[submission_v4_last][rank2]:  21%|██▏       | 44/205 [02:08<07:45,  2.89s/it][A[A[submission_v4_last][rank0]:  21%|██▏       | 44/205 [02:08<07:49,  2.92s/it]
+
+
+[submission_v4_last][rank3]:  22%|██▏       | 44/204 [02:08<07:46,  2.91s/it][A[A[A
+[submission_v4_last][rank1]:  21%|██▏       | 44/205 [02:08<07:39,  2.85s/it][A
+
+[submission_v4_last][rank2]:  22%|██▏       | 45/205 [02:11<07:44,  2.90s/it][A[A
+[submission_v4_last][rank1]:  22%|██▏       | 45/205 [02:11<07:33,  2.84s/it][A[submission_v4_last][rank0]:  22%|██▏       | 45/205 [02:11<07:57,  2.99s/it]
+
+
+[submission_v4_last][rank3]:  22%|██▏       | 45/204 [02:11<07:49,  2.95s/it][A[A[A
+
+[submission_v4_last][rank2]:  22%|██▏       | 46/205 [02:14<07:50,  2.96s/it][A[A
+[submission_v4_last][rank1]:  22%|██▏       | 46/205 [02:14<07:37,  2.88s/it][A[submission_v4_last][rank0]:  22%|██▏       | 46/205 [02:14<07:56,  3.00s/it]
+
+
+[submission_v4_last][rank3]:  23%|██▎       | 46/204 [02:15<07:50,  2.98s/it][A[A[A
+[submission_v4_last][rank1]:  23%|██▎       | 47/205 [02:16<06:54,  2.62s/it][A
+
+[submission_v4_last][rank2]:  23%|██▎       | 47/205 [02:17<07:39,  2.91s/it][A[A[submission_v4_last][rank0]:  23%|██▎       | 47/205 [02:17<07:47,  2.96s/it]
+
+
+[submission_v4_last][rank3]:  23%|██▎       | 47/204 [02:17<07:46,  2.97s/it][A[A[A
+[submission_v4_last][rank1]:  23%|██▎       | 48/205 [02:19<07:08,  2.73s/it][A
+
+[submission_v4_last][rank2]:  23%|██▎       | 48/205 [02:20<07:44,  2.96s/it][A[A[submission_v4_last][rank0]:  23%|██▎       | 48/205 [02:20<07:44,  2.96s/it]
+
+
+[submission_v4_last][rank3]:  24%|██▎       | 48/204 [02:20<07:36,  2.92s/it][A[A[A
+[submission_v4_last][rank1]:  24%|██▍       | 49/205 [02:22<07:09,  2.75s/it][A
+
+[submission_v4_last][rank2]:  24%|██▍       | 49/205 [02:23<07:38,  2.94s/it][A[A
+
+
+[submission_v4_last][rank3]:  24%|██▍       | 49/204 [02:23<07:27,  2.89s/it][A[A[A[submission_v4_last][rank0]:  24%|██▍       | 49/205 [02:23<07:50,  3.02s/it]
+[submission_v4_last][rank1]:  24%|██▍       | 50/205 [02:25<07:16,  2.82s/it][A
+
+[submission_v4_last][rank2]:  24%|██▍       | 50/205 [02:26<07:28,  2.90s/it][A[A
+
+
+[submission_v4_last][rank3]:  25%|██▍       | 50/204 [02:26<07:30,  2.92s/it][A[A[A[submission_v4_last][rank0]:  24%|██▍       | 50/205 [02:26<07:48,  3.02s/it]
+[submission_v4_last][rank1]:  25%|██▍       | 51/205 [02:28<07:43,  3.01s/it][A
+
+[submission_v4_last][rank2]:  25%|██▍       | 51/205 [02:29<07:29,  2.92s/it][A[A
+
+
+[submission_v4_last][rank3]:  25%|██▌       | 51/204 [02:29<07:44,  3.04s/it][A[A[A[submission_v4_last][rank0]:  25%|██▍       | 51/205 [02:30<07:57,  3.10s/it]
+[submission_v4_last][rank1]:  25%|██▌       | 52/205 [02:31<07:38,  2.99s/it][A
+
+[submission_v4_last][rank2]:  25%|██▌       | 52/205 [02:32<07:28,  2.93s/it][A[A
+
+
+[submission_v4_last][rank3]:  25%|██▌       | 52/204 [02:32<07:30,  2.96s/it][A[A[A[submission_v4_last][rank0]:  25%|██▌       | 52/205 [02:33<07:42,  3.03s/it]
+[submission_v4_last][rank1]:  26%|██▌       | 53/205 [02:34<07:26,  2.94s/it][A
+
+[submission_v4_last][rank2]:  26%|██▌       | 53/205 [02:34<07:25,  2.93s/it][A[A[submission_v4_last][rank0]:  26%|██▌       | 53/205 [02:35<07:11,  2.84s/it]
+
+
+[submission_v4_last][rank3]:  26%|██▌       | 53/204 [02:35<07:25,  2.95s/it][A[A[A
+[submission_v4_last][rank1]:  26%|██▋       | 54/205 [02:37<07:24,  2.94s/it][A
+
+[submission_v4_last][rank2]:  26%|██▋       | 54/205 [02:37<07:18,  2.90s/it][A[A
+
+
+[submission_v4_last][rank3]:  26%|██▋       | 54/204 [02:38<07:19,  2.93s/it][A[A[A[submission_v4_last][rank0]:  26%|██▋       | 54/205 [02:38<07:31,  2.99s/it]
+
+[submission_v4_last][rank2]:  27%|██▋       | 55/205 [02:40<07:23,  2.96s/it][A[A
+[submission_v4_last][rank1]:  27%|██▋       | 55/205 [02:41<07:38,  3.06s/it][A
+
+
+[submission_v4_last][rank3]:  27%|██▋       | 55/204 [02:41<07:23,  2.98s/it][A[A[A[submission_v4_last][rank0]:  27%|██▋       | 55/205 [02:41<07:19,  2.93s/it]
+[submission_v4_last][rank1]:  27%|██▋       | 56/205 [02:44<07:34,  3.05s/it][A
+
+[submission_v4_last][rank2]:  27%|██▋       | 56/205 [02:44<07:34,  3.05s/it][A[A
+
+
+[submission_v4_last][rank3]:  27%|██▋       | 56/204 [02:44<07:22,  2.99s/it][A[A[A[submission_v4_last][rank0]:  27%|██▋       | 56/205 [02:44<07:27,  3.00s/it]
+[submission_v4_last][rank1]:  28%|██▊       | 57/205 [02:46<07:11,  2.92s/it][A
+
+[submission_v4_last][rank2]:  28%|██▊       | 57/205 [02:46<07:20,  2.98s/it][A[A
+
+
+[submission_v4_last][rank3]:  28%|██▊       | 57/204 [02:47<07:15,  2.96s/it][A[A[A[submission_v4_last][rank0]:  28%|██▊       | 57/205 [02:48<07:47,  3.16s/it]
+
+
+[submission_v4_last][rank3]:  28%|██▊       | 58/204 [02:49<06:29,  2.67s/it][A[A[A
+[submission_v4_last][rank1]:  28%|██▊       | 58/205 [02:49<07:11,  2.93s/it][A
+
+[submission_v4_last][rank2]:  28%|██▊       | 58/205 [02:49<07:20,  2.99s/it][A[A[submission_v4_last][rank0]:  28%|██▊       | 58/205 [02:51<07:33,  3.08s/it]
+
+
+[submission_v4_last][rank3]:  29%|██▉       | 59/204 [02:52<06:38,  2.75s/it][A[A[A
+[submission_v4_last][rank1]:  29%|██▉       | 59/205 [02:52<07:18,  3.00s/it][A
+
+[submission_v4_last][rank2]:  29%|██▉       | 59/205 [02:53<07:38,  3.14s/it][A[A[submission_v4_last][rank0]:  29%|██▉       | 59/205 [02:54<07:23,  3.04s/it]
+
+
+[submission_v4_last][rank3]:  29%|██▉       | 60/204 [02:55<06:47,  2.83s/it][A[A[A
+[submission_v4_last][rank1]:  29%|██▉       | 60/205 [02:55<07:05,  2.94s/it][A
+
+[submission_v4_last][rank2]:  29%|██▉       | 60/205 [02:56<07:37,  3.16s/it][A[A[submission_v4_last][rank0]:  29%|██▉       | 60/205 [02:57<07:20,  3.04s/it]
+[submission_v4_last][rank1]:  30%|██▉       | 61/205 [02:58<07:01,  2.93s/it][A
+
+
+[submission_v4_last][rank3]:  30%|██▉       | 61/204 [02:58<06:54,  2.90s/it][A[A[A
+
+[submission_v4_last][rank2]:  30%|██▉       | 61/205 [02:59<07:24,  3.09s/it][A[A[submission_v4_last][rank0]:  30%|██▉       | 61/205 [02:59<07:04,  2.95s/it]
+
+
+[submission_v4_last][rank3]:  30%|███       | 62/204 [03:00<06:13,  2.63s/it][A[A[A
+[submission_v4_last][rank1]:  30%|███       | 62/205 [03:01<07:03,  2.96s/it][A
+
+[submission_v4_last][rank2]:  30%|███       | 62/205 [03:02<07:08,  2.99s/it][A[A[submission_v4_last][rank0]:  30%|███       | 62/205 [03:02<06:58,  2.93s/it]
+
+
+[submission_v4_last][rank3]:  31%|███       | 63/204 [03:03<06:26,  2.74s/it][A[A[A
+[submission_v4_last][rank1]:  31%|███       | 63/205 [03:04<07:06,  3.00s/it][A
+
+[submission_v4_last][rank2]:  31%|███       | 63/205 [03:05<07:01,  2.97s/it][A[A[submission_v4_last][rank0]:  31%|███       | 63/205 [03:05<06:57,  2.94s/it]
+
+
+[submission_v4_last][rank3]:  31%|███▏      | 64/204 [03:06<06:33,  2.81s/it][A[A[A
+[submission_v4_last][rank1]:  31%|███       | 64/205 [03:06<06:27,  2.75s/it][A
+
+[submission_v4_last][rank2]:  31%|███       | 64/205 [03:08<06:49,  2.90s/it][A[A[submission_v4_last][rank0]:  31%|███       | 64/205 [03:08<06:32,  2.78s/it]
+[submission_v4_last][rank1]:  32%|███▏      | 65/205 [03:09<06:32,  2.81s/it][A
+
+
+[submission_v4_last][rank3]:  32%|███▏      | 65/204 [03:09<06:56,  2.99s/it][A[A[A
+
+[submission_v4_last][rank2]:  32%|███▏      | 65/205 [03:10<06:46,  2.91s/it][A[A[submission_v4_last][rank0]:  32%|███▏      | 65/205 [03:11<06:56,  2.98s/it]
+
+
+[submission_v4_last][rank3]:  32%|███▏      | 66/204 [03:11<06:06,  2.65s/it][A[A[A
+[submission_v4_last][rank1]:  32%|███▏      | 66/205 [03:12<06:36,  2.85s/it][A
+
+[submission_v4_last][rank2]:  32%|███▏      | 66/205 [03:13<06:49,  2.95s/it][A[A[submission_v4_last][rank0]:  32%|███▏      | 66/205 [03:14<06:57,  3.00s/it]
+
+
+[submission_v4_last][rank3]:  33%|███▎      | 67/204 [03:15<06:37,  2.90s/it][A[A[A
+[submission_v4_last][rank1]:  33%|███▎      | 67/205 [03:15<06:42,  2.91s/it][A
+
+[submission_v4_last][rank2]:  33%|███▎      | 67/205 [03:16<06:39,  2.90s/it][A[A
+
+
+[submission_v4_last][rank3]:  33%|███▎      | 68/204 [03:17<06:06,  2.70s/it][A[A[A[submission_v4_last][rank0]:  33%|███▎      | 67/205 [03:17<06:59,  3.04s/it]
+[submission_v4_last][rank1]:  33%|███▎      | 68/205 [03:18<06:51,  3.00s/it][A
+
+[submission_v4_last][rank2]:  33%|███▎      | 68/205 [03:19<06:17,  2.75s/it][A[A
+
+
+[submission_v4_last][rank3]:  34%|███▍      | 69/204 [03:20<06:07,  2.72s/it][A[A[A[submission_v4_last][rank0]:  33%|███▎      | 68/205 [03:20<06:52,  3.01s/it]
+[submission_v4_last][rank1]:  34%|███▎      | 69/205 [03:20<06:07,  2.70s/it][A
+
+[submission_v4_last][rank2]:  34%|███▎      | 69/205 [03:22<06:20,  2.80s/it][A[A
+
+
+[submission_v4_last][rank3]:  34%|███▍      | 70/204 [03:23<06:12,  2.78s/it][A[A[A[submission_v4_last][rank0]:  34%|███▎      | 69/205 [03:23<06:45,  2.98s/it]
+[submission_v4_last][rank1]:  34%|███▍      | 70/205 [03:23<06:12,  2.76s/it][A
+
+[submission_v4_last][rank2]:  34%|███▍      | 70/205 [03:24<06:18,  2.80s/it][A[A
+
+
+[submission_v4_last][rank3]:  35%|███▍      | 71/204 [03:25<06:10,  2.78s/it][A[A[A[submission_v4_last][rank0]:  34%|███▍      | 70/205 [03:26<06:43,  2.99s/it]
+[submission_v4_last][rank1]:  35%|███▍      | 71/205 [03:26<06:24,  2.87s/it][A
+
+[submission_v4_last][rank2]:  35%|███▍      | 71/205 [03:28<06:46,  3.04s/it][A[A[submission_v4_last][rank0]:  35%|███▍      | 71/205 [03:28<06:10,  2.77s/it]
+[submission_v4_last][rank1]:  35%|███▌      | 72/205 [03:29<05:53,  2.66s/it][A
+
+
+[submission_v4_last][rank3]:  35%|███▌      | 72/204 [03:29<06:37,  3.01s/it][A[A[A
+
+[submission_v4_last][rank2]:  35%|███▌      | 72/205 [03:31<06:40,  3.01s/it][A[A[submission_v4_last][rank0]:  35%|███▌      | 72/205 [03:31<06:07,  2.76s/it]
+[submission_v4_last][rank1]:  36%|███▌      | 73/205 [03:32<06:19,  2.87s/it][A
+
+
+[submission_v4_last][rank3]:  36%|███▌      | 73/204 [03:32<06:41,  3.06s/it][A[A[A
+
+[submission_v4_last][rank2]:  36%|███▌      | 73/205 [03:34<06:37,  3.01s/it][A[A[submission_v4_last][rank0]:  36%|███▌      | 73/205 [03:34<06:09,  2.80s/it]
+[submission_v4_last][rank1]:  36%|███▌      | 74/205 [03:35<06:05,  2.79s/it][A
+
+
+[submission_v4_last][rank3]:  36%|███▋      | 74/204 [03:35<06:33,  3.02s/it][A[A[A[submission_v4_last][rank0]:  36%|███▌      | 74/205 [03:37<06:06,  2.80s/it]
+
+[submission_v4_last][rank2]:  36%|███▌      | 74/205 [03:37<06:32,  3.00s/it][A[A
+[submission_v4_last][rank1]:  37%|███▋      | 75/205 [03:38<06:21,  2.93s/it][A
+
+
+[submission_v4_last][rank3]:  37%|███▋      | 75/204 [03:38<06:25,  2.99s/it][A[A[A
+
+[submission_v4_last][rank2]:  37%|███▋      | 75/205 [03:40<06:22,  2.94s/it][A[A[submission_v4_last][rank0]:  37%|███▋      | 75/205 [03:40<06:15,  2.89s/it]
+
+
+[submission_v4_last][rank3]:  37%|███▋      | 76/204 [03:41<06:17,  2.95s/it][A[A[A
+[submission_v4_last][rank1]:  37%|███▋      | 76/205 [03:41<06:23,  2.97s/it][A
+
+[submission_v4_last][rank2]:  37%|███▋      | 76/205 [03:43<06:18,  2.94s/it][A[A[submission_v4_last][rank0]:  37%|███▋      | 76/205 [03:43<06:18,  2.94s/it]
+[submission_v4_last][rank1]:  38%|███▊      | 77/205 [03:44<06:16,  2.94s/it][A
+
+
+[submission_v4_last][rank3]:  38%|███▊      | 77/204 [03:44<06:15,  2.96s/it][A[A[A
+
+[submission_v4_last][rank2]:  38%|███▊      | 77/205 [03:46<06:18,  2.95s/it][A[A[submission_v4_last][rank0]:  38%|███▊      | 77/205 [03:46<06:14,  2.92s/it]
+[submission_v4_last][rank1]:  38%|███▊      | 78/205 [03:47<06:14,  2.95s/it][A
+
+
+[submission_v4_last][rank3]:  38%|███▊      | 78/204 [03:47<06:14,  2.97s/it][A[A[A
+
+[submission_v4_last][rank2]:  38%|███▊      | 78/205 [03:49<06:16,  2.96s/it][A[A[submission_v4_last][rank0]:  38%|███▊      | 78/205 [03:49<06:05,  2.88s/it]
+[submission_v4_last][rank1]:  39%|███▊      | 79/205 [03:50<06:10,  2.94s/it][A
+
+
+[submission_v4_last][rank3]:  39%|███▊      | 79/204 [03:50<06:10,  2.96s/it][A[A[A
+
+[submission_v4_last][rank2]:  39%|███▊      | 79/205 [03:51<06:07,  2.92s/it][A[A[submission_v4_last][rank0]:  39%|███▊      | 79/205 [03:52<06:04,  2.89s/it]
+[submission_v4_last][rank1]:  39%|███▉      | 80/205 [03:52<06:02,  2.90s/it][A
+
+
+[submission_v4_last][rank3]:  39%|███▉      | 80/204 [03:53<06:24,  3.10s/it][A[A[A
+
+[submission_v4_last][rank2]:  39%|███▉      | 80/205 [03:54<06:04,  2.92s/it][A[A[submission_v4_last][rank0]:  39%|███▉      | 80/205 [03:55<06:15,  3.00s/it]
+[submission_v4_last][rank1]:  40%|███▉      | 81/205 [03:55<06:01,  2.92s/it][A
+
+
+[submission_v4_last][rank3]:  40%|███▉      | 81/204 [03:56<06:09,  3.01s/it][A[A[A
+
+[submission_v4_last][rank2]:  40%|███▉      | 81/205 [03:57<05:57,  2.88s/it][A[A[submission_v4_last][rank0]:  40%|███▉      | 81/205 [03:58<06:08,  2.97s/it]
+[submission_v4_last][rank1]:  40%|████      | 82/205 [03:58<05:59,  2.92s/it][A
+
+
+[submission_v4_last][rank3]:  40%|████      | 82/204 [03:59<06:20,  3.12s/it][A[A[A
+
+[submission_v4_last][rank2]:  40%|████      | 82/205 [04:01<06:12,  3.03s/it][A[A[submission_v4_last][rank0]:  40%|████      | 82/205 [04:01<06:03,  2.96s/it]
+[submission_v4_last][rank1]:  40%|████      | 83/205 [04:01<05:55,  2.92s/it][A
+
+
+[submission_v4_last][rank3]:  41%|████      | 83/204 [04:02<06:05,  3.02s/it][A[A[A
+
+[submission_v4_last][rank2]:  40%|████      | 83/205 [04:03<06:00,  2.96s/it][A[A[submission_v4_last][rank0]:  40%|████      | 83/205 [04:04<06:05,  3.00s/it]
+[submission_v4_last][rank1]:  41%|████      | 84/205 [04:04<05:53,  2.92s/it][A
+
+
+[submission_v4_last][rank3]:  41%|████      | 84/204 [04:05<06:06,  3.06s/it][A[A[A
+
+[submission_v4_last][rank2]:  41%|████      | 84/205 [04:06<06:01,  2.99s/it][A[A[submission_v4_last][rank0]:  41%|████      | 84/205 [04:07<05:55,  2.94s/it]
+[submission_v4_last][rank1]:  41%|████▏     | 85/205 [04:07<05:50,  2.92s/it][A
+
+
+[submission_v4_last][rank3]:  42%|████▏     | 85/204 [04:08<05:54,  2.98s/it][A[A[A
+
+[submission_v4_last][rank2]:  41%|████▏     | 85/205 [04:09<05:51,  2.93s/it][A[A[submission_v4_last][rank0]:  41%|████▏     | 85/205 [04:10<06:00,  3.01s/it]
+[submission_v4_last][rank1]:  42%|████▏     | 86/205 [04:10<05:44,  2.90s/it][A
+
+
+[submission_v4_last][rank3]:  42%|████▏     | 86/204 [04:11<05:33,  2.83s/it][A[A[A
+
+[submission_v4_last][rank2]:  42%|████▏     | 86/205 [04:12<05:46,  2.91s/it][A[A[submission_v4_last][rank0]:  42%|████▏     | 86/205 [04:13<05:50,  2.95s/it]
+[submission_v4_last][rank1]:  42%|████▏     | 87/205 [04:13<05:37,  2.86s/it][A
+
+
+[submission_v4_last][rank3]:  43%|████▎     | 87/204 [04:13<05:31,  2.83s/it][A[A[A
+[submission_v4_last][rank1]:  43%|████▎     | 88/205 [04:16<05:37,  2.88s/it][A
+
+[submission_v4_last][rank2]:  42%|████▏     | 87/205 [04:16<06:12,  3.16s/it][A[A[submission_v4_last][rank0]:  42%|████▏     | 87/205 [04:16<06:01,  3.06s/it]
+
+
+[submission_v4_last][rank3]:  43%|████▎     | 88/204 [04:16<05:25,  2.80s/it][A[A[A
+[submission_v4_last][rank1]:  43%|████▎     | 89/205 [04:18<05:31,  2.86s/it][A[submission_v4_last][rank0]:  43%|████▎     | 88/205 [04:19<05:46,  2.96s/it]
+
+[submission_v4_last][rank2]:  43%|████▎     | 88/205 [04:19<06:02,  3.10s/it][A[A
+
+
+[submission_v4_last][rank3]:  44%|████▎     | 89/204 [04:19<05:31,  2.89s/it][A[A[A[submission_v4_last][rank0]:  43%|████▎     | 89/205 [04:21<05:36,  2.90s/it]
+[submission_v4_last][rank1]:  44%|████▍     | 90/205 [04:21<05:32,  2.90s/it][A
+
+[submission_v4_last][rank2]:  43%|████▎     | 89/205 [04:22<05:49,  3.01s/it][A[A
+
+
+[submission_v4_last][rank3]:  44%|████▍     | 90/204 [04:22<05:29,  2.89s/it][A[A[A
+[submission_v4_last][rank1]:  44%|████▍     | 91/205 [04:25<05:35,  2.94s/it][A[submission_v4_last][rank0]:  44%|████▍     | 90/205 [04:25<05:48,  3.03s/it]
+
+[submission_v4_last][rank2]:  44%|████▍     | 90/205 [04:25<05:52,  3.06s/it][A[A
+
+
+[submission_v4_last][rank3]:  45%|████▍     | 91/204 [04:25<05:35,  2.97s/it][A[A[A
+
+
+[submission_v4_last][rank3]:  45%|████▌     | 92/204 [04:27<05:01,  2.70s/it][A[A[A
+[submission_v4_last][rank1]:  45%|████▍     | 92/205 [04:27<05:31,  2.93s/it][A
+
+[submission_v4_last][rank2]:  44%|████▍     | 91/205 [04:28<05:40,  2.98s/it][A[A[submission_v4_last][rank0]:  44%|████▍     | 91/205 [04:28<05:43,  3.02s/it]
+
+[submission_v4_last][rank2]:  45%|████▍     | 92/205 [04:30<05:35,  2.97s/it][A[A[submission_v4_last][rank0]:  45%|████▍     | 92/205 [04:31<05:37,  2.99s/it]
+[submission_v4_last][rank1]:  45%|████▌     | 93/205 [04:31<05:40,  3.04s/it][A
+
+
+[submission_v4_last][rank3]:  46%|████▌     | 93/204 [04:31<05:24,  2.93s/it][A[A[A
+
+[submission_v4_last][rank2]:  45%|████▌     | 93/205 [04:33<05:26,  2.92s/it][A[A[submission_v4_last][rank0]:  45%|████▌     | 93/205 [04:34<05:32,  2.97s/it]
+
+
+[submission_v4_last][rank3]:  46%|████▌     | 94/204 [04:34<05:23,  2.94s/it][A[A[A
+[submission_v4_last][rank1]:  46%|████▌     | 94/205 [04:34<05:39,  3.06s/it][A
+
+[submission_v4_last][rank2]:  46%|████▌     | 94/205 [04:36<05:25,  2.93s/it][A[A[submission_v4_last][rank0]:  46%|████▌     | 94/205 [04:37<05:30,  2.98s/it]
+[submission_v4_last][rank1]:  46%|████▋     | 95/205 [04:37<05:38,  3.08s/it][A
+
+
+[submission_v4_last][rank3]:  47%|████▋     | 95/204 [04:37<05:33,  3.06s/it][A[A[A
+
+[submission_v4_last][rank2]:  46%|████▋     | 95/205 [04:39<05:06,  2.79s/it][A[A[submission_v4_last][rank0]:  46%|████▋     | 95/205 [04:39<05:25,  2.96s/it]
+
+
+[submission_v4_last][rank3]:  47%|████▋     | 96/204 [04:40<05:09,  2.87s/it][A[A[A
+[submission_v4_last][rank1]:  47%|████▋     | 96/205 [04:40<05:30,  3.03s/it][A
+
+[submission_v4_last][rank2]:  47%|████▋     | 96/205 [04:42<05:09,  2.84s/it][A[A[submission_v4_last][rank0]:  47%|████▋     | 96/205 [04:42<05:17,  2.91s/it]
+
+
+[submission_v4_last][rank3]:  48%|████▊     | 97/204 [04:42<05:08,  2.88s/it][A[A[A
+[submission_v4_last][rank1]:  47%|████▋     | 97/205 [04:43<05:17,  2.94s/it][A
+
+[submission_v4_last][rank2]:  47%|████▋     | 97/205 [04:44<05:05,  2.83s/it][A[A
+
+
+[submission_v4_last][rank3]:  48%|████▊     | 98/204 [04:45<04:52,  2.76s/it][A[A[A[submission_v4_last][rank0]:  47%|████▋     | 97/205 [04:45<05:13,  2.90s/it]
+[submission_v4_last][rank1]:  48%|████▊     | 98/205 [04:46<05:37,  3.16s/it][A
+
+[submission_v4_last][rank2]:  48%|████▊     | 98/205 [04:47<05:08,  2.88s/it][A[A
+
+
+[submission_v4_last][rank3]:  49%|████▊     | 99/204 [04:48<04:50,  2.76s/it][A[A[A[submission_v4_last][rank0]:  48%|████▊     | 98/205 [04:48<05:25,  3.04s/it]
+[submission_v4_last][rank1]:  48%|████▊     | 99/205 [04:49<05:10,  2.93s/it][A
+
+[submission_v4_last][rank2]:  48%|████▊     | 99/205 [04:50<05:02,  2.85s/it][A[A
+
+
+[submission_v4_last][rank3]:  49%|████▉     | 100/204 [04:51<04:50,  2.80s/it][A[A[A[submission_v4_last][rank0]:  48%|████▊     | 99/205 [04:51<05:12,  2.95s/it]
+[submission_v4_last][rank1]:  49%|████▉     | 100/205 [04:52<05:18,  3.04s/it][A
+
+[submission_v4_last][rank2]:  49%|████▉     | 100/205 [04:53<05:10,  2.95s/it][A[A
+
+
+[submission_v4_last][rank3]:  50%|████▉     | 101/204 [04:54<05:00,  2.92s/it][A[A[A[submission_v4_last][rank0]:  49%|████▉     | 100/205 [04:54<05:10,  2.96s/it]
+[submission_v4_last][rank1]:  49%|████▉     | 101/205 [04:55<05:27,  3.15s/it][A
+
+[submission_v4_last][rank2]:  49%|████▉     | 101/205 [04:57<05:14,  3.02s/it][A[A
+
+
+[submission_v4_last][rank3]:  50%|█████     | 102/204 [04:57<05:12,  3.06s/it][A[A[A[submission_v4_last][rank0]:  49%|████▉     | 101/205 [04:58<05:19,  3.08s/it]
+[submission_v4_last][rank1]:  50%|████▉     | 102/205 [04:59<05:26,  3.17s/it][A
+
+[submission_v4_last][rank2]:  50%|████▉     | 102/205 [05:00<05:10,  3.02s/it][A[A
+
+
+[submission_v4_last][rank3]:  50%|█████     | 103/204 [05:00<04:55,  2.92s/it][A[A[A[submission_v4_last][rank0]:  50%|████▉     | 102/205 [05:00<05:06,  2.98s/it]
+[submission_v4_last][rank1]:  50%|█████     | 103/205 [05:01<05:11,  3.06s/it][A
+
+[submission_v4_last][rank2]:  50%|█████     | 103/205 [05:02<05:01,  2.95s/it][A[A
+
+
+[submission_v4_last][rank3]:  51%|█████     | 104/204 [05:03<04:49,  2.89s/it][A[A[A[submission_v4_last][rank0]:  50%|█████     | 103/205 [05:03<04:58,  2.92s/it]
+[submission_v4_last][rank1]:  51%|█████     | 104/205 [05:04<05:04,  3.02s/it][A
+
+[submission_v4_last][rank2]:  51%|█████     | 104/205 [05:05<04:58,  2.95s/it][A[A
+
+
+[submission_v4_last][rank3]:  51%|█████▏    | 105/204 [05:06<05:04,  3.08s/it][A[A[A[submission_v4_last][rank0]:  51%|█████     | 104/205 [05:06<05:03,  3.01s/it]
+[submission_v4_last][rank1]:  51%|█████     | 105/205 [05:07<05:02,  3.02s/it][A
+
+[submission_v4_last][rank2]:  51%|█████     | 105/205 [05:08<04:49,  2.89s/it][A[A
+
+
+[submission_v4_last][rank3]:  52%|█████▏    | 106/204 [05:09<04:53,  3.00s/it][A[A[A[submission_v4_last][rank0]:  51%|█████     | 105/205 [05:09<04:57,  2.98s/it]
+[submission_v4_last][rank1]:  52%|█████▏    | 106/205 [05:11<05:13,  3.17s/it][A
+
+[submission_v4_last][rank2]:  52%|█████▏    | 106/205 [05:11<04:46,  2.89s/it][A[A
+
+
+[submission_v4_last][rank3]:  52%|█████▏    | 107/204 [05:12<05:01,  3.10s/it][A[A[A[submission_v4_last][rank0]:  52%|█████▏    | 106/205 [05:13<05:09,  3.13s/it]
+[submission_v4_last][rank1]:  52%|█████▏    | 107/205 [05:13<04:54,  3.01s/it][A
+
+[submission_v4_last][rank2]:  52%|█████▏    | 107/205 [05:14<04:45,  2.91s/it][A[A[submission_v4_last][rank0]:  52%|█████▏    | 107/205 [05:15<04:55,  3.02s/it]
+
+
+[submission_v4_last][rank3]:  53%|█████▎    | 108/204 [05:16<05:03,  3.16s/it][A[A[A
+[submission_v4_last][rank1]:  53%|█████▎    | 108/205 [05:17<05:03,  3.13s/it][A
+
+[submission_v4_last][rank2]:  53%|█████▎    | 108/205 [05:17<04:58,  3.08s/it][A[A
+
+
+[submission_v4_last][rank3]:  53%|█████▎    | 109/204 [05:18<04:37,  2.92s/it][A[A[A[submission_v4_last][rank0]:  53%|█████▎    | 108/205 [05:18<04:53,  3.03s/it]
+[submission_v4_last][rank1]:  53%|█████▎    | 109/205 [05:20<05:01,  3.14s/it][A
+
+[submission_v4_last][rank2]:  53%|█████▎    | 109/205 [05:20<04:46,  2.98s/it][A[A
+
+
+[submission_v4_last][rank3]:  54%|█████▍    | 110/204 [05:21<04:30,  2.87s/it][A[A[A[submission_v4_last][rank0]:  53%|█████▎    | 109/205 [05:21<04:42,  2.95s/it]
+[submission_v4_last][rank1]:  54%|█████▎    | 110/205 [05:23<04:55,  3.11s/it][A
+
+[submission_v4_last][rank2]:  54%|█████▎    | 110/205 [05:23<04:45,  3.00s/it][A[A
+
+
+[submission_v4_last][rank3]:  54%|█████▍    | 111/204 [05:24<04:28,  2.88s/it][A[A[A[submission_v4_last][rank0]:  54%|█████▎    | 110/205 [05:24<04:39,  2.95s/it]
+[submission_v4_last][rank1]:  54%|█████▍    | 111/205 [05:26<04:54,  3.14s/it][A
+
+[submission_v4_last][rank2]:  54%|█████▍    | 111/205 [05:26<04:47,  3.06s/it][A[A
+
+
+[submission_v4_last][rank3]:  55%|█████▍    | 112/204 [05:27<04:25,  2.88s/it][A[A[A[submission_v4_last][rank0]:  54%|█████▍    | 111/205 [05:27<04:32,  2.90s/it]
+
+[submission_v4_last][rank2]:  55%|█████▍    | 112/205 [05:29<04:18,  2.78s/it][A[A
+[submission_v4_last][rank1]:  55%|█████▍    | 112/205 [05:29<04:44,  3.06s/it][A
+
+
+[submission_v4_last][rank3]:  55%|█████▌    | 113/204 [05:30<04:27,  2.94s/it][A[A[A[submission_v4_last][rank0]:  55%|█████▍    | 112/205 [05:31<04:51,  3.14s/it]
+
+[submission_v4_last][rank2]:  55%|█████▌    | 113/205 [05:32<04:20,  2.84s/it][A[A
+[submission_v4_last][rank1]:  55%|█████▌    | 113/205 [05:32<04:48,  3.13s/it][A
+
+
+[submission_v4_last][rank3]:  56%|█████▌    | 114/204 [05:33<04:38,  3.09s/it][A[A[A[submission_v4_last][rank0]:  55%|█████▌    | 113/205 [05:33<04:38,  3.03s/it]
+
+[submission_v4_last][rank2]:  56%|█████▌    | 114/205 [05:35<04:38,  3.06s/it][A[A
+[submission_v4_last][rank1]:  56%|█████▌    | 114/205 [05:35<04:39,  3.07s/it][A
+
+
+[submission_v4_last][rank3]:  56%|█████▋    | 115/204 [05:36<04:29,  3.03s/it][A[A[A[submission_v4_last][rank0]:  56%|█████▌    | 114/205 [05:37<04:53,  3.22s/it]
+
+[submission_v4_last][rank2]:  56%|█████▌    | 115/205 [05:38<04:33,  3.04s/it][A[A
+[submission_v4_last][rank1]:  56%|█████▌    | 115/205 [05:38<04:27,  2.97s/it][A
+
+
+[submission_v4_last][rank3]:  57%|█████▋    | 116/204 [05:39<04:19,  2.95s/it][A[A[A[submission_v4_last][rank0]:  56%|█████▌    | 115/205 [05:40<04:48,  3.20s/it]
+
+[submission_v4_last][rank2]:  57%|█████▋    | 116/205 [05:41<04:23,  2.97s/it][A[A
+[submission_v4_last][rank1]:  57%|█████▋    | 116/205 [05:41<04:19,  2.92s/it][A
+
+
+[submission_v4_last][rank3]:  57%|█████▋    | 117/204 [05:42<04:15,  2.93s/it][A[A[A[submission_v4_last][rank0]:  57%|█████▋    | 116/205 [05:44<04:49,  3.26s/it]
+[submission_v4_last][rank1]:  57%|█████▋    | 117/205 [05:44<04:17,  2.92s/it][A
+
+[submission_v4_last][rank2]:  57%|█████▋    | 117/205 [05:44<04:23,  2.99s/it][A[A
+
+
+[submission_v4_last][rank3]:  58%|█████▊    | 118/204 [05:45<04:12,  2.94s/it][A[A[A
+[submission_v4_last][rank1]:  58%|█████▊    | 118/205 [05:46<04:01,  2.77s/it][A[submission_v4_last][rank0]:  57%|█████▋    | 117/205 [05:46<04:31,  3.09s/it]
+
+[submission_v4_last][rank2]:  58%|█████▊    | 118/205 [05:47<04:20,  3.00s/it][A[A
+
+
+[submission_v4_last][rank3]:  58%|█████▊    | 119/204 [05:48<04:27,  3.14s/it][A[A[A[submission_v4_last][rank0]:  58%|█████▊    | 118/205 [05:49<04:24,  3.04s/it]
+[submission_v4_last][rank1]:  58%|█████▊    | 119/205 [05:49<04:03,  2.84s/it][A
+
+[submission_v4_last][rank2]:  58%|█████▊    | 119/205 [05:50<04:12,  2.94s/it][A[A
+
+
+[submission_v4_last][rank3]:  59%|█████▉    | 120/204 [05:51<04:15,  3.05s/it][A[A[A
+[submission_v4_last][rank1]:  59%|█████▊    | 120/205 [05:52<04:00,  2.83s/it][A[submission_v4_last][rank0]:  58%|█████▊    | 119/205 [05:52<04:18,  3.01s/it]
+
+[submission_v4_last][rank2]:  59%|█████▊    | 120/205 [05:53<04:12,  2.98s/it][A[A
+
+
+[submission_v4_last][rank3]:  59%|█████▉    | 121/204 [05:54<04:08,  3.00s/it][A[A[A
+[submission_v4_last][rank1]:  59%|█████▉    | 121/205 [05:55<03:59,  2.85s/it][A[submission_v4_last][rank0]:  59%|█████▊    | 120/205 [05:55<04:16,  3.02s/it]
+
+[submission_v4_last][rank2]:  59%|█████▉    | 121/205 [05:56<04:07,  2.94s/it][A[A
+
+
+[submission_v4_last][rank3]:  60%|█████▉    | 122/204 [05:57<04:01,  2.94s/it][A[A[A
+[submission_v4_last][rank1]:  60%|█████▉    | 122/205 [05:58<03:55,  2.83s/it][A[submission_v4_last][rank0]:  59%|█████▉    | 121/205 [05:58<04:12,  3.01s/it]
+
+[submission_v4_last][rank2]:  60%|█████▉    | 122/205 [05:59<04:02,  2.92s/it][A[A
+
+
+[submission_v4_last][rank3]:  60%|██████    | 123/204 [06:00<04:03,  3.01s/it][A[A[A
+[submission_v4_last][rank1]:  60%|██████    | 123/205 [06:01<03:58,  2.91s/it][A[submission_v4_last][rank0]:  60%|█████▉    | 122/205 [06:01<04:04,  2.95s/it]
+
+[submission_v4_last][rank2]:  60%|██████    | 123/205 [06:02<04:08,  3.03s/it][A[A
+
+
+[submission_v4_last][rank3]:  61%|██████    | 124/204 [06:02<03:46,  2.83s/it][A[A[A[submission_v4_last][rank0]:  60%|██████    | 123/205 [06:04<03:54,  2.86s/it]
+[submission_v4_last][rank1]:  60%|██████    | 124/205 [06:04<03:59,  2.95s/it][A
+
+[submission_v4_last][rank2]:  60%|██████    | 124/205 [06:05<04:02,  2.99s/it][A[A
+
+
+[submission_v4_last][rank3]:  61%|██████▏   | 125/204 [06:05<03:44,  2.84s/it][A[A[A[submission_v4_last][rank0]:  60%|██████    | 124/205 [06:07<03:50,  2.85s/it]
+[submission_v4_last][rank1]:  61%|██████    | 125/205 [06:07<04:02,  3.03s/it][A
+
+[submission_v4_last][rank2]:  61%|██████    | 125/205 [06:08<04:00,  3.01s/it][A[A
+
+
+[submission_v4_last][rank3]:  62%|██████▏   | 126/204 [06:08<03:44,  2.88s/it][A[A[A[submission_v4_last][rank0]:  61%|██████    | 125/205 [06:09<03:46,  2.83s/it]
+[submission_v4_last][rank1]:  61%|██████▏   | 126/205 [06:10<03:52,  2.95s/it][A
+
+[submission_v4_last][rank2]:  61%|██████▏   | 126/205 [06:11<03:57,  3.01s/it][A[A
+
+
+[submission_v4_last][rank3]:  62%|██████▏   | 127/204 [06:11<03:43,  2.90s/it][A[A[A[submission_v4_last][rank0]:  61%|██████▏   | 126/205 [06:12<03:48,  2.89s/it]
+[submission_v4_last][rank1]:  62%|██████▏   | 127/205 [06:13<03:48,  2.93s/it][A
+
+[submission_v4_last][rank2]:  62%|██████▏   | 127/205 [06:14<03:51,  2.96s/it][A[A
+
+
+[submission_v4_last][rank3]:  63%|██████▎   | 128/204 [06:14<03:43,  2.94s/it][A[A[A[submission_v4_last][rank0]:  62%|██████▏   | 127/205 [06:15<03:43,  2.87s/it]
+[submission_v4_last][rank1]:  62%|██████▏   | 128/205 [06:16<03:42,  2.89s/it][A
+
+[submission_v4_last][rank2]:  62%|██████▏   | 128/205 [06:17<03:48,  2.96s/it][A[A
+
+
+[submission_v4_last][rank3]:  63%|██████▎   | 129/204 [06:17<03:51,  3.09s/it][A[A[A[submission_v4_last][rank0]:  62%|██████▏   | 128/205 [06:18<03:42,  2.90s/it]
+[submission_v4_last][rank1]:  63%|██████▎   | 129/205 [06:19<03:40,  2.90s/it][A
+
+[submission_v4_last][rank2]:  63%|██████▎   | 129/205 [06:20<03:47,  2.99s/it][A[A
+
+
+[submission_v4_last][rank3]:  64%|██████▎   | 130/204 [06:20<03:45,  3.05s/it][A[A[A[submission_v4_last][rank0]:  63%|██████▎   | 129/205 [06:21<03:43,  2.94s/it]
+[submission_v4_last][rank1]:  63%|██████▎   | 130/205 [06:22<03:46,  3.02s/it][A
+
+[submission_v4_last][rank2]:  63%|██████▎   | 130/205 [06:22<03:40,  2.94s/it][A[A
+
+
+[submission_v4_last][rank3]:  64%|██████▍   | 131/204 [06:23<03:39,  3.00s/it][A[A[A
+[submission_v4_last][rank1]:  64%|██████▍   | 131/205 [06:24<03:23,  2.75s/it][A[submission_v4_last][rank0]:  63%|██████▎   | 130/205 [06:24<03:37,  2.90s/it]
+
+[submission_v4_last][rank2]:  64%|██████▍   | 131/205 [06:25<03:28,  2.81s/it][A[A
+
+
+[submission_v4_last][rank3]:  65%|██████▍   | 132/204 [06:26<03:30,  2.92s/it][A[A[A
+[submission_v4_last][rank1]:  64%|██████▍   | 132/205 [06:27<03:21,  2.76s/it][A[submission_v4_last][rank0]:  64%|██████▍   | 131/205 [06:27<03:34,  2.90s/it]
+
+[submission_v4_last][rank2]:  64%|██████▍   | 132/205 [06:29<03:41,  3.03s/it][A[A
+
+
+[submission_v4_last][rank3]:  65%|██████▌   | 133/204 [06:29<03:37,  3.07s/it][A[A[A[submission_v4_last][rank0]:  64%|██████▍   | 132/205 [06:30<03:31,  2.90s/it]
+[submission_v4_last][rank1]:  65%|██████▍   | 133/205 [06:30<03:26,  2.87s/it][A
+
+[submission_v4_last][rank2]:  65%|██████▍   | 133/205 [06:32<03:38,  3.03s/it][A[A[submission_v4_last][rank0]:  65%|██████▍   | 133/205 [06:33<03:30,  2.92s/it]
+
+
+[submission_v4_last][rank3]:  66%|██████▌   | 134/204 [06:33<03:39,  3.13s/it][A[A[A
+[submission_v4_last][rank1]:  65%|██████▌   | 134/205 [06:33<03:25,  2.90s/it][A
+
+[submission_v4_last][rank2]:  65%|██████▌   | 134/205 [06:35<03:40,  3.10s/it][A[A
+
+
+[submission_v4_last][rank3]:  66%|██████▌   | 135/204 [06:36<03:33,  3.10s/it][A[A[A
+[submission_v4_last][rank1]:  66%|██████▌   | 135/205 [06:36<03:26,  2.94s/it][A[submission_v4_last][rank0]:  65%|██████▌   | 134/205 [06:36<03:41,  3.12s/it]
+
+[submission_v4_last][rank2]:  66%|██████▌   | 135/205 [06:38<03:33,  3.04s/it][A[A
+
+
+[submission_v4_last][rank3]:  67%|██████▋   | 136/204 [06:39<03:23,  2.99s/it][A[A[A
+[submission_v4_last][rank1]:  66%|██████▋   | 136/205 [06:39<03:19,  2.89s/it][A[submission_v4_last][rank0]:  66%|██████▌   | 135/205 [06:40<03:41,  3.17s/it]
+
+[submission_v4_last][rank2]:  66%|██████▋   | 136/205 [06:41<03:25,  2.97s/it][A[A
+
+
+[submission_v4_last][rank3]:  67%|██████▋   | 137/204 [06:42<03:21,  3.01s/it][A[A[A
+[submission_v4_last][rank1]:  67%|██████▋   | 137/205 [06:42<03:27,  3.06s/it][A[submission_v4_last][rank0]:  66%|██████▋   | 136/205 [06:42<03:32,  3.08s/it]
+
+[submission_v4_last][rank2]:  67%|██████▋   | 137/205 [06:43<03:13,  2.85s/it][A[A
+
+
+[submission_v4_last][rank3]:  68%|██████▊   | 138/204 [06:45<03:18,  3.01s/it][A[A[A[submission_v4_last][rank0]:  67%|██████▋   | 137/205 [06:45<03:25,  3.03s/it]
+[submission_v4_last][rank1]:  67%|██████▋   | 138/205 [06:45<03:31,  3.15s/it][A
+
+[submission_v4_last][rank2]:  67%|██████▋   | 138/205 [06:46<03:13,  2.88s/it][A[A
+
+
+[submission_v4_last][rank3]:  68%|██████▊   | 139/204 [06:48<03:14,  2.99s/it][A[A[A[submission_v4_last][rank0]:  67%|██████▋   | 138/205 [06:48<03:06,  2.78s/it]
+[submission_v4_last][rank1]:  68%|██████▊   | 139/205 [06:49<03:33,  3.23s/it][A
+
+[submission_v4_last][rank2]:  68%|██████▊   | 139/205 [06:49<03:11,  2.90s/it][A[A[submission_v4_last][rank0]:  68%|██████▊   | 139/205 [06:51<03:06,  2.83s/it]
+
+
+[submission_v4_last][rank3]:  69%|██████▊   | 140/204 [06:51<03:19,  3.12s/it][A[A[A
+[submission_v4_last][rank1]:  68%|██████▊   | 140/205 [06:52<03:20,  3.08s/it][A
+
+[submission_v4_last][rank2]:  68%|██████▊   | 140/205 [06:52<03:11,  2.95s/it][A[A[submission_v4_last][rank0]:  68%|██████▊   | 140/205 [06:54<03:09,  2.92s/it]
+
+
+[submission_v4_last][rank3]:  69%|██████▉   | 141/204 [06:54<03:23,  3.22s/it][A[A[A
+
+[submission_v4_last][rank2]:  69%|██████▉   | 141/205 [06:55<03:07,  2.92s/it][A[A
+[submission_v4_last][rank1]:  69%|██████▉   | 141/205 [06:55<03:22,  3.17s/it][A[submission_v4_last][rank0]:  69%|██████▉   | 141/205 [06:57<03:06,  2.91s/it]
+[submission_v4_last][rank1]:  69%|██████▉   | 142/205 [06:57<03:05,  2.95s/it][A
+
+
+[submission_v4_last][rank3]:  70%|██████▉   | 142/204 [06:58<03:20,  3.23s/it][A[A[A
+
+[submission_v4_last][rank2]:  69%|██████▉   | 142/205 [06:58<03:09,  3.01s/it][A[A[submission_v4_last][rank0]:  69%|██████▉   | 142/205 [06:59<03:03,  2.91s/it]
+[submission_v4_last][rank1]:  70%|██████▉   | 143/205 [07:01<03:06,  3.00s/it][A
+
+
+[submission_v4_last][rank3]:  70%|███████   | 143/204 [07:01<03:13,  3.17s/it][A[A[A
+
+[submission_v4_last][rank2]:  70%|██████▉   | 143/205 [07:01<03:06,  3.01s/it][A[A[submission_v4_last][rank0]:  70%|██████▉   | 143/205 [07:02<02:57,  2.86s/it]
+[submission_v4_last][rank1]:  70%|███████   | 144/205 [07:04<03:07,  3.08s/it][A
+
+
+[submission_v4_last][rank3]:  71%|███████   | 144/204 [07:04<03:09,  3.16s/it][A[A[A
+
+[submission_v4_last][rank2]:  70%|███████   | 144/205 [07:04<02:59,  2.94s/it][A[A[submission_v4_last][rank0]:  70%|███████   | 144/205 [07:06<03:05,  3.04s/it]
+[submission_v4_last][rank1]:  71%|███████   | 145/205 [07:07<03:02,  3.04s/it][A
+
+
+[submission_v4_last][rank3]:  71%|███████   | 145/204 [07:07<03:15,  3.31s/it][A[A[A
+
+[submission_v4_last][rank2]:  71%|███████   | 145/205 [07:08<03:11,  3.20s/it][A[A[submission_v4_last][rank0]:  71%|███████   | 145/205 [07:08<02:45,  2.76s/it]
+[submission_v4_last][rank1]:  71%|███████   | 146/205 [07:10<03:11,  3.24s/it][A
+
+
+[submission_v4_last][rank3]:  72%|███████▏  | 146/204 [07:11<03:16,  3.39s/it][A[A[A
+
+[submission_v4_last][rank2]:  71%|███████   | 146/205 [07:11<03:14,  3.29s/it][A[A[submission_v4_last][rank0]:  71%|███████   | 146/205 [07:12<03:00,  3.06s/it]
+[submission_v4_last][rank1]:  72%|███████▏  | 147/205 [07:14<03:11,  3.30s/it][A
+
+
+[submission_v4_last][rank3]:  72%|███████▏  | 147/204 [07:15<03:17,  3.46s/it][A[A[A
+
+[submission_v4_last][rank2]:  72%|███████▏  | 147/205 [07:15<03:16,  3.38s/it][A[A[submission_v4_last][rank0]:  72%|███████▏  | 147/205 [07:15<03:04,  3.18s/it]
+[submission_v4_last][rank1]:  72%|███████▏  | 148/205 [07:17<03:11,  3.36s/it][A
+
+
+[submission_v4_last][rank3]:  73%|███████▎  | 148/204 [07:18<03:14,  3.48s/it][A[A[A
+
+[submission_v4_last][rank2]:  72%|███████▏  | 148/205 [07:18<03:14,  3.42s/it][A[A[submission_v4_last][rank0]:  72%|███████▏  | 148/205 [07:19<03:08,  3.31s/it]
+[submission_v4_last][rank1]:  73%|███████▎  | 149/205 [07:21<03:12,  3.44s/it][A
+
+
+[submission_v4_last][rank3]:  73%|███████▎  | 149/204 [07:22<03:13,  3.51s/it][A[A[A
+
+[submission_v4_last][rank2]:  73%|███████▎  | 149/205 [07:22<03:14,  3.48s/it][A[A[submission_v4_last][rank0]:  73%|███████▎  | 149/205 [07:22<03:10,  3.40s/it]
+[submission_v4_last][rank1]:  73%|███████▎  | 150/205 [07:24<03:09,  3.45s/it][A
+
+
+[submission_v4_last][rank3]:  74%|███████▎  | 150/204 [07:25<03:09,  3.51s/it][A[A[A
+
+[submission_v4_last][rank2]:  73%|███████▎  | 150/205 [07:26<03:15,  3.55s/it][A[A[submission_v4_last][rank0]:  73%|███████▎  | 150/205 [07:26<03:11,  3.48s/it]
+[submission_v4_last][rank1]:  74%|███████▎  | 151/205 [07:28<03:07,  3.47s/it][A
+
+
+[submission_v4_last][rank3]:  74%|███████▍  | 151/204 [07:29<03:09,  3.57s/it][A[A[A[submission_v4_last][rank0]:  74%|███████▎  | 151/205 [07:30<03:11,  3.56s/it]
+
+[submission_v4_last][rank2]:  74%|███████▎  | 151/205 [07:30<03:17,  3.66s/it][A[A
+[submission_v4_last][rank1]:  74%|███████▍  | 152/205 [07:32<03:06,  3.52s/it][A
+
+
+[submission_v4_last][rank3]:  75%|███████▍  | 152/204 [07:33<03:06,  3.59s/it][A[A[A[submission_v4_last][rank0]:  74%|███████▍  | 152/205 [07:33<03:07,  3.54s/it]
+
+[submission_v4_last][rank2]:  74%|███████▍  | 152/205 [07:33<03:13,  3.65s/it][A[A
+[submission_v4_last][rank1]:  75%|███████▍  | 153/205 [07:35<03:02,  3.50s/it][A
+
+
+[submission_v4_last][rank3]:  75%|███████▌  | 153/204 [07:36<03:02,  3.58s/it][A[A[A[submission_v4_last][rank0]:  75%|███████▍  | 153/205 [07:37<03:05,  3.56s/it]
+
+[submission_v4_last][rank2]:  75%|███████▍  | 153/205 [07:37<03:07,  3.61s/it][A[A
+[submission_v4_last][rank1]:  75%|███████▌  | 154/205 [07:39<03:02,  3.57s/it][A
+
+
+[submission_v4_last][rank3]:  75%|███████▌  | 154/204 [07:40<02:59,  3.60s/it][A[A[A
+
+[submission_v4_last][rank2]:  75%|███████▌  | 154/205 [07:41<03:06,  3.66s/it][A[A[submission_v4_last][rank0]:  75%|███████▌  | 154/205 [07:41<03:05,  3.63s/it]
+[submission_v4_last][rank1]:  76%|███████▌  | 155/205 [07:42<02:58,  3.57s/it][A
+
+
+[submission_v4_last][rank3]:  76%|███████▌  | 155/204 [07:43<02:56,  3.60s/it][A[A[A
+
+[submission_v4_last][rank2]:  76%|███████▌  | 155/205 [07:44<03:00,  3.60s/it][A[A[submission_v4_last][rank0]:  76%|███████▌  | 155/205 [07:44<02:59,  3.60s/it]
+[submission_v4_last][rank1]:  76%|███████▌  | 156/205 [07:46<02:54,  3.56s/it][A
+
+
+[submission_v4_last][rank3]:  76%|███████▋  | 156/204 [07:47<02:53,  3.62s/it][A[A[A
+
+[submission_v4_last][rank2]:  76%|███████▌  | 156/205 [07:48<02:57,  3.61s/it][A[A[submission_v4_last][rank0]:  76%|███████▌  | 156/205 [07:48<02:59,  3.65s/it]
+[submission_v4_last][rank1]:  77%|███████▋  | 157/205 [07:49<02:51,  3.56s/it][A
+
+
+[submission_v4_last][rank3]:  77%|███████▋  | 157/204 [07:51<02:49,  3.61s/it][A[A[A
+
+[submission_v4_last][rank2]:  77%|███████▋  | 157/205 [07:51<02:52,  3.58s/it][A[A[submission_v4_last][rank0]:  77%|███████▋  | 157/205 [07:51<02:52,  3.59s/it]
+[submission_v4_last][rank1]:  77%|███████▋  | 158/205 [07:53<02:46,  3.54s/it][A
+
+
+[submission_v4_last][rank3]:  77%|███████▋  | 158/204 [07:54<02:43,  3.56s/it][A[A[A
+
+[submission_v4_last][rank2]:  77%|███████▋  | 158/205 [07:55<02:50,  3.62s/it][A[A[submission_v4_last][rank0]:  77%|███████▋  | 158/205 [07:55<02:51,  3.65s/it]
+[submission_v4_last][rank1]:  78%|███████▊  | 159/205 [07:57<02:43,  3.56s/it][A
+
+
+[submission_v4_last][rank3]:  78%|███████▊  | 159/204 [07:58<02:42,  3.61s/it][A[A[A
+
+[submission_v4_last][rank2]:  78%|███████▊  | 159/205 [07:59<02:46,  3.63s/it][A[A[submission_v4_last][rank0]:  78%|███████▊  | 159/205 [07:59<02:49,  3.68s/it]
+[submission_v4_last][rank1]:  78%|███████▊  | 160/205 [08:00<02:42,  3.61s/it][A
+
+
+[submission_v4_last][rank3]:  78%|███████▊  | 160/204 [08:01<02:37,  3.57s/it][A[A[A
+
+[submission_v4_last][rank2]:  78%|███████▊  | 160/205 [08:02<02:44,  3.66s/it][A[A[submission_v4_last][rank0]:  78%|███████▊  | 160/205 [08:02<02:44,  3.65s/it]
+[submission_v4_last][rank1]:  79%|███████▊  | 161/205 [08:04<02:37,  3.57s/it][A
+
+
+[submission_v4_last][rank3]:  79%|███████▉  | 161/204 [08:05<02:34,  3.59s/it][A[A[A
+
+[submission_v4_last][rank2]:  79%|███████▊  | 161/205 [08:06<02:38,  3.60s/it][A[A[submission_v4_last][rank0]:  79%|███████▊  | 161/205 [08:06<02:41,  3.67s/it]
+[submission_v4_last][rank1]:  79%|███████▉  | 162/205 [08:07<02:32,  3.55s/it][A
+
+
+[submission_v4_last][rank3]:  79%|███████▉  | 162/204 [08:09<02:29,  3.56s/it][A[A[A
+
+[submission_v4_last][rank2]:  79%|███████▉  | 162/205 [08:09<02:34,  3.60s/it][A[A[submission_v4_last][rank0]:  79%|███████▉  | 162/205 [08:10<02:35,  3.62s/it]
+[submission_v4_last][rank1]:  80%|███████▉  | 163/205 [08:11<02:28,  3.54s/it][A
+
+
+[submission_v4_last][rank3]:  80%|███████▉  | 163/204 [08:12<02:28,  3.62s/it][A[A[A
+
+[submission_v4_last][rank2]:  80%|███████▉  | 163/205 [08:13<02:29,  3.56s/it][A[A[submission_v4_last][rank0]:  80%|███████▉  | 163/205 [08:13<02:33,  3.65s/it]
+[submission_v4_last][rank1]:  80%|████████  | 164/205 [08:15<02:27,  3.59s/it][A
+
+
+[submission_v4_last][rank3]:  80%|████████  | 164/204 [08:16<02:24,  3.62s/it][A[A[A
+
+[submission_v4_last][rank2]:  80%|████████  | 164/205 [08:16<02:24,  3.52s/it][A[A[submission_v4_last][rank0]:  80%|████████  | 164/205 [08:17<02:27,  3.60s/it]
+[submission_v4_last][rank1]:  80%|████████  | 165/205 [08:18<02:22,  3.56s/it][A
+
+
+[submission_v4_last][rank3]:  81%|████████  | 165/204 [08:19<02:19,  3.58s/it][A[A[A
+
+[submission_v4_last][rank2]:  80%|████████  | 165/205 [08:20<02:21,  3.54s/it][A[A[submission_v4_last][rank0]:  80%|████████  | 165/205 [08:20<02:23,  3.59s/it]
+[submission_v4_last][rank1]:  81%|████████  | 166/205 [08:22<02:19,  3.58s/it][A
+
+
+[submission_v4_last][rank3]:  81%|████████▏ | 166/204 [08:23<02:16,  3.60s/it][A[A[A
+
+[submission_v4_last][rank2]:  81%|████████  | 166/205 [08:23<02:17,  3.52s/it][A[A[submission_v4_last][rank0]:  81%|████████  | 166/205 [08:24<02:18,  3.56s/it]
+[submission_v4_last][rank1]:  81%|████████▏ | 167/205 [08:25<02:14,  3.54s/it][A
+
+[submission_v4_last][rank2]:  81%|████████▏ | 167/205 [08:27<02:13,  3.51s/it][A[A
+
+
+[submission_v4_last][rank3]:  82%|████████▏ | 167/204 [08:27<02:16,  3.68s/it][A[A[A[submission_v4_last][rank0]:  81%|████████▏ | 167/205 [08:28<02:17,  3.62s/it]
+[submission_v4_last][rank1]:  82%|████████▏ | 168/205 [08:29<02:10,  3.52s/it][A
+
+[submission_v4_last][rank2]:  82%|████████▏ | 168/205 [08:30<02:11,  3.55s/it][A[A
+
+
+[submission_v4_last][rank3]:  82%|████████▏ | 168/204 [08:31<02:12,  3.67s/it][A[A[A[submission_v4_last][rank0]:  82%|████████▏ | 168/205 [08:31<02:13,  3.60s/it]
+[submission_v4_last][rank1]:  82%|████████▏ | 169/205 [08:32<02:06,  3.53s/it][A
+
+[submission_v4_last][rank2]:  82%|████████▏ | 169/205 [08:34<02:07,  3.53s/it][A[A
+
+
+[submission_v4_last][rank3]:  83%|████████▎ | 169/204 [08:34<02:08,  3.66s/it][A[A[A[submission_v4_last][rank0]:  82%|████████▏ | 169/205 [08:35<02:09,  3.60s/it]
+[submission_v4_last][rank1]:  83%|████████▎ | 170/205 [08:36<02:03,  3.53s/it][A
+
+[submission_v4_last][rank2]:  83%|████████▎ | 170/205 [08:37<02:02,  3.50s/it][A[A
+
+
+[submission_v4_last][rank3]:  83%|████████▎ | 170/204 [08:38<02:04,  3.65s/it][A[A[A[submission_v4_last][rank0]:  83%|████████▎ | 170/205 [08:38<02:06,  3.60s/it]
+[submission_v4_last][rank1]:  83%|████████▎ | 171/205 [08:39<01:59,  3.51s/it][A
+
+[submission_v4_last][rank2]:  83%|████████▎ | 171/205 [08:41<02:01,  3.57s/it][A[A
+
+
+[submission_v4_last][rank3]:  84%|████████▍ | 171/204 [08:41<02:00,  3.64s/it][A[A[A[submission_v4_last][rank0]:  83%|████████▎ | 171/205 [08:42<02:01,  3.57s/it]
+[submission_v4_last][rank1]:  84%|████████▍ | 172/205 [08:43<01:58,  3.59s/it][A
+
+[submission_v4_last][rank2]:  84%|████████▍ | 172/205 [08:45<01:57,  3.55s/it][A[A
+
+
+[submission_v4_last][rank3]:  84%|████████▍ | 172/204 [08:45<01:56,  3.63s/it][A[A[A[submission_v4_last][rank0]:  84%|████████▍ | 172/205 [08:46<01:59,  3.63s/it]
+[submission_v4_last][rank1]:  84%|████████▍ | 173/205 [08:46<01:53,  3.55s/it][A
+
+[submission_v4_last][rank2]:  84%|████████▍ | 173/205 [08:48<01:53,  3.55s/it][A[A
+
+
+[submission_v4_last][rank3]:  85%|████████▍ | 173/204 [08:49<01:51,  3.60s/it][A[A[A[submission_v4_last][rank0]:  84%|████████▍ | 173/205 [08:49<01:56,  3.64s/it]
+[submission_v4_last][rank1]:  85%|████████▍ | 174/205 [08:50<01:50,  3.58s/it][A
+
+[submission_v4_last][rank2]:  85%|████████▍ | 174/205 [08:52<01:51,  3.60s/it][A[A
+
+
+[submission_v4_last][rank3]:  85%|████████▌ | 174/204 [08:52<01:49,  3.66s/it][A[A[A[submission_v4_last][rank0]:  85%|████████▍ | 174/205 [08:53<01:53,  3.66s/it]
+[submission_v4_last][rank1]:  85%|████████▌ | 175/205 [08:54<01:48,  3.63s/it][A
+
+[submission_v4_last][rank2]:  85%|████████▌ | 175/205 [08:55<01:47,  3.57s/it][A[A
+
+
+[submission_v4_last][rank3]:  86%|████████▌ | 175/204 [08:56<01:45,  3.65s/it][A[A[A[submission_v4_last][rank0]:  85%|████████▌ | 175/205 [08:57<01:49,  3.67s/it]
+[submission_v4_last][rank1]:  86%|████████▌ | 176/205 [08:57<01:43,  3.58s/it][A
+
+[submission_v4_last][rank2]:  86%|████████▌ | 176/205 [08:59<01:44,  3.61s/it][A[A
+
+
+[submission_v4_last][rank3]:  86%|████████▋ | 176/204 [09:00<01:41,  3.63s/it][A[A[A[submission_v4_last][rank0]:  86%|████████▌ | 176/205 [09:00<01:44,  3.60s/it]
+[submission_v4_last][rank1]:  86%|████████▋ | 177/205 [09:01<01:40,  3.59s/it][A
+
+[submission_v4_last][rank2]:  86%|████████▋ | 177/205 [09:02<01:39,  3.57s/it][A[A
+
+
+[submission_v4_last][rank3]:  87%|████████▋ | 177/204 [09:03<01:36,  3.57s/it][A[A[A[submission_v4_last][rank0]:  86%|████████▋ | 177/205 [09:04<01:40,  3.59s/it]
+[submission_v4_last][rank1]:  87%|████████▋ | 178/205 [09:04<01:36,  3.57s/it][A
+
+[submission_v4_last][rank2]:  87%|████████▋ | 178/205 [09:06<01:37,  3.60s/it][A[A
+
+
+[submission_v4_last][rank3]:  87%|████████▋ | 178/204 [09:07<01:33,  3.60s/it][A[A[A[submission_v4_last][rank0]:  87%|████████▋ | 178/205 [09:07<01:35,  3.55s/it]
+[submission_v4_last][rank1]:  87%|████████▋ | 179/205 [09:08<01:34,  3.62s/it][A
+
+[submission_v4_last][rank2]:  87%|████████▋ | 179/205 [09:10<01:33,  3.59s/it][A[A
+
+
+[submission_v4_last][rank3]:  88%|████████▊ | 179/204 [09:10<01:30,  3.61s/it][A[A[A[submission_v4_last][rank0]:  87%|████████▋ | 179/205 [09:11<01:32,  3.57s/it]
+[submission_v4_last][rank1]:  88%|████████▊ | 180/205 [09:12<01:30,  3.61s/it][A
+
+[submission_v4_last][rank2]:  88%|████████▊ | 180/205 [09:13<01:30,  3.62s/it][A[A
+
+
+[submission_v4_last][rank3]:  88%|████████▊ | 180/204 [09:14<01:27,  3.66s/it][A[A[A[submission_v4_last][rank0]:  88%|████████▊ | 180/205 [09:15<01:31,  3.65s/it]
+[submission_v4_last][rank1]:  88%|████████▊ | 181/205 [09:15<01:26,  3.60s/it][A
+
+[submission_v4_last][rank2]:  88%|████████▊ | 181/205 [09:17<01:26,  3.61s/it][A[A
+
+
+[submission_v4_last][rank3]:  89%|████████▊ | 181/204 [09:18<01:25,  3.70s/it][A[A[A[submission_v4_last][rank0]:  88%|████████▊ | 181/205 [09:18<01:28,  3.69s/it]
+[submission_v4_last][rank1]:  89%|████████▉ | 182/205 [09:19<01:22,  3.57s/it][A
+
+[submission_v4_last][rank2]:  89%|████████▉ | 182/205 [09:21<01:24,  3.68s/it][A[A
+
+
+[submission_v4_last][rank3]:  89%|████████▉ | 182/204 [09:21<01:20,  3.66s/it][A[A[A[submission_v4_last][rank0]:  89%|████████▉ | 182/205 [09:22<01:24,  3.66s/it]
+[submission_v4_last][rank1]:  89%|████████▉ | 183/205 [09:22<01:18,  3.58s/it][A
+
+[submission_v4_last][rank2]:  89%|████████▉ | 183/205 [09:24<01:20,  3.65s/it][A[A
+
+
+[submission_v4_last][rank3]:  90%|████████▉ | 183/204 [09:25<01:17,  3.69s/it][A[A[A[submission_v4_last][rank0]:  89%|████████▉ | 183/205 [09:26<01:20,  3.65s/it]
+[submission_v4_last][rank1]:  90%|████████▉ | 184/205 [09:26<01:14,  3.55s/it][A
+
+[submission_v4_last][rank2]:  90%|████████▉ | 184/205 [09:28<01:16,  3.65s/it][A[A
+
+
+[submission_v4_last][rank3]:  90%|█████████ | 184/204 [09:29<01:14,  3.70s/it][A[A[A[submission_v4_last][rank0]:  90%|████████▉ | 184/205 [09:29<01:17,  3.71s/it]
+[submission_v4_last][rank1]:  90%|█████████ | 185/205 [09:29<01:11,  3.58s/it][A
+
+[submission_v4_last][rank2]:  90%|█████████ | 185/205 [09:32<01:13,  3.68s/it][A[A
+
+
+[submission_v4_last][rank3]:  91%|█████████ | 185/204 [09:33<01:10,  3.70s/it][A[A[A[submission_v4_last][rank0]:  90%|█████████ | 185/205 [09:33<01:12,  3.62s/it]
+[submission_v4_last][rank1]:  91%|█████████ | 186/205 [09:33<01:07,  3.56s/it][A
+
+[submission_v4_last][rank2]:  91%|█████████ | 186/205 [09:35<01:08,  3.63s/it][A[A
+
+
+[submission_v4_last][rank3]:  91%|█████████ | 186/204 [09:36<01:05,  3.66s/it][A[A[A[submission_v4_last][rank0]:  91%|█████████ | 186/205 [09:36<01:08,  3.60s/it]
+[submission_v4_last][rank1]:  91%|█████████ | 187/205 [09:37<01:04,  3.61s/it][A
+
+[submission_v4_last][rank2]:  91%|█████████ | 187/205 [09:39<01:05,  3.62s/it][A[A
+
+
+[submission_v4_last][rank3]:  92%|█████████▏| 187/204 [09:40<01:01,  3.61s/it][A[A[A
+[submission_v4_last][rank1]:  92%|█████████▏| 188/205 [09:40<01:00,  3.56s/it][A[submission_v4_last][rank0]:  91%|█████████ | 187/205 [09:40<01:05,  3.66s/it]
+
+[submission_v4_last][rank2]:  92%|█████████▏| 188/205 [09:43<01:01,  3.63s/it][A[A
+
+
+[submission_v4_last][rank3]:  92%|█████████▏| 188/204 [09:43<00:58,  3.63s/it][A[A[A[submission_v4_last][rank0]:  92%|█████████▏| 188/205 [09:44<01:01,  3.61s/it]
+[submission_v4_last][rank1]:  92%|█████████▏| 189/205 [09:44<00:57,  3.61s/it][A
+
+[submission_v4_last][rank2]:  92%|█████████▏| 189/205 [09:46<00:57,  3.59s/it][A[A
+
+
+[submission_v4_last][rank3]:  93%|█████████▎| 189/204 [09:47<00:55,  3.67s/it][A[A[A[submission_v4_last][rank0]:  92%|█████████▏| 189/205 [09:47<00:57,  3.61s/it]
+[submission_v4_last][rank1]:  93%|█████████▎| 190/205 [09:48<00:54,  3.67s/it][A
+
+[submission_v4_last][rank2]:  93%|█████████▎| 190/205 [09:50<00:54,  3.64s/it][A[A[submission_v4_last][rank0]:  93%|█████████▎| 190/205 [09:51<00:53,  3.58s/it]
+
+
+[submission_v4_last][rank3]:  93%|█████████▎| 190/204 [09:51<00:51,  3.69s/it][A[A[A
+[submission_v4_last][rank1]:  93%|█████████▎| 191/205 [09:51<00:50,  3.60s/it][A
+
+[submission_v4_last][rank2]:  93%|█████████▎| 191/205 [09:54<00:51,  3.68s/it][A[A[submission_v4_last][rank0]:  93%|█████████▎| 191/205 [09:54<00:50,  3.59s/it]
+
+
+[submission_v4_last][rank3]:  94%|█████████▎| 191/204 [09:55<00:48,  3.71s/it][A[A[A
+[submission_v4_last][rank1]:  94%|█████████▎| 192/205 [09:55<00:46,  3.60s/it][A
+
+[submission_v4_last][rank2]:  94%|█████████▎| 192/205 [09:57<00:47,  3.65s/it][A[A[submission_v4_last][rank0]:  94%|█████████▎| 192/205 [09:58<00:46,  3.56s/it]
+
+
+[submission_v4_last][rank3]:  94%|█████████▍| 192/204 [09:58<00:43,  3.64s/it][A[A[A
+[submission_v4_last][rank1]:  94%|█████████▍| 193/205 [09:58<00:42,  3.56s/it][A
+
+[submission_v4_last][rank2]:  94%|█████████▍| 193/205 [10:01<00:43,  3.60s/it][A[A[submission_v4_last][rank0]:  94%|█████████▍| 193/205 [10:02<00:43,  3.59s/it]
+
+
+[submission_v4_last][rank3]:  95%|█████████▍| 193/204 [10:02<00:39,  3.62s/it][A[A[A
+[submission_v4_last][rank1]:  95%|█████████▍| 194/205 [10:02<00:39,  3.57s/it][A
+
+[submission_v4_last][rank2]:  95%|█████████▍| 194/205 [10:04<00:39,  3.64s/it][A[A
+
+
+[submission_v4_last][rank3]:  95%|█████████▌| 194/204 [10:05<00:35,  3.58s/it][A[A[A[submission_v4_last][rank0]:  95%|█████████▍| 194/205 [10:05<00:39,  3.59s/it]
+[submission_v4_last][rank1]:  95%|█████████▌| 195/205 [10:05<00:36,  3.61s/it][A
+
+[submission_v4_last][rank2]:  95%|█████████▌| 195/205 [10:08<00:35,  3.59s/it][A[A[submission_v4_last][rank0]:  95%|█████████▌| 195/205 [10:09<00:35,  3.57s/it]
+
+
+[submission_v4_last][rank3]:  96%|█████████▌| 195/204 [10:09<00:33,  3.67s/it][A[A[A
+[submission_v4_last][rank1]:  96%|█████████▌| 196/205 [10:09<00:32,  3.67s/it][A
+
+[submission_v4_last][rank2]:  96%|█████████▌| 196/205 [10:11<00:32,  3.60s/it][A[A
+
+
+[submission_v4_last][rank3]:  96%|█████████▌| 196/204 [10:13<00:28,  3.61s/it][A[A[A[submission_v4_last][rank0]:  96%|█████████▌| 196/205 [10:13<00:33,  3.69s/it]
+[submission_v4_last][rank1]:  96%|█████████▌| 197/205 [10:13<00:29,  3.75s/it][A
+
+[submission_v4_last][rank2]:  96%|█████████▌| 197/205 [10:15<00:28,  3.61s/it][A[A[submission_v4_last][rank0]:  96%|█████████▌| 197/205 [10:16<00:29,  3.63s/it]
+
+
+[submission_v4_last][rank3]:  97%|█████████▋| 197/204 [10:16<00:25,  3.63s/it][A[A[A
+[submission_v4_last][rank1]:  97%|█████████▋| 198/205 [10:17<00:25,  3.65s/it][A
+
+[submission_v4_last][rank2]:  97%|█████████▋| 198/205 [10:19<00:25,  3.60s/it][A[A[submission_v4_last][rank0]:  97%|█████████▋| 198/205 [10:20<00:25,  3.63s/it]
+
+
+[submission_v4_last][rank3]:  97%|█████████▋| 198/204 [10:20<00:21,  3.66s/it][A[A[A
+[submission_v4_last][rank1]:  97%|█████████▋| 199/205 [10:20<00:22,  3.69s/it][A
+
+[submission_v4_last][rank2]:  97%|█████████▋| 199/205 [10:22<00:21,  3.56s/it][A[A[submission_v4_last][rank0]:  97%|█████████▋| 199/205 [10:23<00:21,  3.59s/it]
+
+
+[submission_v4_last][rank3]:  98%|█████████▊| 199/204 [10:23<00:18,  3.61s/it][A[A[A
+[submission_v4_last][rank1]:  98%|█████████▊| 200/205 [10:24<00:18,  3.61s/it][A
+
+[submission_v4_last][rank2]:  98%|█████████▊| 200/205 [10:26<00:17,  3.58s/it][A[A
+
+
+[submission_v4_last][rank3]:  98%|█████████▊| 200/204 [10:27<00:14,  3.60s/it][A[A[A[submission_v4_last][rank0]:  98%|█████████▊| 200/205 [10:27<00:18,  3.69s/it]
+[submission_v4_last][rank1]:  98%|█████████▊| 201/205 [10:27<00:14,  3.62s/it][A
+
+[submission_v4_last][rank2]:  98%|█████████▊| 201/205 [10:29<00:14,  3.59s/it][A[A
+
+
+[submission_v4_last][rank3]:  99%|█████████▊| 201/204 [10:30<00:10,  3.57s/it][A[A[A[submission_v4_last][rank0]:  98%|█████████▊| 201/205 [10:31<00:14,  3.62s/it]
+[submission_v4_last][rank1]:  99%|█████████▊| 202/205 [10:31<00:10,  3.62s/it][A
+
+[submission_v4_last][rank2]:  99%|█████████▊| 202/205 [10:33<00:10,  3.60s/it][A[A
+
+
+[submission_v4_last][rank3]:  99%|█████████▉| 202/204 [10:34<00:07,  3.63s/it][A[A[A[submission_v4_last][rank0]:  99%|█████████▊| 202/205 [10:34<00:10,  3.63s/it]
+[submission_v4_last][rank1]:  99%|█████████▉| 203/205 [10:34<00:07,  3.56s/it][A
+
+[submission_v4_last][rank2]:  99%|█████████▉| 203/205 [10:37<00:07,  3.62s/it][A[A
+
+
+[submission_v4_last][rank3]: 100%|█████████▉| 203/204 [10:38<00:03,  3.58s/it][A[A[A[submission_v4_last][rank0]:  99%|█████████▉| 203/205 [10:38<00:07,  3.60s/it]
+[submission_v4_last][rank1]: 100%|█████████▉| 204/205 [10:38<00:03,  3.56s/it][A
+
+[submission_v4_last][rank2]: 100%|█████████▉| 204/205 [10:40<00:03,  3.62s/it][A[A
+
+
+[submission_v4_last][rank3]: 100%|██████████| 204/204 [10:41<00:00,  3.58s/it][A[A[A[submission_v4_last][rank3]: 100%|██████████| 204/204 [10:41<00:00,  3.15s/it]
+[submission_v4_last][rank0]: 100%|█████████▉| 204/205 [10:42<00:03,  3.61s/it]
+[submission_v4_last][rank1]: 100%|██████████| 205/205 [10:42<00:00,  3.62s/it][A[submission_v4_last][rank1]: 100%|██████████| 205/205 [10:42<00:00,  3.13s/it]
+
+
+[submission_v4_last][rank2]: 100%|██████████| 205/205 [10:44<00:00,  3.57s/it][A[A[submission_v4_last][rank2]: 100%|██████████| 205/205 [10:44<00:00,  3.14s/it]
+[submission_v4_last][rank0]: 100%|██████████| 205/205 [10:45<00:00,  3.58s/it][submission_v4_last][rank0]: 100%|██████████| 205/205 [10:45<00:00,  3.15s/it]
+/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)

@@ -1,0 +1,57 @@
+Job: 226395  Node: node27  Started: Sat Jul  4 11:11:31 KST 2026
+### size=448 batch=4 ###
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([4, 709])
+labels sample (row0): [-100, -100, -100, -100, -100, -100, 16, 11, 18, 11, 19, 11, 17, 151645, 198]
+pixel_values shape: torch.Size([7168, 1536])
+loss: 0.9390979409217834 finite: True
+
+=== Peak VRAM (batch=4 samples, 448px) === 58.93 GB
+H100 80GB 여유: 21.07 GB
+
+제약디코딩 결과: pred=[2, 4, 3, 1]  gt=[1, 3, 4, 2]  유효한 순열=True
+
+### size=560 batch=4 ###
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([4, 981])
+labels sample (row0): [-100, -100, -100, -100, -100, -100, 16, 11, 18, 11, 19, 11, 17, 151645, 198]
+pixel_values shape: torch.Size([11520, 1536])
+loss: 0.8259056806564331 finite: True
+
+=== Peak VRAM (batch=4 samples, 560px) === 74.70 GB
+H100 80GB 여유: 5.30 GB
+
+제약디코딩 결과: pred=[2, 4, 3, 1]  gt=[1, 3, 4, 2]  유효한 순열=True
+
+### size=672 batch=2 ###
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([2, 1141])
+labels sample (row0): [-100, -100, -100, -100, -100, -100, 16, 11, 18, 11, 19, 11, 17, 151645, 198]
+pixel_values shape: torch.Size([7040, 1536])
+loss: 0.7625560760498047 finite: True
+
+=== Peak VRAM (batch=2 samples, 672px) === 51.14 GB
+H100 80GB 여유: 28.86 GB
+
+제약디코딩 결과: pred=[2, 4, 3, 1]  gt=[1, 3, 4, 2]  유효한 순열=True
+
+### size=560 batch=8 ###
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+input_ids shape: torch.Size([8, 981])
+labels sample (row0): [-100, -100, -100, -100, -100, -100, 16, 11, 18, 11, 19, 11, 17, 151645, 198]
+pixel_values shape: torch.Size([22680, 1536])
+FAILED (size=560 batch=8)
+
+Done: Sat Jul  4 11:12:41 KST 2026

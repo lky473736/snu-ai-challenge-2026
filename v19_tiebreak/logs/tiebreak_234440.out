@@ -1,0 +1,23 @@
+Job: 234440  Node: node25  Started: Sun Jul 19 12:39:05 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+Loading v14 best checkpoint: /data/gyuyeonlim/snu_ai_challenge/v14_listwise_softmax/checkpoints/best_v14
+val: 476개
+
+소요: 12.8분
+
+[Baseline]  exact_match=0.5966 (284/476)
+[Tiebreak]  exact_match=0.5105 (243/476)
+
+트리거(1등-2등 d=1): 188/476 (39.5%)
+오버라이드 발생: 63/188
+  override로 오답->정답: 7
+  override로 정답->오답: 48
+  순증감: -41
+
+상세 로그: /data/gyuyeonlim/snu_ai_challenge/v19_tiebreak/logs/tiebreak_detail.csv
+Done: Sun Jul 19 12:52:49 KST 2026

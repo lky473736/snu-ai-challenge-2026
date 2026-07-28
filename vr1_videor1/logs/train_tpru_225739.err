@@ -1,0 +1,15 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+	`--num_machines` was set to a value of `1`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights: 100%|██████████| 729/729 [00:00<00:00, 10779.50it/s]
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights: 100%|██████████| 729/729 [00:00<00:00, 10217.40it/s]
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights: 100%|██████████| 729/729 [00:00<00:00, 13871.10it/s]
+Loading weights: 100%|██████████| 729/729 [00:00<00:00, 20147.65it/s]
+Ep1:   0%|          | 0/1915 [00:00<?, ?it/s][transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+Ep1:   0%|          | 1/1915 [00:25<13:26:07, 25.27s/it]Ep1:   0%|          | 2/1915 [00:45<11:44:56, 22.11s/it]Ep1:   0%|          | 3/1915 [01:04<11:11:23, 21.07s/it]Ep1:   0%|          | 4/1915 [01:25<11:03:47, 20.84s/it]Ep1:   0%|          | 5/1915 [01:44<10:44:01, 20.23s/it]Ep1:   0%|          | 6/1915 [02:08<11:17:38, 21.30s/it]Ep1:   0%|          | 7/1915 [02:27<10:56:20, 20.64s/it]Ep1:   0%|          | 8/1915 [02:47<10:53:27, 20.56s/it]Ep1:   0%|          | 9/1915 [03:07<10:48:23, 20.41s/it]slurmstepd-node23: error: *** JOB 225739 ON node23 CANCELLED AT 2026-07-01T23:14:19 ***

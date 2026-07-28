@@ -1,0 +1,9 @@
+Job: 236334  Node: node27  Started: Thu Jul 23 09:15:17 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+World size: 4  총 819건 -> GPU당 205건
+
+저장: /data/gyuyeonlim/snu_ai_challenge/diag_em_check/margins.csv  (819행)
+Done: Thu Jul 23 09:22:53 KST 2026

@@ -1,0 +1,37 @@
+Job: 226539  Node: node25  Started: Sun Jul  5 13:43:08 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Val samples (No_ordering excluded): 100
+
+============================================================
+Loading Qwen3-VL-30B-A3B-Instruct(MoE,4bit)
+============================================================
+  -> flash_attention_2 OK (load 69.3s)
+  가중치 로드 후 VRAM: 60.01 GB
+
+[Qwen3-VL-30B-A3B-Instruct(MoE,4bit)] exact_match=0.3500 (35/100)  adj_swap_fail=16  other_fail=49
+  속도: 356.6s 총, 3.566s/sample, 148.6ms/forward(24개 중 1개)
+  Peak VRAM: 60.36 GB  (3090 24GB 기준: ⚠️ 빡빡함/초과 위험)
+
+============================================================
+Loading Qwen3-VL-32B-Instruct(Dense,4bit)
+============================================================
+  -> flash_attention_2 OK (load 75.2s)
+  가중치 로드 후 VRAM: 19.60 GB
+
+[Qwen3-VL-32B-Instruct(Dense,4bit)] exact_match=0.3500 (35/100)  adj_swap_fail=16  other_fail=49
+  속도: 432.0s 총, 4.320s/sample, 180.0ms/forward(24개 중 1개)
+  Peak VRAM: 20.23 GB  (3090 24GB 기준: ✅ 들어감)
+
+============================================================
+SUMMARY (비교 기준: Qwen3-VL-8B-Instruct zero-shot 32.83%, bf16, VRAM~18GB)
+============================================================
+  Qwen3-VL-30B-A3B-Instruct(MoE,4bit)
+    acc=0.3500 (35/100)  adj_swap_fail=16  other_fail=49
+    3.566s/sample  peak_vram=60.36GB  weight_vram=60.01GB
+  Qwen3-VL-32B-Instruct(Dense,4bit)
+    acc=0.3500 (35/100)  adj_swap_fail=16  other_fail=49
+    4.320s/sample  peak_vram=20.23GB  weight_vram=19.60GB
+Done: Sun Jul  5 13:58:50 KST 2026

@@ -1,0 +1,9 @@
+Job: 227337  Started: Wed Jul  8 03:47:55 KST 2026
+World size: 4  |  Resolution: 448px
+Total: 819 samples → 205 per GPU
+
+==================================================
+Checkpoint: /data/gyuyeonlim/snu_ai_challenge/v15_dynamic_hardneg/checkpoints/best_v15
+
+저장: /data/gyuyeonlim/snu_ai_challenge/v15_dynamic_hardneg/submission_v15_best.csv  (819 rows)
+Done: Wed Jul  8 03:55:25 KST 2026

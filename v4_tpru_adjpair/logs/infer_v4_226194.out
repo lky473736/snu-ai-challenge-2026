@@ -1,0 +1,18 @@
+Job: 226194  Node: node25  Started: Sat Jul  4 06:53:21 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+World size: 4  |  Resolution: 448px
+Total: 819 samples → 205 per GPU
+
+==================================================
+Checkpoint: /data/gyuyeonlim/snu_ai_challenge/v4_tpru_adjpair/checkpoints/best_v4
+
+저장: /data/gyuyeonlim/snu_ai_challenge/v4_tpru_adjpair/submission_v4_best.csv  (819 rows)
+
+==================================================
+Checkpoint: /data/gyuyeonlim/snu_ai_challenge/v4_tpru_adjpair/checkpoints/best_v4_last
+
+저장: /data/gyuyeonlim/snu_ai_challenge/v4_tpru_adjpair/submission_v4_last.csv  (819 rows)
+Done: Sat Jul  4 07:16:00 KST 2026

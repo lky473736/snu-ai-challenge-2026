@@ -1,0 +1,12 @@
+Job: 225902  Node: node23  Started: Thu Jul  2 17:20:29 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Model : /data/gyuyeonlim/models/VideoR1-7B
+Device: cuda
+Val CSV loaded: /data/gyuyeonlim/snu_ai_challenge/vr1_videor1/checkpoints/_val_raw.csv (476 rows)
+After filtering No_ordering: 399 samples
+Evaluating: 399 samples
+
+Loading Qwen2_5_VLForConditionalGeneration...

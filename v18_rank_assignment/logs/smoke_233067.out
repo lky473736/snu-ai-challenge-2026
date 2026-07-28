@@ -1,0 +1,46 @@
+Job: 233067  Node: node26  Started: Sun Jul 19 04:38:26 KST 2026
+LORA_R=128  LORA_ALPHA=256  (alpha/r=2.00)
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+
+=== 1) 고속 경로 검증 (slow vs fast) ===
+  BtjEoZ (1, 2)  slow=-2.0000  fast=-2.0000  diff=0.00000
+  BtjEoZ (1, 3)  slow=1.2500  fast=1.2500  diff=0.00000
+  BtjEoZ (1, 4)  slow=1.0000  fast=1.0000  diff=0.00000
+  BtjEoZ (2, 3)  slow=-3.5000  fast=-3.5000  diff=0.00000
+  BtjEoZ (2, 4)  slow=-1.5000  fast=-1.5000  diff=0.00000
+  BtjEoZ (3, 4)  slow=0.2500  fast=0.2500  diff=0.00000
+  8cbtrl (1, 2)  slow=1.0000  fast=1.0000  diff=0.00000
+  8cbtrl (1, 3)  slow=6.5000  fast=6.5000  diff=0.00000
+  8cbtrl (1, 4)  slow=4.2500  fast=4.2500  diff=0.00000
+  8cbtrl (2, 3)  slow=3.2500  fast=3.2500  diff=0.00000
+  8cbtrl (2, 4)  slow=4.2500  fast=4.2500  diff=0.00000
+  8cbtrl (3, 4)  slow=7.2500  fast=7.2500  diff=0.00000
+  25oh28 (1, 2)  slow=4.5000  fast=4.5000  diff=0.00000
+  25oh28 (1, 3)  slow=7.2500  fast=7.2500  diff=0.00000
+  25oh28 (1, 4)  slow=7.7500  fast=7.7500  diff=0.00000
+  25oh28 (2, 3)  slow=-5.2500  fast=-5.2500  diff=0.00000
+  25oh28 (2, 4)  slow=5.0000  fast=5.0000  diff=0.00000
+  25oh28 (3, 4)  slow=6.5000  fast=6.5000  diff=0.00000
+
+최대 오차: 0.00000
+검증 통과 — 고속 경로 사용 가능
+
+=== 2) loss / backward / VRAM 스모크 ===
+그룹 크기(4C2): [6]
+loss: 1.2928810119628906 finite: True
+backward 성공
+Peak VRAM: 64.84 GB
+
+=== 3) predict_permutation 스모크 ===
+pred=[2, 4, 1, 3]  gt=[3, 4, 1, 2]
+
+=== 4) 실제 학습 루프 재현 (optimizer.step() 2사이클, GRAD_ACCUM=8) ===
+  optimizer.step() #1 완료 — 누적 peak VRAM: 24.65 GB
+  optimizer.step() #2 완료 — 누적 peak VRAM: 26.48 GB
+GRAD_ACCUM=8 기준 optimizer.step() 2사이클 통과. 최종 peak VRAM: 26.48 GB
+
+스모크 테스트 전체 통과
+Done: Sun Jul 19 04:40:03 KST 2026

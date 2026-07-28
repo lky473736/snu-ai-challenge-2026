@@ -1,0 +1,28 @@
+Job: 225983  Node: node24  Started: Thu Jul  2 17:31:34 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Model : /data/gyuyeonlim/models/VideoR1-7B
+Device: cuda
+Val CSV loaded: /data/gyuyeonlim/snu_ai_challenge/vr1_videor1/checkpoints/_val_raw.csv (476 rows)
+After filtering No_ordering: 399 samples
+Evaluating: 399 samples
+
+Loading Qwen2_5_VLForConditionalGeneration...
+  processor load failed, using fallback: /data/gyuyeonlim/models/TPRU-7B
+yes_id=9454  no_id=2753
+
+
+==================================================
+[Zero-shot Val Result]
+  Model     : /data/gyuyeonlim/models/VideoR1-7B
+  Samples   : 399
+  Exact Match: 0.2431 (97/399)
+  adj_swap fail: 60  other fail: 242
+==================================================
+
+비교 기준:
+  Qwen2-VL-7B + LoRA v1 fine-tuned: 0.5013 (200/399)
+  TPRU-7B zero-shot (이번):         0.2431 (97/399)
+Done: Thu Jul  2 17:53:09 KST 2026

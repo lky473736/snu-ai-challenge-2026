@@ -1,0 +1,13 @@
+Job: 225364  Node: node27  Started: Tue Jun 30 12:53:20 KST 2026
+Device: cuda
+Loading processor & model...
+Test samples: 819
+
+제출 파일 저장: /data/gyuyeonlim/hntv/data/submission.csv
+       Id        Answer
+0  WI8o3F  [1, 4, 2, 3]
+1  Ae7zLm  [2, 3, 4, 1]
+2  4QSIII  [2, 4, 1, 3]
+3  k7h4gt  [4, 1, 2, 3]
+4  ZtTwCx  [1, 3, 2, 4]
+Done: Tue Jun 30 13:59:05 KST 2026

@@ -1,0 +1,70 @@
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights: 100%|██████████| 750/750 [00:00<00:00, 28781.47it/s]
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights: 100%|██████████| 750/750 [00:00<00:00, 42096.27it/s]
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights: 100%|██████████| 750/750 [00:00<00:00, 41239.76it/s]
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights: 100%|██████████| 750/750 [00:00<00:00, 41616.76it/s]
+Traceback (most recent call last):
+  File "/data/gyuyeonlim/snu_ai_challenge/v5_qwen3_listwise/smoke_test.py", line 39, in <module>
+    out = model(**inputs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/peft/peft_model.py", line 1993, in forward
+    return self.base_model(
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 330, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/utils/generic.py", line 907, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1385, in forward
+    outputs = self.model(
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/utils/generic.py", line 907, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1250, in forward
+    outputs = self.language_model(
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/utils/generic.py", line 1036, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/utils/output_capturing.py", line 252, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 824, in forward
+    layer_outputs = decoder_layer(
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 553, in forward
+    hidden_states, _ = self.self_attn(
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 509, in forward
+    attn_output = self.o_proj(attn_output)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/peft/tuners/lora/layer.py", line 969, in forward
+    result = result + lora_B(lora_A(dropout(x))) * scaling
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/modules/dropout.py", line 73, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/nn/functional.py", line 1443, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 14.38 MiB is free. Including non-PyTorch memory, this process has 79.16 GiB memory in use. Of the allocated memory 78.16 GiB is allocated by PyTorch, and 332.81 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

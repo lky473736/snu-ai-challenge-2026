@@ -1,0 +1,28 @@
+Job: 225663  Node: node23  Started: Wed Jul  1 22:34:49 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Model : /data/gyuyeonlim/models/TPRU-7B
+Device: cuda
+Val CSV not found (/data/gyuyeonlim/hntv_TPRU/checkpoints/_val_raw.csv), splitting from train.csv...
+  → 476 val samples from train.csv
+After filtering No_ordering: 399 samples
+Evaluating: 399 samples
+
+Loading Qwen2_5_VLForConditionalGeneration...
+yes_id=9454  no_id=2753
+
+
+==================================================
+[Zero-shot Val Result]
+  Model     : /data/gyuyeonlim/models/TPRU-7B
+  Samples   : 399
+  Exact Match: 0.2632 (105/399)
+  adj_swap fail: 53  other fail: 241
+==================================================
+
+비교 기준:
+  Qwen2-VL-7B + LoRA v1 fine-tuned: 0.5013 (200/399)
+  TPRU-7B zero-shot (이번):         0.2632 (105/399)
+Done: Wed Jul  1 22:57:07 KST 2026

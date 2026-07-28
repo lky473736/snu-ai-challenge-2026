@@ -1,0 +1,113 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+	`--num_machines` was set to a value of `1`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:  58%|█████▊    | 424/729 [00:00<00:00, 4239.76it/s]Loading weights:  58%|█████▊    | 423/729 [00:00<00:00, 4228.17it/s]Loading weights:  58%|█████▊    | 424/729 [00:00<00:00, 4203.60it/s]Loading weights: 100%|██████████| 729/729 [00:00<00:00, 4393.37it/s]
+Loading weights: 100%|██████████| 729/729 [00:00<00:00, 4434.23it/s]
+Loading weights: 100%|██████████| 729/729 [00:00<00:00, 4373.30it/s]
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights: 100%|██████████| 729/729 [00:00<00:00, 7663.78it/s]
+Ep1:   0%|          | 0/2265 [00:00<?, ?it/s][rank3]:W0702 18:45:54.380000 1307809 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] Graph break from `Tensor.item()`, consider setting:
+[rank3]:W0702 18:45:54.380000 1307809 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     torch._dynamo.config.capture_scalar_outputs = True
+[rank3]:W0702 18:45:54.380000 1307809 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] or:
+[rank3]:W0702 18:45:54.380000 1307809 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     env TORCHDYNAMO_CAPTURE_SCALAR_OUTPUTS=1
+[rank3]:W0702 18:45:54.380000 1307809 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] to include these operations in the captured graph.
+[rank3]:W0702 18:45:54.380000 1307809 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[rank3]:W0702 18:45:54.380000 1307809 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] Graph break: from user code at:
+[rank3]:W0702 18:45:54.380000 1307809 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]   File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 937, in get_vision_position_ids
+[rank3]:W0702 18:45:54.380000 1307809 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     grid_thw[0].item() // temp_merge_size,
+[rank3]:W0702 18:45:54.380000 1307809 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[rank3]:W0702 18:45:54.380000 1307809 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[rank2]:W0702 18:45:54.663000 1307808 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] Graph break from `Tensor.item()`, consider setting:
+[rank2]:W0702 18:45:54.663000 1307808 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     torch._dynamo.config.capture_scalar_outputs = True
+[rank2]:W0702 18:45:54.663000 1307808 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] or:
+[rank2]:W0702 18:45:54.663000 1307808 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     env TORCHDYNAMO_CAPTURE_SCALAR_OUTPUTS=1
+[rank2]:W0702 18:45:54.663000 1307808 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] to include these operations in the captured graph.
+[rank2]:W0702 18:45:54.663000 1307808 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[rank2]:W0702 18:45:54.663000 1307808 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] Graph break: from user code at:
+[rank2]:W0702 18:45:54.663000 1307808 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]   File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 937, in get_vision_position_ids
+[rank2]:W0702 18:45:54.663000 1307808 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     grid_thw[0].item() // temp_merge_size,
+[rank2]:W0702 18:45:54.663000 1307808 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[rank2]:W0702 18:45:54.663000 1307808 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[rank0]:W0702 18:45:54.824000 1307806 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] Graph break from `Tensor.item()`, consider setting:
+[rank0]:W0702 18:45:54.824000 1307806 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     torch._dynamo.config.capture_scalar_outputs = True
+[rank0]:W0702 18:45:54.824000 1307806 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] or:
+[rank0]:W0702 18:45:54.824000 1307806 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     env TORCHDYNAMO_CAPTURE_SCALAR_OUTPUTS=1
+[rank0]:W0702 18:45:54.824000 1307806 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] to include these operations in the captured graph.
+[rank0]:W0702 18:45:54.824000 1307806 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[rank0]:W0702 18:45:54.824000 1307806 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] Graph break: from user code at:
+[rank0]:W0702 18:45:54.824000 1307806 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]   File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 937, in get_vision_position_ids
+[rank0]:W0702 18:45:54.824000 1307806 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     grid_thw[0].item() // temp_merge_size,
+[rank0]:W0702 18:45:54.824000 1307806 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[rank0]:W0702 18:45:54.824000 1307806 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[rank1]:W0702 18:45:54.906000 1307807 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] Graph break from `Tensor.item()`, consider setting:
+[rank1]:W0702 18:45:54.906000 1307807 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     torch._dynamo.config.capture_scalar_outputs = True
+[rank1]:W0702 18:45:54.906000 1307807 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] or:
+[rank1]:W0702 18:45:54.906000 1307807 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     env TORCHDYNAMO_CAPTURE_SCALAR_OUTPUTS=1
+[rank1]:W0702 18:45:54.906000 1307807 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] to include these operations in the captured graph.
+[rank1]:W0702 18:45:54.906000 1307807 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[rank1]:W0702 18:45:54.906000 1307807 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] Graph break: from user code at:
+[rank1]:W0702 18:45:54.906000 1307807 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]   File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 937, in get_vision_position_ids
+[rank1]:W0702 18:45:54.906000 1307807 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0]     grid_thw[0].item() // temp_merge_size,
+[rank1]:W0702 18:45:54.906000 1307807 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[rank1]:W0702 18:45:54.906000 1307807 site-packages/torch/_dynamo/variables/tensor.py:1612] [48/0] 
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+W0702 18:54:12.556000 1307758 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 1307806 closing signal SIGTERM
+W0702 18:54:12.557000 1307758 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 1307808 closing signal SIGTERM
+W0702 18:54:12.557000 1307758 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 1307809 closing signal SIGTERM
+E0702 18:54:16.903000 1307758 site-packages/torch/distributed/elastic/multiprocessing/api.py:988] failed (exitcode: -11) local_rank: 1 (pid: 1307807) of binary: /home/gyuyeonlim/.conda/envs/aichallenge/bin/python3.10
+Traceback (most recent call last):
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1398, in launch_command
+    multi_gpu_launcher(args)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1023, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/distributed/run.py", line 1007, in run
+    elastic_launch(
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 191, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 371, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+=========================================================
+src/train.py FAILED
+---------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-07-02_18:54:16
+  host      : node24.localdomain
+  rank      : 0 (local_rank: 0)
+  exitcode  : -11 (pid: 1307806)  (SIGSEGV)
+  error_file: <N/A>
+  traceback : Signal 11 (SIGSEGV) received by PID 1307806
+[2]:
+  time      : 2026-07-02_18:54:16
+  host      : node24.localdomain
+  rank      : 2 (local_rank: 2)
+  exitcode  : -11 (pid: 1307808)  (SIGSEGV)
+  error_file: <N/A>
+  traceback : Signal 11 (SIGSEGV) received by PID 1307808
+[3]:
+  time      : 2026-07-02_18:54:16
+  host      : node24.localdomain
+  rank      : 3 (local_rank: 3)
+  exitcode  : -11 (pid: 1307809)  (SIGSEGV)
+  error_file: <N/A>
+  traceback : Signal 11 (SIGSEGV) received by PID 1307809
+---------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-07-02_18:54:12
+  host      : node24.localdomain
+  rank      : 1 (local_rank: 1)
+  exitcode  : -11 (pid: 1307807)  (SIGSEGV)
+  error_file: <N/A>
+  traceback : Signal 11 (SIGSEGV) received by PID 1307807
+=========================================================

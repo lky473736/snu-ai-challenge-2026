@@ -1,0 +1,15 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+	`--num_machines` was set to a value of `1`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights: 100%|██████████| 729/729 [00:00<00:00, 12888.58it/s]
+Loading weights: 100%|██████████| 729/729 [00:00<00:00, 20875.45it/s]
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights: 100%|██████████| 729/729 [00:00<00:00, 10311.67it/s]
+Loading weights: 100%|██████████| 729/729 [00:00<00:00, 15556.67it/s]
+Ep1:   0%|          | 0/1915 [00:00<?, ?it/s][transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+Ep1:   0%|          | 1/1915 [00:22<11:56:36, 22.46s/it]Ep1:   0%|          | 2/1915 [00:33<8:24:17, 15.82s/it] Ep1:   0%|          | 3/1915 [00:46<7:37:07, 14.34s/it]Ep1:   0%|          | 4/1915 [00:57<7:04:36, 13.33s/it]Ep1:   0%|          | 5/1915 [01:07<6:25:33, 12.11s/it]Ep1:   0%|          | 6/1915 [01:20<6:33:13, 12.36s/it]Ep1:   0%|          | 7/1915 [01:32<6:27:52, 12.20s/it]Ep1:   0%|          | 8/1915 [01:43<6:17:43, 11.88s/it]Ep1:   0%|          | 9/1915 [01:55<6:10:52, 11.67s/it]Ep1:   1%|          | 10/1915 [02:07<6:18:27, 11.92s/it]Ep1:   1%|          | 11/1915 [02:18<6:11:07, 11.70s/it]Ep1:   1%|          | 12/1915 [02:30<6:10:43, 11.69s/it]Ep1:   1%|          | 13/1915 [02:42<6:10:22, 11.68s/it]Ep1:   1%|          | 14/1915 [02:53<6:08:30, 11.63s/it]Ep1:   1%|          | 15/1915 [03:04<5:58:59, 11.34s/it]Ep1:   1%|          | 16/1915 [03:15<6:00:27, 11.39s/it]Ep1:   1%|          | 17/1915 [03:26<5:53:01, 11.16s/it]Ep1:   1%|          | 18/1915 [03:38<6:02:39, 11.47s/it]Ep1:   1%|          | 19/1915 [03:48<5:51:41, 11.13s/it]Ep1:   1%|          | 20/1915 [04:00<5:51:46, 11.14s/it]Ep1:   1%|          | 21/1915 [04:11<5:54:31, 11.23s/it]Ep1:   1%|          | 22/1915 [04:22<5:56:43, 11.31s/it]Ep1:   1%|          | 23/1915 [04:34<5:58:58, 11.38s/it]Ep1:   1%|▏         | 24/1915 [04:45<5:55:30, 11.28s/it]Ep1:   1%|▏         | 25/1915 [04:56<5:49:50, 11.11s/it]slurmstepd-node23: error: *** JOB 225738 ON node23 CANCELLED AT 2026-07-01T23:09:33 ***

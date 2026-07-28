@@ -1,0 +1,21 @@
+Job: 226453  Node: node25  Started: Sat Jul  4 20:43:13 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+====================================================
+Inference ONLY (train은 이미 완료, 체크포인트 재사용, 448px로 train과 일치)
+====================================================
+World size: 4  |  Resolution: 448px
+Total: 819 samples → 205 per GPU
+
+==================================================
+Checkpoint: /data/gyuyeonlim/snu_ai_challenge/v6_qwen3_final/checkpoints/best_v6
+
+저장: /data/gyuyeonlim/snu_ai_challenge/v6_qwen3_final/submission_v6_best.csv  (819 rows)
+
+==================================================
+Checkpoint: /data/gyuyeonlim/snu_ai_challenge/v6_qwen3_final/checkpoints/best_v6_last
+
+저장: /data/gyuyeonlim/snu_ai_challenge/v6_qwen3_final/submission_v6_last.csv  (819 rows)
+Done: Sat Jul  4 20:55:25 KST 2026

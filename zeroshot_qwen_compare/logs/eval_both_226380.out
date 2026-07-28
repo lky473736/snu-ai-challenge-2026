@@ -1,0 +1,34 @@
+Job: 226380  Node: node25  Started: Sat Jul  4 08:40:42 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Val samples (No_ordering excluded): 399
+
+============================================================
+Loading Qwen2.5-VL-7B-Instruct (/data/gyuyeonlim/models/Qwen2.5-VL-7B-Instruct)
+============================================================
+  -> flash_attention_2 OK
+
+[Qwen2.5-VL-7B-Instruct] exact_match=0.2682 (107/399)  adj_swap_fail=61  other_fail=231
+
+============================================================
+Loading Qwen3-VL-8B-Instruct (/data/gyuyeonlim/models/Qwen3-VL-8B-Instruct)
+============================================================
+  -> flash_attention_2 OK
+
+[Qwen3-VL-8B-Instruct] exact_match=0.3283 (131/399)  adj_swap_fail=61  other_fail=207
+
+============================================================
+SUMMARY
+============================================================
+비교 기준 (idea.md):
+  Qwen2-VL-7B base zero-shot : 0.0550
+  TPRU-7B zero-shot          : 0.2632 (105/399)
+  Video-R1-7B zero-shot      : 0.2431 (97/399)
+  Qwen2-VL v1 fine-tuned     : 0.5013 (200/399)
+  v4 TPRU fine-tuned(epoch3) : 0.5336 (254/476, no_ord 포함 val)
+------------------------------------------------------------
+  Qwen2.5-VL-7B-Instruct      : 0.2682 (107/399)  adj_swap_fail=61  other_fail=231
+  Qwen3-VL-8B-Instruct        : 0.3283 (131/399)  adj_swap_fail=61  other_fail=207
+Done: Sat Jul  4 09:05:38 KST 2026

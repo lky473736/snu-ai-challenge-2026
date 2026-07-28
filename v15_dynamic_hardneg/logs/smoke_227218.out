@@ -1,0 +1,31 @@
+Job: 227218  Node: node26  Started: Tue Jul  7 23:43:25 KST 2026
+LORA_R=128  LORA_ALPHA=256
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+
+=== epoch1 시뮬레이션 (뱅크 비어있음) ===
+  sample 0: group_size=8, loss=1.8279
+  sample 1: group_size=8, loss=0.1004
+  sample 2: group_size=8, loss=4.3152
+  sample 3: group_size=8, loss=1.0657
+  sample 4: group_size=8, loss=0.6871
+  sample 5: group_size=8, loss=7.2539
+
+epoch1 끝 — 뱅크 크기: 6 (기대: 6)
+
+=== epoch2 시뮬레이션 (뱅크 반영됨) — d1 보너스 슬롯이 뱅크로 교체되는지 확인 ===
+  qpoFUD의 뱅크 하드 네거티브: (2, 3, 1, 4)
+  epoch2 그룹에 포함됐는가: True
+  dist 분포: [0, 1, 2, 3, 4, 4, 5, 6]  (d1~d6 전 구간 커버 여부: True)
+
+Peak VRAM: 78.68 GB
+
+=== val_exact_match 스모크 (n=3) ===
+
+[Val] exact_match=0.3333 (1/3)  adj_swap_fail=0  other_fail=2
+val smoke acc: 0.3333333333333333
+
+스모크 테스트 전체 통과
+Done: Tue Jul  7 23:43:54 KST 2026

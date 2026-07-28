@@ -1,0 +1,40 @@
+Job: 227209  Node: node23  Started: Tue Jul  7 23:04:24 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+모델 로딩 (LoRA r=128, v15 config)...
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+n_extra=  0  minibatch=  8  group_size=  8  OK    peak=78.41GB
+n_extra=  0  minibatch= 12  group_size=  8  OK    peak=76.42GB
+n_extra=  0  minibatch= 16  group_size=  8  OK    peak=83.09GB
+n_extra=  0  minibatch= 20  group_size=  8  OOM   peak=None
+n_extra=  0  minibatch= 24  group_size=  8  OK    peak=74.73GB
+n_extra=  4  minibatch=  8  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 12  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 16  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 20  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 24  group_size= 12  OOM   peak=None
+n_extra=  8  minibatch=  8  group_size= 16  OOM   peak=None
+n_extra=  8  minibatch= 12  group_size= 16  OOM   peak=None
+n_extra=  8  minibatch= 16  group_size= 16  OOM   peak=None
+n_extra=  8  minibatch= 20  group_size= 16  OOM   peak=None
+n_extra=  8  minibatch= 24  group_size= 16  OOM   peak=None
+n_extra= 12  minibatch=  8  group_size= 20  OOM   peak=None
+n_extra= 12  minibatch= 12  group_size= 20  OOM   peak=None
+n_extra= 12  minibatch= 16  group_size= 20  OOM   peak=None
+n_extra= 12  minibatch= 20  group_size= 20  OOM   peak=None
+n_extra= 12  minibatch= 24  group_size= 20  OOM   peak=None
+n_extra= 16  minibatch=  8  group_size= 24  OOM   peak=None
+n_extra= 16  minibatch= 12  group_size= 24  OOM   peak=None
+n_extra= 16  minibatch= 16  group_size= 24  OOM   peak=None
+n_extra= 16  minibatch= 20  group_size= 24  OOM   peak=None
+n_extra= 16  minibatch= 24  group_size= 24  OOM   peak=None
+
+추천 조합: n_extra=0  minibatch=24  group_size=8  peak=74.73GB
+
+저장: grid_search_results.csv
+Done: Tue Jul  7 23:05:49 KST 2026

@@ -1,0 +1,15 @@
+Job: 226689  Node: node23  Started: Sun Jul  5 19:57:26 KST 2026
+LORA_R=128  LORA_ALPHA=256  (alpha/r=2.00, v6.5는 2.00)
+샘플 20개 중 No_ordering 분포:
+ No_ordering
+False    18
+True      2
+Name: count, dtype: int64
+그룹 크기(1 pos+7 neg): [8]
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 350,576,640 || all params: 9,117,700,336 || trainable%: 3.8450
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1

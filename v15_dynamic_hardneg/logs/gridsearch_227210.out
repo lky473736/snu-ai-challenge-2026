@@ -1,0 +1,92 @@
+Job: 227210  Node: node23  Started: Tue Jul  7 23:10:54 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+모델 로딩 (LoRA r=128, v15 config)...
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+n_extra=  0  minibatch=  4  group_size=  8  OK    peak=75.66GB
+n_extra=  0  minibatch=  6  group_size=  8  OK    peak=75.28GB
+n_extra=  0  minibatch=  8  group_size=  8  OK    peak=76.42GB
+n_extra=  0  minibatch= 10  group_size=  8  OK    peak=76.42GB
+n_extra=  0  minibatch= 12  group_size=  8  OK    peak=76.42GB
+n_extra=  0  minibatch= 14  group_size=  8  OK    peak=76.42GB
+n_extra=  0  minibatch= 16  group_size=  8  OK    peak=76.42GB
+n_extra=  0  minibatch= 20  group_size=  8  OK    peak=76.42GB
+n_extra=  0  minibatch= 24  group_size=  8  OK    peak=76.42GB
+n_extra=  0  minibatch= 28  group_size=  8  OK    peak=76.42GB
+n_extra=  0  minibatch= 32  group_size=  8  OK    peak=76.42GB
+n_extra=  1  minibatch=  4  group_size=  9  OK    peak=82.07GB
+n_extra=  1  minibatch=  6  group_size=  9  OK    peak=82.46GB
+n_extra=  1  minibatch=  8  group_size=  9  OK    peak=82.07GB
+n_extra=  1  minibatch= 10  group_size=  9  OK    peak=83.60GB
+n_extra=  1  minibatch= 12  group_size=  9  OK    peak=83.60GB
+n_extra=  1  minibatch= 14  group_size=  9  OK    peak=83.60GB
+n_extra=  1  minibatch= 16  group_size=  9  OK    peak=83.60GB
+n_extra=  1  minibatch= 20  group_size=  9  OK    peak=83.60GB
+n_extra=  1  minibatch= 24  group_size=  9  OK    peak=83.60GB
+n_extra=  1  minibatch= 28  group_size=  9  OK    peak=83.60GB
+n_extra=  1  minibatch= 32  group_size=  9  OK    peak=83.60GB
+n_extra=  2  minibatch=  4  group_size= 10  OOM   peak=None
+n_extra=  2  minibatch=  6  group_size= 10  OOM   peak=None
+n_extra=  2  minibatch=  8  group_size= 10  OOM   peak=None
+n_extra=  2  minibatch= 10  group_size= 10  OOM   peak=None
+n_extra=  2  minibatch= 12  group_size= 10  OOM   peak=None
+n_extra=  2  minibatch= 14  group_size= 10  OOM   peak=None
+n_extra=  2  minibatch= 16  group_size= 10  OOM   peak=None
+n_extra=  2  minibatch= 20  group_size= 10  OOM   peak=None
+n_extra=  2  minibatch= 24  group_size= 10  OOM   peak=None
+n_extra=  2  minibatch= 28  group_size= 10  OOM   peak=None
+n_extra=  2  minibatch= 32  group_size= 10  OOM   peak=None
+n_extra=  3  minibatch=  4  group_size= 11  OOM   peak=None
+n_extra=  3  minibatch=  6  group_size= 11  OOM   peak=None
+n_extra=  3  minibatch=  8  group_size= 11  OOM   peak=None
+n_extra=  3  minibatch= 10  group_size= 11  OOM   peak=None
+n_extra=  3  minibatch= 12  group_size= 11  OOM   peak=None
+n_extra=  3  minibatch= 14  group_size= 11  OOM   peak=None
+n_extra=  3  minibatch= 16  group_size= 11  OOM   peak=None
+n_extra=  3  minibatch= 20  group_size= 11  OOM   peak=None
+n_extra=  3  minibatch= 24  group_size= 11  OOM   peak=None
+n_extra=  3  minibatch= 28  group_size= 11  OOM   peak=None
+n_extra=  3  minibatch= 32  group_size= 11  OOM   peak=None
+n_extra=  4  minibatch=  4  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch=  6  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch=  8  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 10  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 12  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 14  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 16  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 20  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 24  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 28  group_size= 12  OOM   peak=None
+n_extra=  4  minibatch= 32  group_size= 12  OOM   peak=None
+n_extra=  5  minibatch=  4  group_size= 13  OOM   peak=None
+n_extra=  5  minibatch=  6  group_size= 13  OOM   peak=None
+n_extra=  5  minibatch=  8  group_size= 13  OOM   peak=None
+n_extra=  5  minibatch= 10  group_size= 13  OOM   peak=None
+n_extra=  5  minibatch= 12  group_size= 13  OOM   peak=None
+n_extra=  5  minibatch= 14  group_size= 13  OOM   peak=None
+n_extra=  5  minibatch= 16  group_size= 13  OOM   peak=None
+n_extra=  5  minibatch= 20  group_size= 13  OOM   peak=None
+n_extra=  5  minibatch= 24  group_size= 13  OOM   peak=None
+n_extra=  5  minibatch= 28  group_size= 13  OOM   peak=None
+n_extra=  5  minibatch= 32  group_size= 13  OOM   peak=None
+n_extra=  6  minibatch=  4  group_size= 14  OOM   peak=None
+n_extra=  6  minibatch=  6  group_size= 14  OOM   peak=None
+n_extra=  6  minibatch=  8  group_size= 14  OOM   peak=None
+n_extra=  6  minibatch= 10  group_size= 14  OOM   peak=None
+n_extra=  6  minibatch= 12  group_size= 14  OOM   peak=None
+n_extra=  6  minibatch= 14  group_size= 14  OOM   peak=None
+n_extra=  6  minibatch= 16  group_size= 14  OOM   peak=None
+n_extra=  6  minibatch= 20  group_size= 14  OOM   peak=None
+n_extra=  6  minibatch= 24  group_size= 14  OOM   peak=None
+n_extra=  6  minibatch= 28  group_size= 14  OOM   peak=None
+n_extra=  6  minibatch= 32  group_size= 14  OOM   peak=None
+
+추천 조합: n_extra=1  minibatch=32  group_size=9  peak=83.6GB
+
+저장: grid_search_results.csv
+Done: Tue Jul  7 23:13:23 KST 2026

@@ -1,0 +1,19 @@
+Job: 226642  Node: node25  Started: Sun Jul  5 15:43:51 KST 2026
+샘플 20개 중 No_ordering 분포:
+ No_ordering
+False    18
+True      2
+Name: count, dtype: int64
+n_nouns 분포:
+ count    20.000000
+mean      7.300000
+std       3.908156
+min       1.000000
+25%       4.000000
+50%       7.500000
+75%       9.500000
+max      13.000000
+Name: n_nouns, dtype: float64
+그룹 크기(1 pos+7 neg): [8]  noun_bucket: [0]
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...

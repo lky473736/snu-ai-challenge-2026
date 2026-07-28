@@ -1,0 +1,21 @@
+Job: 227217  Started: Tue Jul  7 23:41:55 KST 2026  N_EXTRA=1
+[verify] n_extra=1  GRAD_ACCUM=8  n_cycles=3  device=cuda
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+  step 1/24  group_size=9  누적peak=68.47GB
+  step 2/24  group_size=9  누적peak=71.69GB
+  step 3/24  group_size=9  누적peak=71.69GB
+  step 4/24  group_size=9  누적peak=72.97GB
+  step 5/24  group_size=9  누적peak=72.97GB
+  step 6/24  group_size=9  누적peak=77.67GB
+  step 7/24  group_size=9  누적peak=81.36GB
+  step 8/24  group_size=9  누적peak=81.36GB  <- 진짜 optimizer 업데이트
+  step 9/24  group_size=9  누적peak=81.36GB
+  step 10/24  group_size=9  누적peak=81.36GB
+  step 11/24  group_size=9  누적peak=81.36GB
+  step 12/24  group_size=9  누적peak=81.36GB
+
+결과: n_extra=1  OOM  (optimizer 업데이트 1회까지는 성공)
+Done: Tue Jul  7 23:42:33 KST 2026

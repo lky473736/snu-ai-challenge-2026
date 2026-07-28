@@ -1,0 +1,13 @@
+Job: 226487  Node: node25  Started: Sun Jul  5 07:01:16 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+Loading base model + LoRA from /data/gyuyeonlim/snu_ai_challenge/v6.5_resample/checkpoints/best_v6_5 ...
+Val samples: 476
+
+============================================================
+프롬프트 A/B 테스트 (best_v6_5 체크포인트, 재학습 없음)
+============================================================
+[A_baseline] exact_match=0.5924 (282/476)  adj_swap_fail=55  other_fail=139
+[B_adjswap_hint] exact_match=0.5861 (279/476)  adj_swap_fail=62  other_fail=135

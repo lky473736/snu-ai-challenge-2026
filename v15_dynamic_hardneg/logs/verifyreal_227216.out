@@ -1,0 +1,33 @@
+Job: 227216  Started: Tue Jul  7 23:40:56 KST 2026  N_EXTRA=0
+[verify] n_extra=0  GRAD_ACCUM=8  n_cycles=3  device=cuda
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 349,175,808 || all params: 9,116,299,504 || trainable%: 3.8302
+  step 1/24  group_size=8  누적peak=66.15GB
+  step 2/24  group_size=8  누적peak=69.30GB
+  step 3/24  group_size=8  누적peak=69.30GB
+  step 4/24  group_size=8  누적peak=70.53GB
+  step 5/24  group_size=8  누적peak=70.53GB
+  step 6/24  group_size=8  누적peak=75.08GB
+  step 7/24  group_size=8  누적peak=78.65GB
+  step 8/24  group_size=8  누적peak=78.65GB  <- 진짜 optimizer 업데이트
+  step 9/24  group_size=8  누적peak=78.65GB
+  step 10/24  group_size=8  누적peak=78.65GB
+  step 11/24  group_size=8  누적peak=78.65GB
+  step 12/24  group_size=8  누적peak=78.65GB
+  step 13/24  group_size=8  누적peak=81.43GB
+  step 14/24  group_size=8  누적peak=81.43GB
+  step 15/24  group_size=8  누적peak=81.43GB
+  step 16/24  group_size=8  누적peak=81.43GB  <- 진짜 optimizer 업데이트
+  step 17/24  group_size=8  누적peak=81.43GB
+  step 18/24  group_size=8  누적peak=81.43GB
+  step 19/24  group_size=8  누적peak=81.43GB
+  step 20/24  group_size=8  누적peak=81.43GB
+  step 21/24  group_size=8  누적peak=81.43GB
+  step 22/24  group_size=8  누적peak=81.43GB
+  step 23/24  group_size=8  누적peak=81.43GB
+  step 24/24  group_size=8  누적peak=81.43GB  <- 진짜 optimizer 업데이트
+
+결과: n_extra=0  OK  진짜 optimizer 업데이트 3회 완료  최종 peak=81.43GB
+Done: Tue Jul  7 23:41:41 KST 2026

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.cache/
+.DS_Store
+partial_*.csv
+*.tmp
+
+# 최종 모델 가중치는 GitHub에 올리지 않고 Hugging Face Hub에서 download_weights.sh로 받습니다.
+# https://huggingface.co/lky473736/snuaichallenge-v20-qwen3vl32b-qlora
+v20_32b_qlora/checkpoints/best_v20/

@@ -1,0 +1,38 @@
+Job: 226435  Node: node25  Started: Sat Jul  4 15:51:22 KST 2026
+샘플 20개 중 No_ordering 분포:
+ No_ordering
+False    18
+True      2
+Name: count, dtype: int64
+  [data] groups: 20 (8 samples each)  total rows: 160
+생성된 총 row: 160  그룹 수: 20
+       Id                                           Sentence  ... dist  group_id
+0  qpoFUD  The man in the black shirt returns and inspect...  ...    0         0
+1  qpoFUD  The man in the black shirt returns and inspect...  ...    1         0
+2  qpoFUD  The man in the black shirt returns and inspect...  ...    1         0
+3  qpoFUD  The man in the black shirt returns and inspect...  ...    2         0
+4  qpoFUD  The man in the black shirt returns and inspect...  ...    3         0
+5  qpoFUD  The man in the black shirt returns and inspect...  ...    4         0
+6  qpoFUD  The man in the black shirt returns and inspect...  ...    5         0
+7  qpoFUD  The man in the black shirt returns and inspect...  ...    6         0
+8  ACFdQU  The camera transitions from an overhead view o...  ...    0         1
+9  ACFdQU  The camera transitions from an overhead view o...  ...    1         1
+
+[10 rows x 6 columns]
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+logits shape: torch.Size([8])
+loss: 0.5459744334220886 finite: True
+weights: [0.1666666716337204, 0.1666666716337204, 0.1666666716337204, 0.1666666716337204, 0.1666666716337204, 0.1666666716337204]
+backward 성공
+Peak VRAM: 74.90 GB
+
+=== val_exact_match 스모크 (n=3) ===
+
+[Val] exact_match=0.3333 (1/3)  adj_swap_fail=0  other_fail=2
+val smoke acc: 0.3333333333333333
+
+스모크 테스트 전체 통과
+Done: Sat Jul  4 15:51:44 KST 2026

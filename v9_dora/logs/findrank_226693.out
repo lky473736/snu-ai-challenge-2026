@@ -1,0 +1,79 @@
+Job: 226693  Node: node25  Started: Sun Jul  5 20:12:39 KST 2026
+Loading processor...
+Loading base model (한 번만 로드, 이후 어댑터만 교체)...
+  -> flash_attention_2 OK
+그룹 크기(1 pos+7 neg): [8]
+
+==================================================
+시도: r=112  alpha=224  (시작 전 잔여 할당량: 17.53GB)
+==================================================
+trainable params: 306,929,664 || all params: 9,074,053,360 || trainable%: 3.3825
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=112 실패 — 상세: CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 92.38 MiB is free. Including non-PyTorch memory, this process has 79.08 GiB memory in use. Of the allocated memory 78.10 GiB is allocated by PyTorch, and 313.93 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+  정리 후 잔여 할당량: 83.66GB
+
+==================================================
+시도: r=104  alpha=208  (시작 전 잔여 할당량: 17.57GB)
+==================================================
+trainable params: 285,106,176 || all params: 9,052,229,872 || trainable%: 3.1496
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=104 실패 — 상세: CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 200.38 MiB is free. Including non-PyTorch memory, this process has 78.97 GiB memory in use. Of the allocated memory 78.01 GiB is allocated by PyTorch, and 296.43 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+  정리 후 잔여 할당량: 83.56GB
+
+==================================================
+시도: r=96  alpha=192  (시작 전 잔여 할당량: 17.57GB)
+==================================================
+trainable params: 263,282,688 || all params: 9,030,406,384 || trainable%: 2.9155
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=96 실패 — 상세: CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 168.38 MiB is free. Including non-PyTorch memory, this process has 79.01 GiB memory in use. Of the allocated memory 77.99 GiB is allocated by PyTorch, and 352.30 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+  정리 후 잔여 할당량: 83.44GB
+
+==================================================
+시도: r=88  alpha=176  (시작 전 잔여 할당량: 17.57GB)
+==================================================
+trainable params: 241,459,200 || all params: 9,008,582,896 || trainable%: 2.6803
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=88 실패 — 상세: CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 98.38 MiB is free. Including non-PyTorch memory, this process has 79.07 GiB memory in use. Of the allocated memory 78.09 GiB is allocated by PyTorch, and 320.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+  정리 후 잔여 할당량: 83.35GB
+
+==================================================
+시도: r=80  alpha=160  (시작 전 잔여 할당량: 17.57GB)
+==================================================
+trainable params: 219,635,712 || all params: 8,986,759,408 || trainable%: 2.4440
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=80 실패 — 상세: CUDA out of memory. Tried to allocate 576.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 504.38 MiB is free. Including non-PyTorch memory, this process has 78.68 GiB memory in use. Of the allocated memory 77.68 GiB is allocated by PyTorch, and 330.86 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+  정리 후 잔여 할당량: 83.41GB
+
+==================================================
+시도: r=72  alpha=144  (시작 전 잔여 할당량: 17.57GB)
+==================================================
+trainable params: 197,812,224 || all params: 8,964,935,920 || trainable%: 2.2065
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=72 실패 — 상세: CUDA out of memory. Tried to allocate 576.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 576.38 MiB is free. Including non-PyTorch memory, this process has 78.61 GiB memory in use. Of the allocated memory 77.59 GiB is allocated by PyTorch, and 349.10 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+  정리 후 잔여 할당량: 83.32GB
+
+==================================================
+시도: r=64  alpha=128  (시작 전 잔여 할당량: 17.57GB)
+==================================================
+trainable params: 175,988,736 || all params: 8,943,112,432 || trainable%: 1.9679
+[OOM] forward chunk_size -> 4
+[OOM] forward chunk_size -> 2
+[OOM] forward chunk_size -> 1
+[OOM] r=64 실패 — 상세: CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 100.38 MiB is free. Including non-PyTorch memory, this process has 79.07 GiB memory in use. Of the allocated memory 78.07 GiB is allocated by PyTorch, and 336.35 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+  정리 후 잔여 할당량: 83.83GB
+
+==================================================
+모든 후보에서 OOM — DoRA는 이 VRAM으로 불가능해 보임
+Done: Sun Jul  5 20:13:39 KST 2026

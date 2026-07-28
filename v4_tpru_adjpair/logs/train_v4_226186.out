@@ -1,0 +1,45 @@
+Job: 226186  Node: node25  Started: Fri Jul  3 13:05:09 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+[v4] Processes=4  Device=cuda:0
+  lora_r=64  lora_alpha=128  lr=1e-05
+  Loss: AdaptiveDistanceLoss (all 23 perms, d=1..6 fully covered)
+  [data] ordered groups: 7658  no_ordering groups: 1401×5=7005  total rows: 190797
+Train groups: 14663  Total rows: 190797
+Loading processor...
+Loading processor...
+Loading processor...
+Loading processor...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.
+  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.
+  -> flash_attention_2 skipped: FlashAttention2 has been toggled on, but it cannot be used due to the following error: the package for FlashAttention2 doesn't seem to be installed.
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+Loading model (Qwen2_5_VLForConditionalGeneration, bf16, attn=sdpa)...
+  -> sdpa OK
+  -> sdpa OK  -> sdpa OK
+  -> sdpa OK
+
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+trainable params: 190,357,504 || all params: 8,482,524,160 || trainable%: 2.2441
+
+============================================================
+Epoch 1/5  시작: 13:06:16
+  Effective batch = 1×8×4
+============================================================
+  step=   50  loss=0.7603  no_ord=0.0000  lr=5.24e-07  w=[0.171,0.168,0.167,0.165,0.165,0.164]  L=[0.342,0.299,0.461,0.347,0.246,0.008]
+  step=  100  loss=0.8913  no_ord=0.0000  lr=1.05e-06  w=[0.174,0.166,0.165,0.169,0.167,0.159]  L=[0.650,0.563,0.444,0.382,0.498,0.387]
+  step=  150  loss=0.8377  no_ord=6.1272  lr=1.57e-06  w=[0.181,0.166,0.165,0.170,0.167,0.150]  L=[nan,nan,nan,nan,nan,nan]
+  step=  200  loss=0.8545  no_ord=1.3133  lr=2.18e-06  w=[0.184,0.167,0.166,0.167,0.165,0.151]  L=[nan,nan,nan,nan,nan,nan]
+  step=  250  loss=0.8253  no_ord=0.0000  lr=2.71e-06  w=[0.188,0.168,0.166,0.165,0.164,0.150]  L=[0.436,0.269,0.159,0.060,0.052,0.100]
+  step=  300  loss=0.7793  no_ord=1.5019  lr=3.23e-06  w=[0.191,0.167,0.164,0.164,0.163,0.151]  L=[nan,nan,nan,nan,nan,nan]

@@ -1,0 +1,6 @@
+/home/gyuyeonlim/.conda/envs/aichallenge/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `snapshot_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+Downloading TPRU-7B...
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 17 files:   6%|▌         | 1/17 [00:00<00:12,  1.30it/s]Fetching 17 files:  18%|█▊        | 3/17 [00:01<00:05,  2.69it/s]Fetching 17 files:  47%|████▋     | 8/17 [06:41<08:44, 58.25s/it]Fetching 17 files:  53%|█████▎    | 9/17 [07:30<07:32, 56.59s/it]Fetching 17 files:  59%|█████▉    | 10/17 [08:26<06:35, 56.49s/it]Fetching 17 files: 100%|██████████| 17/17 [08:26<00:00, 29.80s/it]
+Done!

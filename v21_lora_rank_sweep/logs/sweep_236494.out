@@ -1,0 +1,105 @@
+Job: 236494  Node: node26  Started: Thu Jul 23 20:35:21 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+
+########## 1단계: 굵은 폭(32단위) 스윕으로 OOM 구간 찾기 ##########
+
+==================================================
+  Testing r=128  (started: 20:35:21)
+==================================================
+[v21 rank-sweep] r=128  alpha=256  processes=4
+trainable params: 1,073,741,824 || all params: 34,431,131,888 || trainable%: 3.1185
+[r=128] optimizer.step() #1  peak=49.20GB
+[r=128] optimizer.step() #2  peak=56.84GB
+RESULT r=128 OK peakVRAM=56.84GB
+
+==================================================
+  Testing r=160  (started: 20:39:12)
+==================================================
+[v21 rank-sweep] r=160  alpha=320  processes=4
+trainable params: 1,342,177,280 || all params: 34,699,567,344 || trainable%: 3.8680
+[r=160] optimizer.step() #1  peak=52.96GB
+[r=160] optimizer.step() #2  peak=62.75GB
+RESULT r=160 OK peakVRAM=62.75GB
+
+==================================================
+  Testing r=192  (started: 20:41:13)
+==================================================
+[v21 rank-sweep] r=192  alpha=384  processes=4
+trainable params: 1,610,612,736 || all params: 34,968,002,800 || trainable%: 4.6060
+[r=192] optimizer.step() #1  peak=56.72GB
+[r=192] optimizer.step() #2  peak=68.65GB
+RESULT r=192 OK peakVRAM=68.65GB
+
+==================================================
+  Testing r=224  (started: 20:43:15)
+==================================================
+[v21 rank-sweep] r=224  alpha=448  processes=4
+trainable params: 1,879,048,192 || all params: 35,236,438,256 || trainable%: 5.3327
+[r=224] optimizer.step() #1  peak=60.48GB
+[r=224] optimizer.step() #2  peak=74.56GB
+RESULT r=224 OK peakVRAM=74.56GB
+
+==================================================
+  Testing r=256  (started: 20:45:20)
+==================================================
+[v21 rank-sweep] r=256  alpha=512  processes=4
+trainable params: 2,147,483,648 || all params: 35,504,873,712 || trainable%: 6.0484
+[r=256] optimizer.step() #1  peak=64.23GB
+[r=256] optimizer.step() #2  peak=80.46GB
+RESULT r=256 OK peakVRAM=80.46GB
+
+==================================================
+  Testing r=288  (started: 20:47:27)
+==================================================
+[v21 rank-sweep] r=288  alpha=576  processes=4
+trainable params: 2,415,919,104 || all params: 35,773,309,168 || trainable%: 6.7534
+[r=288] optimizer.step() #1  peak=67.99GB
+
+########## 2단계: 브래킷 [256(OK) ~ 288(OOM)] 안에서 16단위 정밀 탐색(속도 우선) ##########
+
+==================================================
+  Testing r=272  (started: 20:49:08)
+==================================================
+[v21 rank-sweep] r=272  alpha=544  processes=4
+trainable params: 2,281,701,376 || all params: 35,639,091,440 || trainable%: 6.4022
+[r=272] optimizer.step() #1  peak=66.11GB
+
+=== 정밀 탐색 중 r=272 에서 OOM (final_ok=256 유지) ===
+
+==================================================
+최종 결론: r=256 까지는 안전(H100 4장, group_size=8, TRAIN_MINIBATCH=8 기준)
+==================================================
+
+########## 3단계: r=256 로 실제 학습(3epoch) ##########
+[v21] Processes=4  Device=cuda:0
+  base=Qwen3-VL-32B-Instruct QLoRA(4bit-NF4)  lora_r=256  lora_alpha=512  lr=5e-05
+  Loss: ListwiseSoftmaxLoss (v14/v20과 동일)
+  Hard negatives: LIVE resampled every __getitem__ (v14/v20과 동일, K=7 d=1..6)
+  EPOCHS=5  ckpt_name=best_v21_r256
+Train samples (raw): 9059  Val: 476
+Loading processor...
+Loading processor...
+Loading processor...
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, 4bit-NF4, r=256, alpha=512, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, 4bit-NF4, r=256, alpha=512, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, 4bit-NF4, r=256, alpha=512, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, 4bit-NF4, r=256, alpha=512, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+trainable params: 2,147,483,648 || all params: 35,504,873,712 || trainable%: 6.0484
+trainable params: 2,147,483,648 || all params: 35,504,873,712 || trainable%: 6.0484
+trainable params: 2,147,483,648 || all params: 35,504,873,712 || trainable%: 6.0484
+trainable params: 2,147,483,648 || all params: 35,504,873,712 || trainable%: 6.0484
+
+============================================================
+Epoch 1/5  시작: 20:51:51
+  Effective batch = 1×8×4
+============================================================
+학습이 비정상 종료(exit=1)됨 — 추론 단계 건너뜀
+Done: Thu Jul 23 20:51:57 KST 2026

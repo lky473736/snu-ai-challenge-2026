@@ -1,0 +1,17 @@
+Job: 226687  Node: node23  Started: Sun Jul  5 19:27:42 KST 2026
+====================================================
+Inference only (best_v8=epoch3 val0.5924, best_v8_last=epoch4 val0.5735), DDP 4-GPU
+====================================================
+World size: 4  |  Resolution: 448px
+Total: 819 samples → 205 per GPU
+
+==================================================
+Checkpoint: /data/gyuyeonlim/snu_ai_challenge/v8_lora128/checkpoints/best_v8
+
+저장: /data/gyuyeonlim/snu_ai_challenge/v8_lora128/submission_v8_best.csv  (819 rows)
+
+==================================================
+Checkpoint: /data/gyuyeonlim/snu_ai_challenge/v8_lora128/checkpoints/best_v8_last
+
+저장: /data/gyuyeonlim/snu_ai_challenge/v8_lora128/submission_v8_last.csv  (819 rows)
+Done: Sun Jul  5 19:52:08 KST 2026

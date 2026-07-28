@@ -1,0 +1,36 @@
+Job: 226439  Node: node25  Started: Sat Jul  4 20:40:32 KST 2026
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+2, NVIDIA H100 80GB HBM3, 81559 MiB
+3, NVIDIA H100 80GB HBM3, 81559 MiB
+====================================================
+STAGE 1: Training (Qwen3-VL-8B, 448px, WEIGHT_TEMP=6, LIVE hard-negative resampling)
+====================================================
+[v6.5] Processes=4  Device=cuda:0
+  lora_r=64  lora_alpha=128  lr=1e-05
+  Loss: AdaptiveDistanceLoss (temp=6.0, all d=1..6 covered, No_ordering도 동일 hard-negative 처리)
+  Hard negatives: LIVE resampled every __getitem__ (v6 was fixed-once)
+Train samples (raw, pre-expansion): 9059
+Loading processor...Loading processor...
+
+Loading processor...
+Loading processor...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+Loading model (Qwen3VLForConditionalGeneration, bf16, attn=flash_attention_2)...
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+  -> flash_attention_2 OK
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+trainable params: 174,587,904 || all params: 8,941,711,600 || trainable%: 1.9525
+
+============================================================
+Epoch 1/5  시작: 20:40:55
+  Effective batch = 1×8×4
+============================================================
+  step=   50  loss=0.5153  lr=8.48e-07  w=[0.150,0.163,0.221,0.093,0.197,0.176]  L=[0.696,0.023,0.387,1.701,0.062,0.030]
+  step=  100  loss=0.4545  lr=1.70e-06  w=[0.209,0.199,0.169,0.124,0.177,0.123]  L=[0.011,0.001,0.000,0.001,0.000,0.000]
