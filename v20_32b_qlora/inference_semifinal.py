@@ -143,9 +143,19 @@ def main():
         bnb_4bit_use_double_quant=BNB_4BIT_USE_DOUBLE_QUANT,
         llm_int8_skip_modules=LLM_INT8_SKIP_MODULES,
     )
-    base_model = ModelClass.from_pretrained(
-        MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map={"": device},
-    )
+    if world_size == 1:
+        # 단일 GPU(예: RTX 3090 24GB)에서 베이스 모델(4bit) + LoRA 어댑터가 다 안 들어갈 수 있어,
+        # 일부 레이어를 CPU RAM으로 오프로드한다. 연산 자체(양자화 방식, 정밀도)는 동일하게
+        # 유지되므로 예측 결과에는 영향이 없다 — forward pass 때 CPU에 있는 레이어만 그때그때
+        # GPU로 옮겨 계산하는 방식이라 속도만 느려진다.
+        base_model = ModelClass.from_pretrained(
+            MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16,
+            device_map="auto", max_memory={0: "20GiB", "cpu": "200GiB"},
+        )
+    else:
+        base_model = ModelClass.from_pretrained(
+            MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map={"": device},
+        )
     torch.cuda.empty_cache()
 
     test_df = pd.read_csv(EXT_TEST_CSV)
