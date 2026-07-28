@@ -138,21 +138,28 @@ def main():
     )
     if world_size == 1:
         # 단일 GPU(예: RTX 3090 24GB)에서 베이스 모델(4bit) + LoRA 어댑터가 다 안 들어갈 수 있다.
-        # 4bit로 양자화된 레이어는 CPU 오프로드가 안 되므로(bitsandbytes 4bit 커널이 CUDA 전용 —
-        # 억지로 CPU에 두려면 32bit로 바꿔야 해서 정밀도가 달라짐), 애초에 4bit가 아니라 bf16
-        # 그대로인 모듈(vision tower, lm_head)만 골라서 CPU로 보낸다. 이 모듈들은 정밀도가
-        # 전혀 바뀌지 않으므로(그냥 물리적으로 GPU 대신 CPU에 있을 뿐) 예측 결과는 동일하고,
-        # forward pass 때 그때그때 GPU로 옮겨 계산하는 만큼만 느려진다.
-        # model.language_model(4bit 양자화된 텍스트 디코더)만 GPU에 두고, 4bit가 아니라
-        # bf16 그대로인 model.visual(vision tower)과 lm_head는 CPU로 보낸다. 정밀도가
-        # 전혀 바뀌지 않으므로(물리적 위치만 다름) 예측 결과는 동일하고, forward pass 때
-        # 그때그때 GPU로 옮겨 계산하는 만큼만 느려진다.
+        # model.language_model(4bit 양자화된 텍스트 디코더)만 GPU에 두고, 4bit가 아니라 bf16
+        # 그대로인 model.visual(vision tower)과 lm_head는 CPU로 보낸다. 이 두 모듈은 원래도
+        # 양자화 대상이 아니었으므로(LLM_INT8_SKIP_MODULES + HF의 lm_head 자동 보호) 정밀도가
+        # 전혀 바뀌지 않고, 물리적 위치만 GPU->CPU로 바뀌는 것이라 예측 결과는 동일하다.
+        # HF의 bnb 4bit 검증 로직이 "4bit 양자화 중 일부라도 CPU/disk에 있으면" 무조건 막아버려서
+        # (오프로드 대상이 실제로 4bit인지는 안 따짐) llm_int8_enable_fp32_cpu_offload로 풀어줘야 한다.
+        offload_bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_quant_type=BNB_4BIT_QUANT_TYPE,
+            bnb_4bit_compute_dtype=torch.bfloat16,
+            bnb_4bit_use_double_quant=BNB_4BIT_USE_DOUBLE_QUANT,
+            llm_int8_skip_modules=LLM_INT8_SKIP_MODULES,
+            llm_int8_enable_fp32_cpu_offload=True,
+        )
         device_map = {"model.language_model": 0, "model.visual": "cpu", "lm_head": "cpu"}
         base_model = ModelClass.from_pretrained(
-            MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map=device_map,
+            MODEL_PATH, quantization_config=offload_bnb_config, torch_dtype=torch.bfloat16, device_map=device_map,
         )
         print("hf_device_map:", getattr(base_model, "hf_device_map", None))
         print(f"GPU 메모리(로드 직후): {torch.cuda.memory_allocated()/1e9:.2f} GB")
+        print("visual dtype:", next(base_model.model.visual.parameters()).dtype)
+        print("lm_head dtype:", next(base_model.lm_head.parameters()).dtype)
     else:
         base_model = ModelClass.from_pretrained(
             MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map={"": device},
