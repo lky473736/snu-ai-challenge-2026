@@ -184,7 +184,7 @@ def main():
             torch.cuda.reset_peak_memory_stats()
             print(f"GPU 메모리(어댑터 로드 직전): {torch.cuda.memory_allocated()/1e9:.2f} GB", flush=True)
             for name, p in base_model.named_parameters():
-                if p.device.type != "cpu" and "language_model" not in name:
+                if p.device.type == "cuda" and "language_model" not in name:
                     print(f"  [의외로 GPU에 있음] {name}: {p.device}, {p.dtype}, {p.numel()}", flush=True)
 
         try:
@@ -192,6 +192,7 @@ def main():
                 model = PeftModel.from_pretrained(
                     base_model, str(ckpt_path),
                     device_map={"model.language_model": 0, "model.visual": "cpu", "lm_head": "cpu"},
+                    low_cpu_mem_usage=True,
                 )
             else:
                 model = PeftModel.from_pretrained(base_model, str(ckpt_path))
@@ -199,7 +200,7 @@ def main():
             if rank == 0:
                 print(f"GPU 메모리(OOM 시점 peak): {torch.cuda.max_memory_allocated()/1e9:.2f} GB", flush=True)
                 for name, p in base_model.named_parameters():
-                    if p.device.type != "cpu" and "language_model" not in name:
+                    if p.device.type == "cuda" and "language_model" not in name:
                         print(f"  [OOM 시점, GPU로 이동됨] {name}: {p.device}, {p.dtype}", flush=True)
             raise
         model.eval()
