@@ -1,13 +1,17 @@
-# TEMPO: Temporal Event Matching via Permutation-scored Ordering
-### Hard-Negative Listwise Ranking for Chronological Frame Reconstruction with Vision-Language Models
+# TEMPO
+
+**Temporal Event Matching via Permutation-scored Ordering**
+Hard-Negative Listwise Ranking for Chronological Frame Reconstruction with Vision-Language Models
+
+SNU AI Challenge 2026 · Kaggle `snuaichallenge` · Public **0.91099** / Private **0.90650**
 
 ![overall architecture](figures/architecture.png)
 
 ![distance loss heatmap animated](figures/distance_loss_heatmap.gif)
 
-**SNU AI Challenge 2026 — "텍스트로 풀어보는 장면의 재구성"** (Kaggle competition ID: `snuaichallenge`)
-출품 프로젝트입니다. 4장의 셔플된 비디오 프레임과, 그 프레임들이 담은 사건을 설명하는 문장(caption)이
-주어졌을 때, 원래 사건의 올바른 시간 순서(4! = 24가지 경우의 수 중 1개)를 맞히는 과제입니다.
+**"텍스트로 풀어보는 장면의 재구성"** 출품 프로젝트입니다. 4장의 셔플된 비디오 프레임과, 그 프레임들이
+담은 사건을 설명하는 문장(caption)이 주어졌을 때, 원래 사건의 올바른 시간 순서(4! = 24가지 경우의 수 중
+1개)를 맞히는 과제입니다.
 
 - **T**emporal: 시간 순서를 다루는 과제 본질
 - **E**vent Matching: 문장(사건 설명)과 프레임 순서를 매칭
@@ -29,6 +33,48 @@
 > - v1-v19, v21은 이 최종 모델에 도달하기까지의 실험 히스토리이며, 최종 제출 모델이 아닙니다(§8 표 참고).
 > - 본선 후보자 외부 데이터셋 검증도 **동일 체크포인트(best_v20)로 추가 학습 없이** 추론만 수행했습니다
 >   (`v20_32b_qlora/inference_semifinal.py` → `submission_semifinal_v20.csv`).
+
+---
+
+## Quick Start — 재현 최소 명령어 (RTX 3090 / 대회 채점 서버 기준)
+
+아래 순서 그대로 실행하면 `submission_v20_best.csv`가 재현됩니다. 각 단계의 상세 설명은 아래 1-5번
+섹션을 참고하세요.
+
+```bash
+# 0) 저장소 클론
+git clone https://github.com/lky473736/snu-ai-challenge-2026.git
+cd snu-ai-challenge-2026
+
+# 1) 환경 구성 (RTX 3090 / CUDA 12.4 — 대회 채점 서버 기준, §1-2 참고)
+conda create -n aichallenge python=3.10 -y
+conda activate aichallenge
+pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
+pip install -r requirements.txt
+
+# 2) 대회 데이터 배치 (§3 참고) — <DATA_DIR>을 config.py의 DATA_DIR과 맞출 것
+python3 -c "import kagglehub; kagglehub.competition_download('snuaichallenge', output_dir='<DATA_DIR>')"
+
+# 3) LoRA 어댑터 가중치 다운로드 (§4 참고)
+cd v20_32b_qlora
+bash download_weights.sh
+
+# 4) 추론 실행 — GPU 1장에서 코드 수정 없이 그대로 동작 (§5.2-b 참고)
+python inference.py
+# 완료되면 v20_32b_qlora/submission_v20_best.csv 가 생성됩니다.
+```
+
+## 목차
+
+1. [실행 환경](#1-실행-환경)
+2. [설치](#2-설치)
+3. [데이터 준비](#3-데이터-준비)
+4. [모델 가중치](#4-모델-가중치)
+5. [실행 방법](#5-실행-방법-최종-제출-모델-v20_32b_qlora)
+6. [재현성 관련 참고사항](#6-재현성-관련-참고사항)
+7. [코드 및 데이터 사용 관련 준수 사항](#7-코드-및-데이터-사용-관련-준수-사항)
+8. [프로젝트 구조 (버전 히스토리 v1-v21)](#8-프로젝트-구조-버전-히스토리-v1-v21)
+9. [라이선스](#9-라이선스)
 
 ---
 
