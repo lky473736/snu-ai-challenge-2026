@@ -137,13 +137,6 @@ def main():
         llm_int8_skip_modules=LLM_INT8_SKIP_MODULES,
     )
     if world_size == 1:
-        # 단일 GPU(예: RTX 3090 24GB)에서 베이스 모델(4bit) + LoRA 어댑터가 다 안 들어갈 수 있다.
-        # model.language_model(4bit 양자화된 텍스트 디코더)만 GPU에 두고, 4bit가 아니라 bf16
-        # 그대로인 model.visual(vision tower)과 lm_head는 CPU로 보낸다. 이 두 모듈은 원래도
-        # 양자화 대상이 아니었으므로(LLM_INT8_SKIP_MODULES + HF의 lm_head 자동 보호) 정밀도가
-        # 전혀 바뀌지 않고, 물리적 위치만 GPU->CPU로 바뀌는 것이라 예측 결과는 동일하다.
-        # HF의 bnb 4bit 검증 로직이 "4bit 양자화 중 일부라도 CPU/disk에 있으면" 무조건 막아버려서
-        # (오프로드 대상이 실제로 4bit인지는 안 따짐) llm_int8_enable_fp32_cpu_offload로 풀어줘야 한다.
         offload_bnb_config = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_quant_type=BNB_4BIT_QUANT_TYPE,
@@ -188,16 +181,27 @@ def main():
             print(f"Checkpoint: {ckpt_path}")
 
         if rank == 0:
-            print(f"GPU 메모리(어댑터 로드 직전): {torch.cuda.memory_allocated()/1e9:.2f} GB")
-        if world_size == 1:
-            # 어댑터도 명시적으로 같은 device_map을 줘서, peft가 임의로 전체 모델을
-            # 다시 GPU로 모으려 드는 것을 방지한다.
-            model = PeftModel.from_pretrained(
-                base_model, str(ckpt_path),
-                device_map={"model.language_model": 0, "model.visual": "cpu", "lm_head": "cpu"},
-            )
-        else:
-            model = PeftModel.from_pretrained(base_model, str(ckpt_path))
+            torch.cuda.reset_peak_memory_stats()
+            print(f"GPU 메모리(어댑터 로드 직전): {torch.cuda.memory_allocated()/1e9:.2f} GB", flush=True)
+            for name, p in base_model.named_parameters():
+                if p.device.type != "cpu" and "language_model" not in name:
+                    print(f"  [의외로 GPU에 있음] {name}: {p.device}, {p.dtype}, {p.numel()}", flush=True)
+
+        try:
+            if world_size == 1:
+                model = PeftModel.from_pretrained(
+                    base_model, str(ckpt_path),
+                    device_map={"model.language_model": 0, "model.visual": "cpu", "lm_head": "cpu"},
+                )
+            else:
+                model = PeftModel.from_pretrained(base_model, str(ckpt_path))
+        except torch.cuda.OutOfMemoryError:
+            if rank == 0:
+                print(f"GPU 메모리(OOM 시점 peak): {torch.cuda.max_memory_allocated()/1e9:.2f} GB", flush=True)
+                for name, p in base_model.named_parameters():
+                    if p.device.type != "cpu" and "language_model" not in name:
+                        print(f"  [OOM 시점, GPU로 이동됨] {name}: {p.device}, {p.dtype}", flush=True)
+            raise
         model.eval()
 
         run_inference(model, processor, device, shard, rank, world_size, out_name, yes_id, no_id, size_holder)
