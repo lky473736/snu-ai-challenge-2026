@@ -203,6 +203,15 @@ def main():
             raise
         model.eval()
 
+        if world_size == 1:
+            emb = model.get_input_embeddings()
+            if next(emb.parameters()).device.type != "cuda":
+                emb.to(device)
+            if rank == 0:
+                for name, p in model.named_parameters():
+                    if "visual" not in name and "lm_head" not in name and p.device.type != "cuda":
+                        print(f"[여전히 CPU] {name}: {p.device}", flush=True)
+
         run_inference(model, processor, device, shard, rank, world_size, out_name, yes_id, no_id, size_holder)
 
         del model
