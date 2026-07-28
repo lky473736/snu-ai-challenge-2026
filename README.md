@@ -215,9 +215,18 @@ python inference.py
 - 베이스 모델(32B)은 4bit NF4로 양자화되어 로드되고(`config.py`의 `BNB_4BIT_QUANT_TYPE`), LoRA
   어댑터만 bf16으로 얹힙니다. Vision tower(`visual`)는 정밀도 유지를 위해 양자화에서 제외됩니다.
 - 추론 배치(`INFER_BATCH_SIZE=24`, 24-permutation을 몇 개씩 묶어 forward할지)는 시작값일 뿐이며,
-  `_chunked_forward()`가 `torch.cuda.OutOfMemoryError`를 잡아 배치 크기를 절반씩 자동으로 줄이면서
-  재시도합니다(24 → 12 → 6 → ... → 1). 즉 GPU 메모리가 24GB로 줄어들어도 배치 크기가 자동으로
-  낮아지며 동작하도록 설계되어 있습니다(속도만 느려짐).
+  `_chunked_forward()`가 OOM을 잡아 배치 크기를 절반씩 자동으로 줄이면서 재시도합니다
+  (24 → 12 → 6 → ...). GPU 메모리가 24GB로 줄어들어도 배치 크기가 자동으로 낮아지며 동작합니다
+  (속도만 느려짐).
+
+**실제 RTX 3090(24GB) 실행 검증 기록**: 베이스 모델(4bit) 로드만으로 22~23GB를 써서 LoRA 어댑터(약
+2GB)가 들어갈 자리가 없어 OOM이 났습니다. 원래도 양자화 대상이 아니던 vision tower와 lm_head(둘 다
+bf16 그대로, 정밀도 변화 없음)를 `device_map`으로 CPU RAM에 오프로드해서 해결했고, 어댑터 로딩 중
+peft가 예상 못한 메모리를 더 쓰는 문제는 `low_cpu_mem_usage=True`로, CPU 오프로드 후 accelerate의
+자동 디바이스 이동 hook이 깨지는 문제는 `dispatch_model()` 재적용으로 해결했습니다. 추가로
+`use_cache=False`(생성 안 하므로 캐시 불필요)와 `logits_to_keep=1`(lm_head를 마지막 토큰에만
+적용 — 이미 그 값만 쓰고 있었으므로 결과는 완전히 동일, 계산량만 감소)로 속도를 개선했습니다.
+실측 결과 819개 test set 처리에 샘플당 약 23~24초, 총 약 5시간 20분 소요(24시간 제한 내).
 
 ### 5.3 추론 (본선 후보자 외부 데이터셋 검증용)
 
