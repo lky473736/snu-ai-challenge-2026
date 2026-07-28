@@ -190,9 +190,7 @@ def main():
         try:
             if world_size == 1:
                 model = PeftModel.from_pretrained(
-                    base_model, str(ckpt_path),
-                    device_map={"model.language_model": 0, "model.visual": "cpu", "lm_head": "cpu"},
-                    low_cpu_mem_usage=True,
+                    base_model, str(ckpt_path), low_cpu_mem_usage=True,
                 )
             else:
                 model = PeftModel.from_pretrained(base_model, str(ckpt_path))
