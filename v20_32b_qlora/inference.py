@@ -143,8 +143,10 @@ def main():
         # GPU로 옮겨 계산하는 방식이라 속도만 느려진다.
         base_model = ModelClass.from_pretrained(
             MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16,
-            device_map="auto", max_memory={0: "20GiB", "cpu": "200GiB"},
+            device_map="auto", max_memory={0: "15GiB", "cpu": "200GiB"},
         )
+        print("hf_device_map:", getattr(base_model, "hf_device_map", None))
+        print(f"GPU 메모리(로드 직후): {torch.cuda.memory_allocated()/1e9:.2f} GB")
     else:
         base_model = ModelClass.from_pretrained(
             MODEL_PATH, quantization_config=bnb_config, torch_dtype=torch.bfloat16, device_map={"": device},
