@@ -42,6 +42,8 @@ def set_deterministic(seed: int = SEED):
     torch.cuda.manual_seed_all(seed)
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
+    torch.backends.cuda.matmul.allow_tf32 = False
+    torch.backends.cudnn.allow_tf32 = False
     torch.use_deterministic_algorithms(True, warn_only=True)
 
 # 예선 최종 제출과 동일한 체크포인트만 사용(추가 학습 금지)
